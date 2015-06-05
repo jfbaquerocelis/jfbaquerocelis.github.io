@@ -1,27 +1,98 @@
 @import 'nib/vendor'
 vendor-prefixes = o ms webkit moz official
 
-Blue = #3f51b5
-DarkBlue = #303f9f
-Green = #64dd17
+// Blue = #3f51b5
+// DarkBlue = #303f9f
+// Green = #64dd17
+Teal = #00796B
+DarkTeal = #004D40
+Green = #00E676
 Grey = #666666
 
+/*Animations*/
+@keyframes showContact
+	from
+		transform translate(120px, 360px)
+		width 0
+		height 0
+	to
+		transform translate(0, 0)
+		height 16.5em
+		width 14em
+@keyframes showMenu
+	from
+		left -100%
+	to
+		left 0
+@keyframes hideMenu
+	from
+		left 0
+	to
+		left -100%
+@keyframes shake-icon
+	0%
+		transform rotate(0)
+	20%
+		transform rotate(5deg)
+	40%
+		transform rotate(-5deg)
+	60%
+		transform rotate(5deg)
+	80%
+		transform rotate(-5deg)
+	100%
+		transform rotate(0)
+
+
+/* UI Components */
+.html5:hover
+	border-left 5px solid #f16529
+.css3:hover
+	border-left 5px solid #28a8de
+.js:hover
+	border-left 5px solid #f1be25
+.node:hover
+	border-left 5px solid #90c741
+.django:hover
+	border-left 5px solid #0dc61e
+
 /*-------CONFIGURACION VISTA SMARTPHONE----------*/
+a
+	outline none
 body
 	font-family 'Roboto'
 	font-size 16px
+	overflow-x hidden
+.blanketBody
+	display none
+	width 100%
+	height 100%
+	position fixed
+	z-index 1
+	background black
+	opacity .4
 	
 /*Section Header*/
 .Header
-	background Blue
-	border-top 1em solid DarkBlue
+	background Teal
 	color white
 	font-size .73em
 	position relative
 	padding-bottom 2em
 	box-shadow 0 1px 2px Grey
+.Header-contentButton
+	background DarkTeal
+	display block
+	padding .3em .5em
+.Header-menuButton
+	color white
+	margin 0
+	font-size 2.2em
+	&:hover
+		text-decoration none
+		color Green
 .Header-contentMe
-	margin 4em 8em 0 0
+	margin 2em 8em 0 0
 .Header-title
 	text-align right
 	margin 0
@@ -31,21 +102,255 @@ body
 	text-align right
 .Header-community
 	color Green
+	&:hover
+		color lightgreen
 .Header-avatarContent
 	width 100%
 	position absolute
 	top 3.5em
+	margin .5em
 .Header-avatar
-	right 1em
+	right 1.5em
 	position absolute
 	width 6em
-	background white
 	border-radius 50%
+	
+/*Section Menu*/
+.contentMenu
+	display none
+	animation-duration .6s
+	background white
+	position fixed
+	height 100%
+	width 18em
+	z-index 2
+.Menu-imageContent
+	width 100%
+	box-shadow 0 1px 2px Grey
+	margin 0
+.Menu-image
+	width 100%
+	background #DDD
+.listMenu
+	margin 3em 0
+	padding 0
+.listMenu li
+	margin 1em 0
+	padding 0 0 0 2em
+.listMenu li a
+	color #333
+	font-weight 600
+	text-decoration none
+	transition .5s all ease
+	font-size 1.1em
+	&:hover
+		color Teal
+	&:hover span
+		animation-name shake-icon
+.listMenu li a span
+	margin 0 .5em
+	font-size 1.2em
+	animation-duration .3s
+.Menu-footer
+	text-align center
+	position absolute
+	bottom 1em
+	width 18em
+	font-style italic
+	display block
+.Menu-footer > p
+	margin 0
+.Menu-footer a
+	color Teal
+
+/*Section Me*/
+.Me-community
+	color Teal
+	font-style italic
+	&:hover
+		color Green
+.Me-welcome
+.Me-web
+	margin 0 auto
+	width 85%
+	text-align center
+.Me-title
+	margin-top .5em
+	border-bottom 1px solid #DDD
+	padding-bottom .5em
+	font-weight 600
+.Me-description
+	text-align left
+
+/*Section Portfolio*/
+.Portfolio
+	display none
+.Portfolio-linkWork
+	color #333
+	text-decoration none
+	transition .5s all ease
+	&:hover
+		text-decoration none
+	&:hover .Portfolio-imageDescription
+		color Teal
+		text-decoration underline
+		transition .3s all ease
+	&:hover .Portfolio-imageContent
+		transform scale(1.1, 1.1)
+.Portfolio-works
+.Portfolio-studies
+	margin 0 auto
+	width 85%
+.Portfolio-title
+	border-bottom 1px solid #DDD
+	font-weight 600
+	margin-top .5em
+	padding-bottom .5em
+	text-align center
+.Portfolio-imageContent
+	border 1px solid #DDD
+	display inline-block
+	text-align center
+	transition .3s all ease
+	width 45%
+	margin .5em .4em
+.Portfolio-image
+	width 6.25em
+.Portfolio-linkStudies
+	color #333
+	text-decoration none
+	&:hover
+		color Teal
+		text-decoration underline
+.Portfolio-studiesContent
+	border-left 2px solid Teal
+	position relative
+	margin-bottom .5em
+	padding 0 .5em
+	transition .2s all ease
+	&:hover
+		border-left 5px solid Green
+.Portfolio-school
+.Portfolio-career
+.Portfolio-year
+	margin 0
+	padding 0
+.Portfolio-logoContent
+	width 100%
+.Portfolio-logo
+	border-radius 50%
+	position absolute
+	right 0
+	top 0
+	width 4.1em
+	
+/*Section Tools*/
+.Tools
+	display none
+	margin 0 auto
+	width 85%
+.Tools-title
+	border-bottom 1px solid #DDD
+	font-weight 600
+	margin-top .5em
+	padding-bottom .5em
+	text-align center
+.Tools-list
+	text-align center
+.Tools-list .Tools-listItem
+	float none
+	display inline-block
+.Tools-list .Tools-listItem a
+	border-radius 0
+	color Teal
+	font-size 1.2em
+.Tools-frontend
+.Tools-backend
+	display table
+	position relative
+	border-left 2px solid Teal
+	margin 1em 0
+	padding 0 .4em
+	transition .2s all ease
+.Tools-imageContent
+	display table-cell
+	vertical-align middle
+.Tools-image
+	width 4.1em
+.Tools-titleFront
+.Tools-titleBack
+	border-bottom 1px solid #DDD
+	font-weight 600
+	margin .3em .5em
+.Tools-descriptionFront
+.Tools-descriptionBack
+	margin 0
+	margin 0 .5em
+
+/*Section Contact*/
+.Button-contact
+	opacity .5
+	bottom 1em
+	right 1.5em
+	position fixed
+	background Green
+	padding 1em
+	border-radius 50%
+	box-shadow 1px 2px 5px Grey
+	transition .3s opacity ease
+	font-size 1.1em
+	&:hover
+		opacity 1
+		text-decoration none
+.Contact
+	animation-duration .6s
+	animation-name showContact
+	background white
+	top 30%
+	box-shadow 1px 2px 5px Grey
+	display none
+	left 0
+	height 16.5em
+	right 0
+	margin 0 auto
+	padding .1em 1.5em .5em
+	position fixed
+	text-align center
+	width 14em
+	z-index 2
+.Contact-content
+	display none
+.Contact-title
+	font-weight 600
+.Contact-group
+	text-align left
+	margin 1em 0
+	padding 0
+.Contact-item
+	display block
+	margin .5em 0
+.Contact-link
+	color #333
+	&:hover
+		color Teal
+		text-decoration none
+	&:hover span
+		animation-name shake-icon
+.Contact-link span
+	animation-duration .5s
+	font-size 2em
+	vertical-align middle
+.Contact-buttonCancel
+	color Teal
+	position relative
+	right -4em
+	&:hover
+		color crimson
 
 /*-------CONFIGURACION VISTA TABLETS----------*/
 
-// @media screen and (min-width: 450px)
-	
-// @media screen and (min-width: 670px)
+@media screen and (min-width: 700px)
+	body
+		background hotpink
 	
 /*-------CONFIGURACION VISTA DESKTOP----------*/
