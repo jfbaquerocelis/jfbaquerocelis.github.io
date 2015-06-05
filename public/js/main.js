@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
 	// Code for text-decoration out in tags "a"
 	$('a').click(function () {
 		$(this).css('text-decoration', 'none')
@@ -6,12 +7,14 @@ $(document).ready(function () {
 
 	/*Function show Section Contact*/
 	$('.Button-contact').on('click', function (e) {
-		e.preventDefault();
-		$('.Contact').css('display', 'block');
 		setTimeout(function () {
-			$('.Contact-content').css('display', 'block');
+			$('.Contact-content').fadeIn('fast');
 		}, 400)
-		$('.blanketBody').css('display', 'block');
+		$('.blanketBody').fadeIn('fast');
+		$('.Contact').fadeIn('fast');
+		$('body').animate({
+			scrollTop : 0
+		}, 400)
 	})
 
 	/*Function hide Section Contact*/

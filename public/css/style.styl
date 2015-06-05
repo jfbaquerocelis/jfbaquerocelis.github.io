@@ -12,11 +12,11 @@ Grey = #666666
 /*Animations*/
 @keyframes showContact
 	from
-		transform translate(120px, 360px)
 		width 0
 		height 0
+		top 90%
+		left 90%
 	to
-		transform translate(0, 0)
 		height 17em
 		width 14em
 @keyframes showMenu
@@ -306,17 +306,17 @@ body
 	animation-duration .6s
 	animation-name showContact
 	background white
-	top 30%
+	top 20%
 	box-shadow 1px 2px 5px Grey
 	display none
-	left 0
 	height 17em
+	width 14em
+	left 0
 	right 0
 	margin 0 auto
 	padding .1em 1.5em .5em
-	position fixed
+	position absolute
 	text-align center
-	width 14em
 	z-index 2
 .Contact-content
 	display none
