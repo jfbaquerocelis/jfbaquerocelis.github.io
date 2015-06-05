@@ -62,7 +62,7 @@ body{font-family:'Roboto';font-size:16px;overflow-x:hidden}
 .Tools-descriptionFront,.Tools-descriptionBack{margin:0;margin:0 .5em}
 .Button-contact{opacity:.5;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter:alpha(opacity=50);bottom:1em;right:1.5em;position:fixed;background:#00e676;padding:1em;-webkit-border-radius:50%;border-radius:50%;-webkit-box-shadow:1px 2px 5px #666;box-shadow:1px 2px 5px #666;-o-transition:0.3s opacity ease;-ms-transition:0.3s opacity ease;-webkit-transition:0.3s opacity ease;-moz-transition:0.3s opacity ease;transition:0.3s opacity ease;font-size:1.1em;}
 .Button-contact:hover{opacity:1;-ms-filter:none;filter:none;text-decoration:none}
-.Contact{-o-animation-duration:.6s;-ms-animation-duration:.6s;-webkit-animation-duration:.6s;-moz-animation-duration:.6s;animation-duration:.6s;-o-animation-name:showContact;-ms-animation-name:showContact;-webkit-animation-name:showContact;-moz-animation-name:showContact;animation-name:showContact;background:#fff;top:30%;-webkit-box-shadow:1px 2px 5px #666;box-shadow:1px 2px 5px #666;display:none;left:0;height:16.5em;right:0;margin:0 auto;padding:.1em 1.5em .5em;position:fixed;text-align:center;width:14em;z-index:2}
+.Contact{-o-animation-duration:.6s;-ms-animation-duration:.6s;-webkit-animation-duration:.6s;-moz-animation-duration:.6s;animation-duration:.6s;-o-animation-name:showContact;-ms-animation-name:showContact;-webkit-animation-name:showContact;-moz-animation-name:showContact;animation-name:showContact;background:#fff;top:30%;-webkit-box-shadow:1px 2px 5px #666;box-shadow:1px 2px 5px #666;display:none;left:0;height:17em;right:0;margin:0 auto;padding:.1em 1.5em .5em;position:fixed;text-align:center;width:14em;z-index:2}
 .Contact-content{display:none}
 .Contact-title{font-weight:600}
 .Contact-group{text-align:left;margin:1em 0;padding:0}
@@ -75,15 +75,15 @@ body{font-family:'Roboto';font-size:16px;overflow-x:hidden}
 .Contact-buttonCancel:hover{color:#dc143c}
 @media screen and (min-width: 700px){body{background:#ff69b4}
 }@-moz-keyframes showContact{0%{-o-transform:translate(120px,360px);-ms-transform:translate(120px,360px);-webkit-transform:translate(120px,360px);-moz-transform:translate(120px,360px);transform:translate(120px,360px);width:0;height:0}
-100%{-o-transform:translate(0,0);-ms-transform:translate(0,0);-webkit-transform:translate(0,0);-moz-transform:translate(0,0);transform:translate(0,0);height:16.5em;width:14em}
+100%{-o-transform:translate(0,0);-ms-transform:translate(0,0);-webkit-transform:translate(0,0);-moz-transform:translate(0,0);transform:translate(0,0);height:17em;width:14em}
 }@-webkit-keyframes showContact{0%{-o-transform:translate(120px,360px);-ms-transform:translate(120px,360px);-webkit-transform:translate(120px,360px);-moz-transform:translate(120px,360px);transform:translate(120px,360px);width:0;height:0}
-100%{-o-transform:translate(0,0);-ms-transform:translate(0,0);-webkit-transform:translate(0,0);-moz-transform:translate(0,0);transform:translate(0,0);height:16.5em;width:14em}
+100%{-o-transform:translate(0,0);-ms-transform:translate(0,0);-webkit-transform:translate(0,0);-moz-transform:translate(0,0);transform:translate(0,0);height:17em;width:14em}
 }@-o-keyframes showContact{0%{-o-transform:translate(120px,360px);-ms-transform:translate(120px,360px);-webkit-transform:translate(120px,360px);-moz-transform:translate(120px,360px);transform:translate(120px,360px);width:0;height:0}
-100%{-o-transform:translate(0,0);-ms-transform:translate(0,0);-webkit-transform:translate(0,0);-moz-transform:translate(0,0);transform:translate(0,0);height:16.5em;width:14em}
+100%{-o-transform:translate(0,0);-ms-transform:translate(0,0);-webkit-transform:translate(0,0);-moz-transform:translate(0,0);transform:translate(0,0);height:17em;width:14em}
 }@-ms-keyframes showContact{0%{-o-transform:translate(120px,360px);-ms-transform:translate(120px,360px);-webkit-transform:translate(120px,360px);-moz-transform:translate(120px,360px);transform:translate(120px,360px);width:0;height:0}
-100%{-o-transform:translate(0,0);-ms-transform:translate(0,0);-webkit-transform:translate(0,0);-moz-transform:translate(0,0);transform:translate(0,0);height:16.5em;width:14em}
+100%{-o-transform:translate(0,0);-ms-transform:translate(0,0);-webkit-transform:translate(0,0);-moz-transform:translate(0,0);transform:translate(0,0);height:17em;width:14em}
 }@keyframes showContact{0%{-o-transform:translate(120px,360px);-ms-transform:translate(120px,360px);-webkit-transform:translate(120px,360px);-moz-transform:translate(120px,360px);transform:translate(120px,360px);width:0;height:0}
-100%{-o-transform:translate(0,0);-ms-transform:translate(0,0);-webkit-transform:translate(0,0);-moz-transform:translate(0,0);transform:translate(0,0);height:16.5em;width:14em}
+100%{-o-transform:translate(0,0);-ms-transform:translate(0,0);-webkit-transform:translate(0,0);-moz-transform:translate(0,0);transform:translate(0,0);height:17em;width:14em}
 }@-moz-keyframes showMenu{0%{left:-100%}
 100%{left:0}
 }@-webkit-keyframes showMenu{0%{left:-100%}
