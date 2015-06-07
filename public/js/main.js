@@ -1,4 +1,7 @@
 $(document).ready(function () {
+	if ($(window).height() < 400){
+		alert('Recomendación: Rota tu Smartphone para mejor experiencia')
+	}
 
 	/*Code Javascript for Smartphones*/
 	if (window.matchMedia( "(max-width: 699px)" ).matches){
