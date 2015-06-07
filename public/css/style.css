@@ -73,7 +73,48 @@ body{font-family:'Roboto';font-size:16px;overflow-x:hidden}
 .Contact-link span{-o-animation-duration:.5s;-ms-animation-duration:.5s;-webkit-animation-duration:.5s;-moz-animation-duration:.5s;animation-duration:.5s;font-size:2em;vertical-align:middle}
 .Contact-buttonCancel{color:#00796b;position:relative;right:-4em;}
 .Contact-buttonCancel:hover{color:#dc143c}
-@media screen and (min-width: 700px){body{background:#ff69b4}
+.Footer{display:none}
+@media screen and (min-width: 700px){.Header{font-size:.8em;padding-bottom:.5em}
+.Header-contentButton{display:none}
+.Header-contentMe{margin:0}
+.Header-title,.Header-career,.Header-organizer{text-align:center}
+.Header-avatarContent{position:initial;text-align:center;margin:0;padding:.5em 0}
+.Header-avatar{position:initial;width:8em}
+.contentMenu{display:block;width:100%;position:initial;background:#004d40}
+.Menu-imageContent{display:none}
+.listMenu{text-align:center;margin:0;padding:1em 0}
+.listMenu li{margin:0;padding:0 1em;display:inline-block}
+.listMenu li a{color:#fff;font-weight:400;}
+.listMenu li a:hover{color:#00e676}
+.listMenu li a span{margin:0;font-size:1em}
+.Menu-footer{display:none}
+.Me,.Portfolio{width:80%;margin:0 auto;padding:2em 0}
+.Me-title{margin:0}
+.Tools{padding:2em;margin:0 auto;width:80%}
+.Tools-title{border-bottom:1px solid #ddd;font-weight:600;margin-top:.5em;padding-bottom:.5em;text-align:center}
+.Tools-list{text-align:center}
+.Tools-list .Tools-listItem{float:none;display:inline-block}
+.Tools-list .Tools-listItem a{-webkit-border-radius:0;border-radius:0;color:#00796b;font-size:1.2em}
+.Tools-frontend,.Tools-backend{display:table;position:relative;border-left:2px solid #00796b;margin:1em 0;padding:0 .4em;-o-transition:0.2s all ease;-ms-transition:0.2s all ease;-webkit-transition:0.2s all ease;-moz-transition:0.2s all ease;transition:0.2s all ease}
+.Tools-imageContent{display:table-cell;vertical-align:middle}
+.Tools-image{width:4.1em}
+.Tools-titleFront,.Tools-titleBack{border-bottom:1px solid #ddd;font-weight:600;margin:.3em .5em}
+.Tools-descriptionFront,.Tools-descriptionBack{margin:0;margin:0 .5em}
+.Button-contact{opacity:.5;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter:alpha(opacity=50);bottom:1em;right:1.5em;position:fixed;background:#00e676;padding:1em;-webkit-border-radius:50%;border-radius:50%;-webkit-box-shadow:1px 2px 5px #666;box-shadow:1px 2px 5px #666;-o-transition:0.3s opacity ease;-ms-transition:0.3s opacity ease;-webkit-transition:0.3s opacity ease;-moz-transition:0.3s opacity ease;transition:0.3s opacity ease;font-size:1.1em;}
+.Button-contact:hover{opacity:1;-ms-filter:none;filter:none;text-decoration:none}
+.Contact{-o-animation-duration:.6s;-ms-animation-duration:.6s;-webkit-animation-duration:.6s;-moz-animation-duration:.6s;animation-duration:.6s;-o-animation-name:showContact;-ms-animation-name:showContact;-webkit-animation-name:showContact;-moz-animation-name:showContact;animation-name:showContact;background:#fff;top:20%;-webkit-box-shadow:1px 2px 5px #666;box-shadow:1px 2px 5px #666;display:none;height:17em;width:14em;left:0;right:0;margin:0 auto;padding:.1em 1.5em .5em;position:absolute;text-align:center;z-index:2}
+.Contact-content{display:none}
+.Contact-title{font-weight:600}
+.Contact-group{text-align:left;margin:1em 0;padding:0}
+.Contact-item{display:block;margin:.5em 0}
+.Contact-link{color:#333;}
+.Contact-link:hover{color:#00796b;text-decoration:none}
+.Contact-link:hover span{-o-animation-name:shake-icon;-ms-animation-name:shake-icon;-webkit-animation-name:shake-icon;-moz-animation-name:shake-icon;animation-name:shake-icon}
+.Contact-link span{-o-animation-duration:.5s;-ms-animation-duration:.5s;-webkit-animation-duration:.5s;-moz-animation-duration:.5s;animation-duration:.5s;font-size:2em;vertical-align:middle}
+.Contact-buttonCancel{color:#00796b;position:relative;right:-4em;}
+.Contact-buttonCancel:hover{color:#dc143c}
+.Footer{display:block;background:#00796b;color:#fff;text-align:center;padding:1em 0}
+.Footer-link{color:#00e676}
 }@-moz-keyframes showContact{0%{width:0;height:0;top:90%;left:90%}
 100%{height:17em;width:14em}
 }@-webkit-keyframes showContact{0%{width:0;height:0;top:90%;left:90%}

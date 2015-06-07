@@ -347,10 +347,181 @@ body
 	&:hover
 		color crimson
 
+/*Section Footer*/
+.Footer
+	display none
+
 /*-------CONFIGURACION VISTA TABLETS----------*/
 
 @media screen and (min-width: 700px)
-	body
-		background hotpink
-	
+	/*Section Header*/
+	.Header
+		font-size .8em
+		padding-bottom .5em
+	.Header-contentButton
+		display none
+	.Header-contentMe
+		margin 0
+	.Header-title
+	.Header-career
+	.Header-organizer
+		text-align center
+	.Header-avatarContent
+		position initial
+		text-align center
+		margin 0
+		padding .5em 0
+	.Header-avatar
+		position initial
+		width 8em
+		
+	/*Section Menu*/
+	.contentMenu
+		display block
+		width 100%
+		position initial
+		background DarkTeal
+	.Menu-imageContent
+		display none
+	.listMenu
+		text-align center
+		margin 0
+		padding 1em 0
+	.listMenu li
+		margin 0
+		padding 0 1em
+		display inline-block
+	.listMenu li a
+		color white
+		font-weight 400
+		&:hover
+			color Green
+	.listMenu li a span
+		margin 0
+		font-size 1em
+	.Menu-footer
+		display none
+		
+	/*Section Me and Portfolio*/
+	.Me
+	.Portfolio
+		width 80%
+		margin 0 auto
+		padding 2em 0
+	.Me-title
+		margin 0
+
+	/*Section Tools*/
+	.Tools
+		padding 2em
+		margin 0 auto
+		width 80%
+	.Tools-title
+		border-bottom 1px solid #DDD
+		font-weight 600
+		margin-top .5em
+		padding-bottom .5em
+		text-align center
+	.Tools-list
+		text-align center
+	.Tools-list .Tools-listItem
+		float none
+		display inline-block
+	.Tools-list .Tools-listItem a
+		border-radius 0
+		color Teal
+		font-size 1.2em
+	.Tools-frontend
+	.Tools-backend
+		display table
+		position relative
+		border-left 2px solid Teal
+		margin 1em 0
+		padding 0 .4em
+		transition .2s all ease
+	.Tools-imageContent
+		display table-cell
+		vertical-align middle
+	.Tools-image
+		width 4.1em
+	.Tools-titleFront
+	.Tools-titleBack
+		border-bottom 1px solid #DDD
+		font-weight 600
+		margin .3em .5em
+	.Tools-descriptionFront
+	.Tools-descriptionBack
+		margin 0
+		margin 0 .5em
+
+	/*Section Contact*/
+	.Button-contact
+		opacity .5
+		bottom 1em
+		right 1.5em
+		position fixed
+		background Green
+		padding 1em
+		border-radius 50%
+		box-shadow 1px 2px 5px Grey
+		transition .3s opacity ease
+		font-size 1.1em
+		&:hover
+			opacity 1
+			text-decoration none
+	.Contact
+		animation-duration .6s
+		animation-name showContact
+		background white
+		top 20%
+		box-shadow 1px 2px 5px Grey
+		display none
+		height 17em
+		width 14em
+		left 0
+		right 0
+		margin 0 auto
+		padding .1em 1.5em .5em
+		position absolute
+		text-align center
+		z-index 2
+	.Contact-content
+		display none
+	.Contact-title
+		font-weight 600
+	.Contact-group
+		text-align left
+		margin 1em 0
+		padding 0
+	.Contact-item
+		display block
+		margin .5em 0
+	.Contact-link
+		color #333
+		&:hover
+			color Teal
+			text-decoration none
+		&:hover span
+			animation-name shake-icon
+	.Contact-link span
+		animation-duration .5s
+		font-size 2em
+		vertical-align middle
+	.Contact-buttonCancel
+		color Teal
+		position relative
+		right -4em
+		&:hover
+			color crimson
+
+	/*Section Footer*/
+	.Footer
+		display block
+		background Teal
+		color white
+		text-align center
+		padding 1em 0
+	.Footer-link
+		color Green
+
 /*-------CONFIGURACION VISTA DESKTOP----------*/
