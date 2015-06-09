@@ -5,6 +5,23 @@ $(document).ready(function () {
 
 	/*Code Javascript for Smartphones*/
 	if (window.matchMedia( "(max-width: 699px)" ).matches){
+		// Fixed contentMenu
+		$(window).scroll(function () {
+			if ($(window).scrollTop() > 15){
+				$('.Header-contentButton').css({
+						'position' : 'fixed',
+						'width' : '100%',
+						'top' : '0',
+						'z-index' : '1'
+				})
+			}else{
+				$('.Header-contentButton').css({
+					'position' : 'initial',
+					'display' : 'block',
+				})
+			}
+		})
+
 		// Code for text-decoration out in tags "a"
 		$('a').click(function () {
 			$(this).css('text-decoration', 'none')
@@ -36,7 +53,8 @@ $(document).ready(function () {
 			$('.contentMenu').css('animation-name','showMenu');
 			$('.blanketBody').fadeIn('fast');
 			$('.contentMenu').css({
-				'display' : 'block'
+				'display' : 'block',
+				'height' : '100%'
 			});
 		})
 
@@ -73,6 +91,21 @@ $(document).ready(function () {
 	}
 	/*Code Javascript for Tablets*/
 	if (window.matchMedia( "(min-width: 700px)" ).matches){
+		// Fixed contentMenu
+		$(window).scroll(function () {
+			if ($(window).scrollTop() > 15){
+				$('.contentMenu').css({
+					'position' : 'fixed',
+					'height' : '56px'
+				})
+			}else{
+				$('.contentMenu').css({
+					'position' : 'initial',
+					'display' : 'block',
+				})
+			}
+		})
+
 		// Code for text-decoration out in tags "a"
 		$('a').click(function () {
 			$(this).css('text-decoration', 'none')

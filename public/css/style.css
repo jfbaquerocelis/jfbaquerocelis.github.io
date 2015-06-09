@@ -15,14 +15,14 @@ body{font-family:'Roboto';font-size:16px;overflow-x:hidden}
 .Header-career,.Header-organizer{margin:0;text-align:right}
 .Header-community{color:#00e676;}
 .Header-community:hover{color:#90ee90}
-.Header-avatarContent{width:100%;position:absolute;top:3.5em;margin:.5em}
+.Header-avatarContent{width:100%;top:3.5em;margin:1.5em}
 .Header-avatar{right:1.5em;position:absolute;width:6em;-webkit-border-radius:50%;border-radius:50%}
-.contentMenu{display:none;-o-animation-duration:.6s;-ms-animation-duration:.6s;-webkit-animation-duration:.6s;-moz-animation-duration:.6s;animation-duration:.6s;background:#fff;position:fixed;height:100%;width:18em;z-index:2}
+.contentMenu{display:none;-o-animation-duration:.6s;-ms-animation-duration:.6s;-webkit-animation-duration:.6s;-moz-animation-duration:.6s;animation-duration:.6s;background:#fff;position:fixed;top:0;height:100%;width:18em;z-index:2}
 .Menu-imageContent{width:100%;-webkit-box-shadow:0 1px 2px #666;box-shadow:0 1px 2px #666;margin:0}
 .Menu-image{width:100%;background:#ddd}
 .listMenu{margin:3em 0;padding:0}
 .listMenu li{margin:1em 0;padding:0 0 0 2em}
-.listMenu li a{color:#333;font-weight:600;text-decoration:none;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;transition:0.5s all ease;font-size:1.1em;}
+.listMenu li a{color:#333;font-weight:500;text-decoration:none;-o-transition:0.5s all ease;-ms-transition:0.5s all ease;-webkit-transition:0.5s all ease;-moz-transition:0.5s all ease;transition:0.5s all ease;font-size:1.1em;}
 .listMenu li a:hover{color:#00796b}
 .listMenu li a:hover span{-o-animation-name:shake-icon;-ms-animation-name:shake-icon;-webkit-animation-name:shake-icon;-moz-animation-name:shake-icon;animation-name:shake-icon}
 .listMenu li a span{margin:0 .5em;font-size:1.2em;-o-animation-duration:.3s;-ms-animation-duration:.3s;-webkit-animation-duration:.3s;-moz-animation-duration:.3s;animation-duration:.3s}
