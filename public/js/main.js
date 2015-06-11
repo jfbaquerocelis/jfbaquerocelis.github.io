@@ -29,7 +29,7 @@ $(document).ready(function () {
 	if (window.matchMedia( "(max-width: 699px)" ).matches){
 		// Fixed contentMenu
 		$(window).scroll(function () {
-			if ($(window).scrollTop() > 15){
+			if ($(window).scrollTop() > 1){
 				$('.Header-contentButton').css({
 					'position' : 'fixed',
 					'width' : '100%',

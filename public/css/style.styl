@@ -216,8 +216,10 @@ body
 	transition .3s all ease
 	width 45%
 	margin .5em .4em
+	padding 1em
 .Portfolio-image
 	width 6.25em
+	margin-bottom .5em
 .Portfolio-linkStudies
 	color #333
 	text-decoration none
@@ -355,11 +357,15 @@ body
 
 /*-------CONFIGURACION VISTA TABLETS----------*/
 
-@media screen and (min-width: 700px)
+@media screen and (min-width: 700px)	
 	/*Section Header*/
 	.Header
 		font-size .8em
 		padding-bottom .5em
+		background-image url('../image/back_header_tab.png')
+		background-size 100%
+		background-repeat no-repeat
+		background-position center
 	.Header-contentButton
 		display none
 	.Header-contentMe
@@ -475,6 +481,7 @@ body
 @media screen and (min-width: 1000px)
 	/*Section Header*/
 	.Header
+		background-image url('../image/back_header.png')
 		font-size 1.2em
 		padding-bottom .5em
 		height 100vh
