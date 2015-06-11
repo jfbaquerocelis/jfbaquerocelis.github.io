@@ -31,17 +31,17 @@ Grey = #666666
 		left -100%
 @keyframes shake-icon
 	0%
-		transform rotate(0)
+		transform rotate3d(1, 1, 1, 0)
 	20%
-		transform rotate(5deg)
+		transform rotate3d(1, 1, 1, 5deg)
 	40%
-		transform rotate(-5deg)
+		transform rotate3d(1, 1, 1, -5deg)
 	60%
-		transform rotate(5deg)
+		transform rotate3d(1, 1, 1, 5deg)
 	80%
-		transform rotate(-5deg)
+		transform rotate3d(1, 1, 1, -5deg)
 	100%
-		transform rotate(0)
+		transform rotate3d(1, 1, 1, 0)
 
 
 /* UI Components */
@@ -67,8 +67,9 @@ body
 	display none
 	width 100%
 	height 100%
+	top 0
 	position fixed
-	z-index 1
+	z-index 2
 	background black
 	opacity .4
 	
@@ -84,6 +85,7 @@ body
 	background DarkTeal
 	display block
 	padding .3em .5em
+	z-index -1
 .Header-menuButton
 	color white
 	margin 0
@@ -196,7 +198,7 @@ body
 		text-decoration underline
 		transition .3s all ease
 	&:hover .Portfolio-imageContent
-		transform scale(1.1, 1.1)
+		transform scale3d(1.1, 1.1, 1)
 .Portfolio-works
 .Portfolio-studies
 	margin 0 auto
@@ -381,6 +383,7 @@ body
 		width 100%
 		position initial
 		background DarkTeal
+		z-index 1
 	.Menu-imageContent
 		display none
 	.listMenu
@@ -404,12 +407,12 @@ body
 		
 	/*Section Me and Portfolio*/
 	.Me
-	.Portfolio
+	.Portfolio-works
 		width 80%
 		margin 0 auto
 		padding 2em 0
 	.Me-title
-		margin 0
+		margin 0 0 .5em
 
 	/*Section Tools*/
 	.Tools
@@ -454,66 +457,6 @@ body
 		margin 0
 		margin 0 .5em
 
-	/*Section Contact*/
-	.Button-contact
-		opacity .5
-		bottom 1em
-		right 1.5em
-		position fixed
-		background Green
-		padding 1em
-		border-radius 50%
-		box-shadow 1px 2px 5px Grey
-		transition .3s opacity ease
-		font-size 1.1em
-		&:hover
-			opacity 1
-			text-decoration none
-	.Contact
-		animation-duration .6s
-		animation-name showContact
-		background white
-		top 20%
-		box-shadow 1px 2px 5px Grey
-		display none
-		height 17em
-		width 14em
-		left 0
-		right 0
-		margin 0 auto
-		padding .1em 1.5em .5em
-		position absolute
-		text-align center
-		z-index 2
-	.Contact-content
-		display none
-	.Contact-title
-		font-weight 600
-	.Contact-group
-		text-align left
-		margin 1em 0
-		padding 0
-	.Contact-item
-		display block
-		margin .5em 0
-	.Contact-link
-		color #333
-		&:hover
-			color Teal
-			text-decoration none
-		&:hover span
-			animation-name shake-icon
-	.Contact-link span
-		animation-duration .5s
-		font-size 2em
-		vertical-align middle
-	.Contact-buttonCancel
-		color Teal
-		position relative
-		right -4em
-		&:hover
-			color crimson
-
 	/*Section Footer*/
 	.Footer
 		display block
@@ -521,7 +464,56 @@ body
 		color white
 		text-align center
 		padding 1em 0
+	.Footer-text
+		margin 0
 	.Footer-link
 		color Green
+		&:hover
+			color Green
 
 /*-------CONFIGURACION VISTA DESKTOP----------*/
+@media screen and (min-width: 1000px)
+	/*Section Header*/
+	.Header
+		font-size 1.2em
+		padding-bottom .5em
+		height 100vh
+	.Header-avatarContent
+		padding 2em 0 .2em
+	.Header-avatar
+		width 15em
+	
+	/*Section Me*/
+	.Me
+		height 100vh
+		font-size 1.05em
+		width 85%
+	.Me-title
+		font-size 2.5em
+	.Me-description
+		width 80%
+		margin 0 auto
+	/*Section Portfolio*/
+	.Portfolio
+		display block
+		height 100vh
+	.Portfolio-title
+		font-size 2.5em
+	.Portfolio-description
+	.Portfolio-studies
+		margin 0 auto
+		width 60%
+	.Portfolio-imageContent
+		width 23%
+
+	/*Section Tools*/
+	.Tools
+		display block
+		height 100vh
+	.Tools-title
+		font-size 2.5em
+	.Tools-description
+	.Tools-list
+	.tab-content
+		width 70%
+		margin 0 auto
