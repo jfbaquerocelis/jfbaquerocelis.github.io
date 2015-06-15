@@ -1,9 +1,6 @@
 @import 'nib/vendor'
 vendor-prefixes = o ms webkit moz official
 
-// Blue = #3f51b5
-// DarkBlue = #303f9f
-// Green = #64dd17
 Teal = #00796B
 DarkTeal = #004D40
 Green = #00E676
@@ -79,13 +76,16 @@ body
 	color white
 	font-size .73em
 	position relative
-	padding-bottom 2em
+	padding 2em 0
 	box-shadow 0 1px 2px Grey
 .Header-contentButton
 	background DarkTeal
 	display block
+	position fixed
+	width 100%
+	top 0
 	padding .3em .5em
-	z-index -1
+	z-index 1
 .Header-menuButton
 	color white
 	margin 0
@@ -361,7 +361,7 @@ body
 	/*Section Header*/
 	.Header
 		font-size .8em
-		padding-bottom .5em
+		padding 56px 0 .5em
 		background-image url('../image/back_header_tab.png')
 		background-size 100%
 		background-repeat no-repeat
@@ -387,7 +387,8 @@ body
 	.contentMenu
 		display block
 		width 100%
-		position initial
+		position fixed
+		height 56px
 		background DarkTeal
 		z-index 1
 	.Menu-imageContent

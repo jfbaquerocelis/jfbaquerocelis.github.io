@@ -6,8 +6,8 @@
 a{outline:none}
 body{font-family:'Roboto';font-size:16px;overflow-x:hidden}
 .blanketBody{display:none;width:100%;height:100%;top:0;position:fixed;z-index:2;background:#000;opacity:.4;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";filter:alpha(opacity=40)}
-.Header{background:#00796b;color:#fff;font-size:.73em;position:relative;padding-bottom:2em;-webkit-box-shadow:0 1px 2px #666;box-shadow:0 1px 2px #666}
-.Header-contentButton{background:#004d40;display:block;padding:.3em .5em;z-index:-1}
+.Header{background:#00796b;color:#fff;font-size:.73em;position:relative;padding:2em 0;-webkit-box-shadow:0 1px 2px #666;box-shadow:0 1px 2px #666}
+.Header-contentButton{background:#004d40;display:block;position:fixed;width:100%;top:0;padding:.3em .5em;z-index:1}
 .Header-menuButton{color:#fff;margin:0;font-size:2.2em;}
 .Header-menuButton:hover{text-decoration:none;color:#00e676}
 .Header-contentMe{margin:2em 8em 0 0}
@@ -74,13 +74,13 @@ body{font-family:'Roboto';font-size:16px;overflow-x:hidden}
 .Contact-buttonCancel{color:#00796b;position:relative;right:-4em;}
 .Contact-buttonCancel:hover{color:#dc143c}
 .Footer{display:none}
-@media screen and (min-width: 700px){.Header{font-size:.8em;padding-bottom:.5em;background-image:url("../image/back_header_tab.png");-webkit-background-size:100%;-moz-background-size:100%;background-size:100%;background-repeat:no-repeat;background-position:center}
+@media screen and (min-width: 700px){.Header{font-size:.8em;padding:56px 0 .5em;background-image:url("../image/back_header_tab.png");-webkit-background-size:100%;-moz-background-size:100%;background-size:100%;background-repeat:no-repeat;background-position:center}
 .Header-contentButton{display:none}
 .Header-contentMe{margin:0}
 .Header-title,.Header-career,.Header-organizer{text-align:center}
 .Header-avatarContent{position:initial;text-align:center;margin:0;padding:.5em 0}
 .Header-avatar{position:initial;width:8em}
-.contentMenu{display:block;width:100%;position:initial;background:#004d40;z-index:1}
+.contentMenu{display:block;width:100%;position:fixed;height:56px;background:#004d40;z-index:1}
 .Menu-imageContent{display:none}
 .listMenu{text-align:center;margin:0;padding:1em 0}
 .listMenu li{margin:0;padding:0 1em;display:inline-block}
