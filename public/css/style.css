@@ -100,6 +100,7 @@ body{font-family:'Roboto';font-size:16px;overflow-x:hidden}
 .Tools-image{width:4.1em}
 .Tools-titleFront,.Tools-titleBack{border-bottom:1px solid #ddd;font-weight:600;margin:.3em .5em}
 .Tools-descriptionFront,.Tools-descriptionBack{margin:0;margin:0 .5em}
+.Button-contact{opacity:1;-ms-filter:none;filter:none;font-size:1.2em}
 .Footer{display:block;background:#00796b;color:#fff;text-align:center;padding:1em 0}
 .Footer-text{margin:0}
 .Footer-link{color:#00e676;}
