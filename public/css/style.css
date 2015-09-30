@@ -74,7 +74,7 @@ body{font-family:'Roboto';font-size:16px;overflow-x:hidden}
 .Contact-buttonCancel{color:#00796b;position:relative;right:-4em;}
 .Contact-buttonCancel:hover{color:#dc143c}
 .Footer{display:none}
-@media screen and (min-width: 700px){.Header{font-size:.8em;padding:56px 0 .5em;background-image:url("../image/back_header_tab.png");-webkit-background-size:100%;-moz-background-size:100%;background-size:100%;background-repeat:no-repeat;background-position:center}
+@media screen and (min-width: 700px){.Header{font-size:.8em;padding:56px 0 .5em;background-image:url("../image/back_header_tab.jpg");-webkit-background-size:100%;-moz-background-size:100%;background-size:100%;background-repeat:no-repeat;background-position:center}
 .Header-contentButton{display:none}
 .Header-contentMe{margin:0}
 .Header-title,.Header-career,.Header-organizer{text-align:center}
@@ -105,7 +105,7 @@ body{font-family:'Roboto';font-size:16px;overflow-x:hidden}
 .Footer-text{margin:0}
 .Footer-link{color:#00e676;}
 .Footer-link:hover{color:#00e676}
-}@media screen and (min-width: 1000px){.Header{background-image:url("../image/back_header.png");font-size:1.2em;padding-bottom:.5em;height:100vh}
+}@media screen and (min-width: 1000px){.Header{background-image:url("../image/back_header.jpg");font-size:1.2em;padding-bottom:.5em;height:100vh}
 .Header-avatarContent{padding:2em 0 .2em}
 .Header-avatar{width:15em}
 .Me{height:100vh;font-size:1.05em;width:85%}
