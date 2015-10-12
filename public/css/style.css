@@ -3,6 +3,8 @@
 .js:hover{border-left:5px solid #f1be25}
 .node:hover{border-left:5px solid #90c741}
 .django:hover{border-left:5px solid #0dc61e}
+.showMenu{-o-animation-name:showMenu;-ms-animation-name:showMenu;-webkit-animation-name:showMenu;-moz-animation-name:showMenu;animation-name:showMenu;-o-animation-duration:.6s;-ms-animation-duration:.6s;-webkit-animation-duration:.6s;-moz-animation-duration:.6s;animation-duration:.6s;-o-animation-timing-function:ease;-ms-animation-timing-function:ease;-webkit-animation-timing-function:ease;-moz-animation-timing-function:ease;animation-timing-function:ease}
+.hideMenu{-o-animation-name:hideMenu;-ms-animation-name:hideMenu;-webkit-animation-name:hideMenu;-moz-animation-name:hideMenu;animation-name:hideMenu;-o-animation-duration:.6s;-ms-animation-duration:.6s;-webkit-animation-duration:.6s;-moz-animation-duration:.6s;animation-duration:.6s;-o-animation-timing-function:ease;-ms-animation-timing-function:ease;-webkit-animation-timing-function:ease;-moz-animation-timing-function:ease;animation-timing-function:ease}
 a{outline:none}
 body{font-family:'Roboto';font-size:16px;overflow-x:hidden}
 .blanketBody{display:none;width:100%;height:100%;top:0;position:fixed;z-index:2;background:#000;opacity:.4;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";filter:alpha(opacity=40)}
@@ -17,7 +19,7 @@ body{font-family:'Roboto';font-size:16px;overflow-x:hidden}
 .Header-community:hover{color:#90ee90}
 .Header-avatarContent{width:100%;top:3.5em;margin:1.5em}
 .Header-avatar{right:1.5em;position:absolute;width:6em;-webkit-border-radius:50%;border-radius:50%}
-.contentMenu{display:none;-o-animation-duration:.6s;-ms-animation-duration:.6s;-webkit-animation-duration:.6s;-moz-animation-duration:.6s;animation-duration:.6s;background:#fff;position:fixed;top:0;height:100%;width:18em;z-index:2}
+.contentMenu{left:-100%;background:#fff;position:fixed;top:0;height:100%;width:18em;z-index:2}
 .Menu-imageContent{width:100%;-webkit-box-shadow:0 1px 2px #666;box-shadow:0 1px 2px #666;margin:0}
 .Menu-image{width:100%;background:#ddd}
 .listMenu{margin:3em 0;padding:0}
@@ -80,7 +82,7 @@ body{font-family:'Roboto';font-size:16px;overflow-x:hidden}
 .Header-title,.Header-career,.Header-organizer{text-align:center}
 .Header-avatarContent{position:initial;text-align:center;margin:0;padding:.5em 0}
 .Header-avatar{position:initial;width:8em}
-.contentMenu{display:block;width:100%;position:fixed;height:56px;background:#004d40;z-index:1}
+.contentMenu{left:0;width:100%;position:fixed;height:56px;background:#004d40;z-index:1}
 .Menu-imageContent{display:none}
 .listMenu{text-align:center;margin:0;padding:1em 0}
 .listMenu li{margin:0;padding:0 1em;display:inline-block}

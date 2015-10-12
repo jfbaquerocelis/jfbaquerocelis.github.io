@@ -30,23 +30,23 @@ $(document).ready(function () {
 		/*Function show Section Menu*/
 		$('.Header-menuButton').on('click', function (e) {
 			e.preventDefault();
-			$('.contentMenu').css('animation-name','showMenu');
-			$('.blanketBody').fadeIn('fast');
-			$('.contentMenu').css({
-				'display' : 'block',
-				'height' : '100%'
-			});
+			// $('.contentMenu').css('animation-name','showMenu');
+			$('.contentMenu').addClass('showMenu')
+			$('.contentMenu').removeClass('hideMenu')
+			$('.blanketBody').fadeIn('fast')
+			$('.contentMenu').css('left', '0%')
 		})
 
 		/*Function hide Section Menu*/
 		$('.blanketBody').on('click', function () {
-			$('.contentMenu').css('animation-name','hideMenu');
-			setTimeout(function () {
-				$('.contentMenu').css('display', 'none');
-			}, 600)
-			$('.Contact').fadeOut('slow');
-			$('.Contact-content').fadeOut('slow');
-			$(this).fadeOut('slow');
+			if ($('.contentMenu').hasClass('showMenu')){
+				$('.contentMenu').removeClass('showMenu')
+				$('.contentMenu').addClass('hideMenu')
+				$('.contentMenu').css('left', '-100%')
+			}
+			$('.blanketBody').fadeOut('slow')
+			$('.Contact').fadeOut('fast')
+			$('.Contact-content').fadeOut('fast')
 		})
 
 		/*Function for show Sections according listItems clicked*/
@@ -58,15 +58,18 @@ $(document).ready(function () {
 				this.style.color = "#333"
 				this.style.marginLeft = "0"
 			})
+			// Agregamos este código para subir el scroll cuando cambiamos de sección
+			$('body, html').animate({
+				scrollTop : 0
+			}, 500)
 			$(this).css({
 				'color' : 'Teal',
 				'margin-left' : '10px'
 			})
-			$('.contentMenu').css('animation-name','hideMenu');
-			setTimeout(function () {
-				$('.contentMenu').css('display', 'none');
-			}, 600)
-			$('.blanketBody').fadeOut('fast');
+			$('.contentMenu').removeClass('showMenu')
+			$('.contentMenu').addClass('hideMenu')
+			$('.contentMenu').css('left', '-100%')
+			$('.blanketBody').fadeOut('fast')
 		})
 	}
 	/*Code Javascript for Tablets*/
@@ -82,7 +85,7 @@ $(document).ready(function () {
 		$('.listMenu li a').on('click', function (e) {
 			e.preventDefault();
 			$('section').fadeOut('fast');
-			$(this.hash).fadeIn('fast');
+			$(this.hash).fadeIn('slow');
 			$('.listMenu li a').each(function (i) {
 				this.style.color = "white"
 			})
@@ -116,7 +119,6 @@ $(document).ready(function () {
 		})
 	}
 	/*
-		Fataría agregar trabajos al portafolio y arreglar detallitos como el background de header
-		y la foto mía. entre otras cosas que nos vallamos dando cuenta
+		Fataría agregar trabajos al portafolio
 	*/
 })

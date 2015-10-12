@@ -52,6 +52,15 @@ Grey = #666666
 	border-left 5px solid #90c741
 .django:hover
 	border-left 5px solid #0dc61e
+/* UI Class Components */
+.showMenu
+	animation-name showMenu
+	animation-duration .6s
+	animation-timing-function ease
+.hideMenu
+	animation-name hideMenu
+	animation-duration .6s
+	animation-timing-function ease
 
 /*-------CONFIGURACION VISTA SMARTPHONE----------*/
 a
@@ -118,8 +127,7 @@ body
 	
 /*Section Menu*/
 .contentMenu
-	display none
-	animation-duration .6s
+	left -100%
 	background white
 	position fixed
 	top 0
@@ -385,7 +393,7 @@ body
 		
 	/*Section Menu*/
 	.contentMenu
-		display block
+		left 0
 		width 100%
 		position fixed
 		height 56px
