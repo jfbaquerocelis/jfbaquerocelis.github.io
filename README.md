@@ -1,12 +1,16 @@
-# Portafolio
-Este es el repositorio de mi Portafolio, si tienes algo que aportar puedes escribirme a mis redes sociales :+1:.
+# Hola! Este es mi portafolio :blush:
+
+Aquí podrás encontrar todo lo que hice para mi portafolio, si tienes algo que aportar puedes escribirme a mis redes sociales :+1:.
 # Redes Sociales
 ```javascript
-    var social_networks = {
+    const social_networks = {
         'twitter'  : '@noverflow',
         'facebook' : '/noverflow',
         'Google+'  : 'jfbaquerocelis@gmail.com'
     }
 ```
 
-Podrás encontrar el código en la rama `gh-pages`
+* [Twitter](http://twitter.com/noverflow)
+* [Facebook](http://facebook.com/noverflow)
+
+> Podrás encontrar el código en la rama `gh-pages`

@@ -5,184 +5,165 @@
 	<meta name="description" content="John Fredy Baquero Celis - Ingeniero de Sistemas. Desarrollador Web Profesional" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link type="image/x-icon" href="public/image/codeico.png" rel="icon" />
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,700,400' rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" href="public/css/vendor/bootstrap.min.css" />
-	<link rel="stylesheet" href="public/css/vendor/normalize.css" />
-	<link rel="stylesheet" href="public/css/vendor/icomoon.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href='https://fonts.googleapis.com/css?family=Lora:400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
 	<link rel="stylesheet" href="public/css/style.css" />
-	<title>jfbaquerocelis - Developer</title>
+	<title>jfbaquerocelis - Desarrollador Web</title>
 </head>
 <body>
 	<div class="blanketBody"></div>
-	<div class="contentMenu">
-		<nav class="Menu">
-			<figure class="Menu-imageContent">
-				<img src="public/image/imageMenu.png" class="Menu-image" />
-			</figure>
-			<ul class="listMenu">
-				<li><a href="#Me"><span class="icon-user-tie"></span> Sobre Mí</a></li>
-				<li><a href="#Portfolio"><span class="icon-briefcase"></span> Mi Portafolio</a></li>
-				<li><a href="#Tools"><span class="icon-wrench"></span> Mis Herramientas</a></li>
+	<span class="myself__menu__action--float material-icons">menu</span>
+	<div class="container-master">
+		<div class="myself__container__menu">
+			<img src="public/image/2jfbaquerocelis.png" class="myself__logo" />
+			<div class="myself__container__click-me">
+				<i class="material-icons shake-up">arrow_upward</i>
+				<p class="myself__click-me">Click a la imagen para volver a la primera vista.</p>
+			</div>
+			<ul class="myself__menu">
+				<a href="#welcome" class="myself__menu__link">
+					<li class="myself__menu__item"><i class="material-icons">favorite_border</i>Inicio</li>
+				</a>
+				<a href="#portfolio" class="myself__menu__link">
+					<li class="myself__menu__item"><i class="material-icons">work</i>Mi Portafolio</li>
+				</a>
+				<a href="#my-tools" class="myself__menu__link">
+					<li class="myself__menu__item"><i class="material-icons">build</i>Mis Herramientas</li>
+				</a>
 			</ul>
-			<footer class="Menu-footer">
-				<p class="Menu-text">Created by <a href="http://twitter.com/noverflow" target="_blank" class="Menu-link">jfbaquerocelis</a></p>
-				<p class="Menu-text">2015</p>
-			</footer>
-		</nav>
+		</div>
+		<section class="container__myself">
+			<span class="myself__menu__action material-icons">menu</span>
+			<article class="myself">
+				<div class="myself__profile">
+					<figure class="myself__container__avatar">
+						<img src="public/image/john.jpg" class="myself__avatar">
+					</figure>
+					<figure class="myself__container-logo">
+						<img src="public/image/jfbaquerocelis.png" class="myself__logo" />
+					</figure>
+					<h1 class="myself__fullname">John Fredy Baquero Celis</h1>
+					<p class="myself__description">Ingeniero de Sistemas - Javascript Developer</p>
+					<p class="myself__description">Organizador de <a href="http://meetup.com/monteriajs" class="jf-links myself__community" target="_blank">MonteríaJS</a></p>
+				</div>
+				<div class="myself__footer">
+					<div class="myself__footer__by">
+						<p>Created by <a href="https://twitter.com/noverflow" class="jf-links myself__footer__created">jfbaquerocelis</a></p>
+						<p>Handshake Design by <a href="http://www.freepik.es/" class="jf-links myself__footer__created">Freepik</a></p>
+						<p>© 2016</p>
+					</div>
+					<div class="myself__footer__social">
+						<a class="myself__footer__link" href="https://facebook.com/monteriajs" target="_blank">
+							<span class="link-facebook icon-facebook"></span>
+						</a>
+						<a class="myself__footer__link" href="https://twitter.com/monteriajs" target="_blank">
+							<span class="link-twitter icon-twitter"></span>
+						</a>
+						<a class="myself__footer__link" href="https://github.com/jfbaquerocelis" target="_blank">
+							<span class="link-github icon-github"></span>
+						</a>
+						<a class="myself__footer__link" href="https://plus.google.com/u/0/109064749405882934001/posts" target="_blank">
+							<span class="link-google icon-google"></span>
+						</a>
+						<a class="myself__footer__link" href="https://bitbucket.org/noverflow" target="_blank">
+							<span class="link-bitbucket icon-bitbucket"></span>
+						</a>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<section class="container__articles">
+			<header class="header">
+				<nav class="header__menu">
+					<ul class="header__menu-list">
+						<a href="#welcome" class="header__menu-list__link">
+							<li class="header__menu-list__item">Inicio</li>
+						</a>
+						<a href="#portfolio" class="header__menu-list__link">
+							<li class="header__menu-list__item">Mi Portafolio</li>
+						</a>
+						<a href="#my-tools" class="header__menu-list__link">
+							<li class="header__menu-list__item">Mis Herramientas</li>
+						</a>
+					</ul>
+				</nav>
+			</header>
+			
+			<article class="welcome article--show" id="welcome">
+				<h2 class="welcome__title">Hola! Quiero darte la bienvenida.</h2>
+				<p class="welcome__description">Mi nombre es <strong>John Fredy Baquero Celis</strong>, soy un amante del desarrollo web, con él he aprendido muchas cosas y con él pienso cambiar el mundo. <br/> No me digas que tu también... ¿En serio? Entonces has llegado al lugar indicado. Me gusta emprender y quiero hacer esto que me apasiona enseñándolo a otras personas y que esas personas compartan esa misma filosofía. Y claro, no estoy solo, tengo la ayuda de <strong>Javascript</strong> y otros más. <br /><br />Hago parte de una gran comunidad llamada <a class="welcome__community" target="_blank" href="http://colombia-dev.org">Colombia.dev</a> y soy organizador de la comunidad <a class="welcome__community" target="_blank" href="http://www.meetup.com/monteriajs">MonteríaJS</a>, así que eres bienvenid@!</p>
+				<h2 class="welcome__title">¿Necesitas una app/website?</h2>
+				<p class="welcome__description">Has llegado al lugar indicado. ¿Quieres conocer cómo trabajo? sigue navegando a través de mi sitio web y verás que hago en realidad, mi portafolio, mis estudios, redes sociales, en fin... Todo!</p>
+			</article>
+
+			<article class="portfolio" id="portfolio">
+				<h2 class="portfolio__title">Mi Portafolio</h2>
+				<p class="portfolio__description">En esta zona podrás encontrar los enlaces de los repositorios y los trabajos que he realizado, talleres, pruebas, inventos, etc. Todo lo que sé hacer con las herramientas que uso, frameworks, librerías, etc.</p>
+				<blockquote class="portfolio__blockquote">Los trabajos que no tienen enlace son proyectos internos de la empresa. Pero estos trabajos podrás verlos en <a target="_blank" class="portfolio__repos" href="https://github.com/jfbaquerocelis">Github</a> y <a target="_blank" class="portfolio__repos" href="https://bitbucket.org/noverflow">Bitbucket</a></blockquote>
+				<div class="portfolio__container-works">
+					<div class="portfolio__work">
+						<img src="public/image/acopterfar.png" class="portfolio__work__logo">
+						<p class="portfolio__work__description">Acopterfar</p>
+					</div>
+					<div class="portfolio__work">
+						<img src="public/image/teletaxi.png" class="portfolio__work__logo">
+						<p class="portfolio__work__description">Teletaxi S.A.S</p>
+					</div>
+				</div>
+				<h2 class="portfolio__title">Mis Estudios</h2>
+				<div class="portfolio__container-educations">
+					<div class="portfolio__education">
+						<img class="portfolio__education__image" src="public/image/unicordoba.png">
+						<a href="http://www.unicordoba.edu.co/" target="_blank" class="portfolio__education__info">
+							<p>Universidad de Córdoba</p>
+							<p>Ingeniería de Sistemas</p>
+							<p>2015</p>
+						</a>
+					</div>
+					<div class="portfolio__education">
+						<img class="portfolio__education__image" src="public/image/platzi.png">
+						<a href="https://platzi.com/@noverflow/" target="_blank" class="portfolio__education__info">
+							<p>Platzi.com</p>
+							<p>Mi Perfil</p>
+							<p>2015</p>
+						</a>
+					</div>
+				</div>
+			</article>
+
+			<article class="my-tools" id="my-tools">
+				<h2 class="my-tools__title">Mis Herramientas</h2>
+				<p class="my-tools__description">Y como buen desarrollador web, necesito herramientas que me ayuden a ayudarte. Estas son las que uso actualmente.</p>
+				<blockquote class="my-tools__blockquote">Frameworks como <strong>AngularJS</strong>, <strong>EmberJS</strong>, <strong>MaterializeCSS</strong>, <strong>ExpressJS</strong>, etc. Son herramientas que también uso dependiendo el proyecto.</blockquote>
+				<div class="my-tools__container-tool">
+					<figure class="tool html">
+						<img src="public/image/html5.png" class="tool__image">
+						<figcaption class="tool__resume"><strong>HTML</strong> mantendrá tu sitio web con una estructura fuerte, así la información estará organizada.</figcaption>
+					</figure>
+					<figure class="tool css">
+						<img src="public/image/css3.png" class="tool__image">
+						<figcaption class="tool__resume"><strong>CSS</strong> es fundamental en un sitio web, la interfaz y experiencia de usuario son necesarias para generar emociones positivas en tus clientes.</figcaption>
+					</figure>
+					<figure class="tool javascript">
+						<img src="public/image/js.png" class="tool__image">
+						<figcaption class="tool__resume"><strong>Javascript</strong> es el lenguaje de la web. Con él, tu sitio web será más dinámico y tendrá una mejor interacción con el usuario.</figcaption>
+					</figure>
+					<figure class="tool stylus">
+						<img src="public/image/stylus.png" class="tool__image">
+						<figcaption class="tool__resume"><strong>Stylus</strong> es uno de los pre-procesadores <strong>CSS</strong> más populares en el mundo front-end. Es uno de mis favoritos y lo uso a menudo para optimizar mi código.</figcaption>
+					</figure>
+					<figure class="tool node">
+						<img src="public/image/node.png" class="tool__image">
+						<figcaption class="tool__resume"><strong>NodeJS</strong> es <strong>Javascript</strong> del lado del servidor. Todas las características de este gran lenguaje pueden ser usadas para crear sistemas, aplicaciones, API's REST, y muchas cosas más en tiempo real. De esta forma la información estará al alcance de todos!</figcaption>
+					</figure>
+				</div>
+		</section>
 	</div>
-
-	<header id="Header" class="Header">
-		<div class="Header-contentButton">
-			<a href="#" class="Header-menuButton icon-menu"></a>
-		</div>
-		<figure class="Header-avatarContent">
-			<img src="public/image/john.jpg" class="Header-avatar" />
-		</figure>
-		<div class="Header-contentMe">
-			<h1 class="Header-title">John Fredy Baquero Celis</h1>
-			<em>
-				<p class="Header-career">Ingeniero de Sistemas - Back/Front Developer</p>
-				<p class="Header-organizer">Organizador de <a target="_blank" href="http://www.meetup.com/monteriajs" class="Header-community">MonteríaJS</a></p>
-			</em>
-		</div>
-	</header>
-	
-	<section class="Me" id="Me">
-		<article class="Me-welcome">
-			<h2 class="Me-title">Hola! Quiero darte la bienvenida a mi web.</h2>
-			<p class="Me-description">Mi nombre es <strong>John Fredy Baquero Celis</strong>, soy un amante del desarrollo web, con él he aprendido muchas cosas y con él pienso cambiar el mundo. <br/> No me digas que tu también... ¿En serio? Entonces has llegado al lugar indicado. Me gusta emprender y quiero hacer esto que me apasiona enseñándoselo a otras personas y que esas personas compartan esa misma filosofía. Y claro, no estoy solo, tengo la ayuda de <strong>JavaScript</strong>, <strong>Python</strong> y otros más. <br /><br />Hago parte de una gran comunidad llamada <a class="Me-community" target="_blank" href="#">ColombiaJS</a> y soy Organizador de la comunidad <a class="Me-community" target="_blank" href="http://www.meetup.com/monteriajs">MonteríaJS</a>, así que eres bienvenido!</p>
-		</article>
-		<article class="Me-web">
-			<h2 class="Me-title">¿Quieres construir tu sitio web?</h2>
-			<p class="Me-description">Has llegado al lugar indicado. ¿Quieres conocer cómo trabajo? sigue navegando a través de mi sitio web y verás que hago en realidad, mi portafolio, mis estudios, redes sociales, en fin... Todo!</p>
-		</article>
-	</section>
-
-	<section class="Portfolio" id="Portfolio">
-		<article class="Portfolio-works">
-			<h2 class="Portfolio-title">Mi Portafolio</h2>
-			<p class="Portfolio-description">En esta zona podrás encontrar los trabajos que he realizado, talleres, pruebas, inventos, etc. Todo lo que sé hacer con las herramientas que uso, frameworks, librerias, etc.</p>
-			<a class="Portfolio-linkWork" target="_blank" href="http://www.acopterfar.org">
-				<figure class="Portfolio-imageContent">
-					<img src="public/image/acopterfar.png" class="Portfolio-image" />
-					<figcaption class="Portfolio-imageDescription">Acopterfar</figcaption>
-				</figure>
-			</a>
-			<!-- <a class="Portfolio-linkWork" target="_blank" href="#">
-				<figure class="Portfolio-imageContent">
-					<img src="public/image/insertCode.png" class="Portfolio-image" />
-					<figcaption class="Portfolio-imageDescription">Work Portfolio</figcaption>
-				</figure>
-			</a>
-			<a class="Portfolio-linkWork" target="_blank" href="#">
-				<figure class="Portfolio-imageContent">
-					<img src="public/image/insertCode.png" class="Portfolio-image" />
-					<figcaption class="Portfolio-imageDescription">Work Portfolio</figcaption>
-				</figure>
-			</a>
-			<a class="Portfolio-linkWork" target="_blank" href="#">
-				<figure class="Portfolio-imageContent">
-					<img src="public/image/insertCode.png" class="Portfolio-image" />
-					<figcaption class="Portfolio-imageDescription">Work Portfolio</figcaption>
-				</figure>
-			</a> -->
-		</article>
-		<article class="Portfolio-studies">
-			<h2 class="Portfolio-title">Mis Estudios</h2>
-			<a href="http://www.unicordoba.edu.co/" target="_blank" class="Portfolio-linkStudies">
-				<div class="Portfolio-studiesContent">
-					<p class="Portfolio-school">Universidad de Córdoba</p>
-					<p class="Portfolio-career">Ingenieria de Sistemas</p>
-					<p class="Portfolio-year">2015</p>
-					<figure class="Portfolio-logoContent">
-						<img src="public/image/unicordoba.png" class="Portfolio-logo" />
-					</figure>
-				</div>
-			</a>
-			<a href="https://platzi.com/usuarios/noverflow/" target="_blank" class="Portfolio-linkStudies">
-				<div class="Portfolio-studiesContent">
-					<p class="Portfolio-school">Platzi.com</p>
-					<p class="Portfolio-career">Mi Perfil</p>
-					<p class="Portfolio-year">2015</p>
-					<figure class="Portfolio-logoContent">
-						<img src="public/image/platzi.png" class="Portfolio-logo" />
-					</figure>
-				</div>
-			</a>
-		</article>
-	</section>
-
-	<section class="Tools" id="Tools">
-		<h2 class="Tools-title">Mis Herramientas</h2>
-		<p class="Tools-description">Y como buen desarrollador web, necesito herramientas que me ayuden a ayudarte. Estas son las que uso actualmente.</p>
-		<ul class="Tools-list nav nav-tabs">
-			<li class="Tools-listItem active"><a href="#front" data-toggle="tab" aria-expanded="true">Frontend</a></li>
-			<li class="Tools-listItem"><a href="#back" data-toggle="tab" aria-expanded="false">Backend</a></li>
-		</ul>
-		<div class="tab-content">
-			<div id="front" class="Tools-contentFront tab-pane fade active in">
-				<article class="Tools-frontend html5">
-					<figure class="Tools-imageContent">
-						<img src="public/image/html5.png" class="Tools-image" />
-					</figure>
-					<h3 class="Tools-titleFront">HTML5</h3>
-					<p class="Tools-descriptionFront">Si de maquetar se habla, <strong>HTML5</strong> es la herramienta correcta. Su sitio web lo necesitará.</p>
-				</article>
-				<article class="Tools-frontend css3">
-					<figure class="Tools-imageContent">
-						<img src="public/image/css3.png" class="Tools-image" />
-					</figure>
-					<h3 class="Tools-titleFront">CSS3</h3>
-					<p class="Tools-descriptionFront">En diseño, <strong>CSS3</strong> es la herramienta ideal para darle un toque personal y único a nuestro sitio web.</p>
-				</article>
-				<article class="Tools-frontend js">
-					<figure class="Tools-imageContent">
-						<img src="public/image/js.png" class="Tools-image" />
-					</figure>
-					<h3 class="Tools-titleFront">JS</h3>
-					<p class="Tools-descriptionFront">Ahora, es necesario darle un poco de vida, y esto es posible gracias a <strong>JavaScript</strong>. Este lenguaje nos brinda la opción de controlar los eventos y hacer funcional nuestra web.</p>
-				</article>
-			</div>
-			<div id="back" class="Tools-contentBack tab-pane fade">
-				<article class="Tools-backend node">
-					<figure class="Tools-imageContent">
-						<img src="public/image/node.png" class="Tools-image" />
-					</figure>
-					<h3 class="Tools-titleBack">NodeJS</h3>
-					<p class="Tools-descriptionBack">Si quieres una aplicación totalmente en tiempo real, robusta, actual, sin nada que envidiar a otras aplicaciones o sitios web, <strong>NodeJS</strong> es la herramienta ideal.</p>
-				</article>
-				<article class="Tools-backend django">
-					<figure class="Tools-imageContent">
-						<img src="public/image/Django.png" class="Tools-image" />
-					</figure>
-					<h3 class="Tools-titleBack">Django</h3>
-					<p class="Tools-descriptionBack"><em>Python</em> es un lenguaje de alto nivel, y junto a él, el framework más popular; <strong>Django</strong>. Con este framework tendrás una aplicación totalmente modular y elegante.</p>
-				</article>
-			</div>
-		</div>
-	</section>
-
-	<a href="#" class="Button-contact icon-share2"></a>
-	<section class="Contact">
-		<div class="Contact-content">
-			<h2 class="Contact-title">Contáctame</h2>
-			<ul class="Contact-group">
-				<li class="Contact-item"><a href="https://twitter.com/noverflow" target="_blank" class="Contact-link"><span class="icon-twitter3"></span> Twitter</a></li>
-				<li class="Contact-item"><a href="https://www.facebook.com/noverflow" target="_blank" class="Contact-link"><span class="icon-facebook3"></span> Facebook</a></li>
-				<li class="Contact-item"><a href="https://github.com/jfbaquerocelis" target="_blank" class="Contact-link"><span class="icon-github"></span> Github</a></li>
-				<li class="Contact-item"><a href="https://plus.google.com/u/0/109064749405882934001/posts" target="_blank" class="Contact-link"><span class="icon-google-plus3"></span> Google+</a></li>
-			</ul>
-			<a href="#" class="Contact-buttonCancel">CANCEL</a>
-		</div>
-	</section>
-	<footer class="Footer">
-		<p class="Footer-text">Created by <a href="http://twitter.com/noverflow" target="_blank" class="Footer-link">jfbaquerocelis</a></p>
-		<p class="Footer-text">2015</p>
-	</footer>
-	<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="public/js/vendor/bootstrap.min.js"></script>
 	<script src="public/js/main.js"></script>
 </body>
 </html>
