@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	if ($(window).height() < 400){
+	if ($(window).height() < 500){
 		alert('Recomendación: Rota tu smartphone para mejor experiencia')
 	}
 
