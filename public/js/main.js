@@ -36,6 +36,12 @@ $(document).ready(function () {
 		e.preventDefault()
 		var hash = this.hash
 
+		// Creamos un each para quitar clase a cada item antes de pornerla al que se le está dando click
+		$('.myself__menu__link').each(function () {
+			$(this).removeClass('myself__menu__link--active')
+		})
+		$(this).addClass('myself__menu__link--active')
+
 		$('.myself__menu__action--float').fadeOut('fast')
 
 		$('.myself__container__menu').animate({

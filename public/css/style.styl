@@ -1,14 +1,13 @@
 @import 'nib/vendor'
 @import 'vendor/flaticon.css'
-@import 'url(https://fonts.googleapis.com/css?family=Open+Sans:400,700)'
 
 vendor-prefixes = o ms webkit moz official
 
-Blue = #1e88e5
-DarkBlue = #1565c0
-aGreen = #00c853
-Grey = #a9a9a9
-myBlack = #2e3436
+primaryColor = #2196F3
+secondaryColor = #1976D2
+accentColor = #4CAF50
+Grey = #B6B6B6
+myBlack = #212121
 
 /*Animations*/
 @keyframes borderBottom__menu
@@ -44,7 +43,7 @@ myBlack = #2e3436
 
 
 body
-	font 16px 'Lato', sans-serif
+	font 16px 'Karla', sans-serif
 	color myBlack
 
 .jf-links
@@ -57,7 +56,7 @@ body
 	display flex
 	& .container__myself
 		flex 1 1 40%
-		background-color Blue
+		background-color secondaryColor
 		color white
 		height 100vh
 	& .container__articles
@@ -71,15 +70,19 @@ body
 	display flex
 	flex-flow column wrap
 	height 100%
-	border-right 5px solid aGreen
+	border-right 5px solid accentColor
 	box-shadow 2px 0 5px Grey
 	&__container__avatar
 		margin 0
 		width 55%
 		^[0]__avatar
-			border 3px solid DarkBlue
+			box-shadow 2px 2px 10px myBlack
+			border 3px solid primaryColor
 			width @width
 			border-radius 50%
+			transition all .2s ease
+			&:hover
+				box-shadow none
 	&__container__menu
 	&__menu__action
 	&__menu__action--float
@@ -93,7 +96,7 @@ body
 		text-align center
 	&__container-logo
 		margin 0
-		width 80%
+		width 70%
 		^[0]__logo
 			width 100%
 	&__fullname
@@ -120,8 +123,10 @@ body
 				color white
 				text-decoration none
 				font-size 1.6rem
-				transition all .2s ease
+				transition all .3s ease
+				transform rotate3d(0, 0, 0, 0)
 				&:hover
+					transform rotate3d(0, 0, 1, -360deg)
 					color myBlack
 
 // Section Container Articles
@@ -139,7 +144,7 @@ body
 
 // Section Menu
 .header
-	background-color DarkBlue
+	background-color primaryColor
 	box-shadow 0 2px 4px Grey
 	width 100%
 	z-index 1
@@ -164,7 +169,7 @@ body
 		bottom 0
 		width 100%
 		height 0
-		background-color Blue
+		background-color secondaryColor
 	&--active:after
 		content ""
 		opacity 1
@@ -173,7 +178,7 @@ body
 		bottom 0
 		width 100%
 		height 5px
-		background-color Blue
+		background-color secondaryColor
 	&:before
 		content ""
 		opacity 0
@@ -182,7 +187,7 @@ body
 		top 0
 		width 100%
 		height 0
-		background-color Blue
+		background-color secondaryColor
 	&--active:before
 		content ""
 		opacity 1
@@ -191,7 +196,7 @@ body
 		top 0
 		width 100%
 		height 5px
-		background-color Blue
+		background-color secondaryColor
 	&:hover:after
 		animation-name borderBottom__menu
 		animation-duration .3s
@@ -206,18 +211,21 @@ body
 	display flex
 	flex-flow column nowrap
 	align-items center
+	&__title
+		margin-top 1.5rem
+	&__description
+		margin-bottom 2.5rem
 	&__community
-		color DarkBlue
+		color secondaryColor
 		&:hover
-			color aGreen
+			color accentColor
 
 // Section Portfolio
 .portfolio
-	flex-flow column nowrap
+	flex-direction column
 	align-items center
-	justify-content center
 	&__blockquote
-		border-left 5px solid aGreen
+		border-left 5px solid accentColor
 		padding .5rem .4rem
 		width 60%
 		margin 1rem auto
@@ -226,51 +234,61 @@ body
 	&__repos
 		color myBlack
 		&:hover
-			color DarkBlue
+			color secondaryColor
 	&__container-works
 		display flex
-		flex-direction row
+		flex-flow row wrap
+		align-items center
 		justify-content center
-		& ^[0]__work
-			display flex
-			flex-direction column
-			justify-content space-between
-			align-items center
-			margin .1rem .4rem
-			width 9rem
-			border 1px solid Grey
-			border-radius 5px
-			&__logo
-				width 100%
-				padding .5rem
-			&__description
-				text-align center
-				font-weight 700
-				background-color aGreen
-				color white
-				border-top 1px solid Grey
-				width 100%
-				margin 0
+		flex 1 0 auto
+	&__go-to
+		text-decoration none
+		color white
+		&:hover ^[0]__work__description
+			background-color secondaryColor
+	&__work
+		display flex
+		flex-direction column
+		align-items center
+		margin .2rem .5rem
+		width 8rem
+		height auto
+		border 1px solid Grey
+		border-radius 5px
+		&__logo
+			width 100%
+			padding .5rem 0
+		&__description
+			background-color accentColor
+			width 100%
+			padding .3rem 0
+			text-align center
+			transition .2s all ease
 	&__container-educations
 		display flex
 		flex-direction column
-		& ^[0]__education
-			display flex
-			align-items flex-start
-			margin .3rem 0
-			border-left 2px solid aGreen
-			transition .1s all ease
-			&:hover
-				border-left 5px solid DarkBlue
-			&:hover .portfolio__education__info p
-				text-decoration underline
-			&__image
-				width 4em
-			&__info
-				text-decoration none
-				color myBlack
-				& p
-					margin 0
+		align-items flex-start
+		width 100%
+	&__education
+		flex 1 0 auto
+		display flex
+		justify-content center
+		align-items center
+		border-left 2px solid accentColor
+		margin .2rem 0
+		transition .2s all ease
+		&:hover
+			border-left 5px solid secondaryColor
+		&:hover &__info
+			cursor pointer
+			text-decoration underline
+		&__image
+			width 5rem
+		&__info
+			color myBlack
+			text-decoration none
+			p
+				margin 0
 
 // Section Tools
 .my-tools
@@ -278,7 +296,7 @@ body
 	justify-content center
 	align-items center
 	&__blockquote
-		border-left 5px solid aGreen
+		border-left 5px solid accentColor
 		align-self flex-start
 		padding .5rem .4rem
 		width 60%
@@ -313,10 +331,15 @@ body
 .stylus
 	background-color rgba(46, 52, 54, .1)
 	border-bottom 2px solid #2e3436
+.mongodb
+	background-color rgba(78, 177, 63, .1)
+	border-bottom 2px solid #4eb13f
+.postgresql
+	background-color rgba(51, 103, 145, .1)
+	border-bottom 2px solid #336791
 .node
 	background-color rgba(144, 199, 65, .1)
 	border-bottom 2px solid #90c741
-
 
 /* UI Components */
 .article--hide
@@ -448,7 +471,7 @@ body
 			z-index 10
 			box-shadow 2px 2px 10px myBlack
 			&:active
-				background-color aGreen
+				background-color accentColor
 		&__container__menu
 			display block
 			position fixed
@@ -459,7 +482,7 @@ body
 			background-color white
 			z-index 11
 			padding 0 1rem
-			border-left 5px solid aGreen
+			border-left 5px solid accentColor
 			.myself__logo
 				padding 2em 0 .5rem
 				width 100%
@@ -483,7 +506,15 @@ body
 					font-size 1rem
 					& + ^[2]__link
 						border-top 1px solid Grey
+				&__link--active
+					color accentColor
 				&__item
 					display flex
 					.material-icons
 						padding-right .5rem
+	
+	// Section container portfolio
+	.portfolio
+		&__work
+			margin .1rem
+			width 7rem

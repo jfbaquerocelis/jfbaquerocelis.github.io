@@ -7,7 +7,7 @@
 	<link type="image/x-icon" href="public/image/codeico.png" rel="icon" />
 	
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
 	<link rel="stylesheet" href="public/css/style.css" />
@@ -103,19 +103,25 @@
 			</article>
 
 			<article class="portfolio" id="portfolio">
+
 				<h2 class="portfolio__title">Mi Portafolio</h2>
 				<p class="portfolio__description">En esta zona podrás encontrar los enlaces de los repositorios y los trabajos que he realizado, talleres, pruebas, inventos, etc. Todo lo que sé hacer con las herramientas que uso, frameworks, librerías, etc.</p>
 				<blockquote class="portfolio__blockquote">Los trabajos que no tienen enlace son proyectos internos de la empresa. Pero estos trabajos podrás verlos en <a target="_blank" class="portfolio__repos" href="https://github.com/jfbaquerocelis">Github</a> y <a target="_blank" class="portfolio__repos" href="https://bitbucket.org/noverflow">Bitbucket</a></blockquote>
 				<div class="portfolio__container-works">
-					<div class="portfolio__work">
-						<img src="public/image/acopterfar.png" class="portfolio__work__logo">
-						<p class="portfolio__work__description">Acopterfar</p>
-					</div>
-					<div class="portfolio__work">
-						<img src="public/image/teletaxi.png" class="portfolio__work__logo">
-						<p class="portfolio__work__description">Teletaxi S.A.S</p>
-					</div>
+					<a href="http://acopterfar.org" class="portfolio__go-to" target="_blank">
+						<figure class="portfolio__work">
+							<img src="public/image/acopterfar.png" class="portfolio__work__logo">
+							<figcaption class="portfolio__work__description">Acopterfar</figcaption>
+						</figure>
+					</a>
+					<a href="" class="portfolio__go-to" target="_blank">
+						<figure class="portfolio__work">
+							<img src="public/image/teletaxi.png" class="portfolio__work__logo">
+							<figcaption class="portfolio__work__description">Teletaxi S.A.S</figcaption>
+						</figure>
+					</a>
 				</div>
+
 				<h2 class="portfolio__title">Mis Estudios</h2>
 				<div class="portfolio__container-educations">
 					<div class="portfolio__education">
@@ -135,6 +141,7 @@
 						</a>
 					</div>
 				</div>
+				
 			</article>
 
 			<article class="my-tools" id="my-tools">
@@ -157,6 +164,14 @@
 					<figure class="tool stylus">
 						<img src="public/image/stylus.png" class="tool__image">
 						<figcaption class="tool__resume"><strong>Stylus</strong> es uno de los pre-procesadores <strong>CSS</strong> más populares en el mundo front-end. Es uno de mis favoritos y lo uso a menudo para optimizar mi código.</figcaption>
+					</figure>
+					<figure class="tool mongodb">
+						<img src="public/image/mongoDB.png" class="tool__image">
+						<figcaption class="tool__resume"><strong>MongoDB</strong> es una base de datos <em>no relacional</em> que nos permite tener información en un formato <strong>JSON</strong>. Ideal para contruir aplicaciones rápidas y elegantes.</figcaption>
+					</figure>
+					<figure class="tool postgresql">
+						<img src="public/image/postgreSQL.png" class="tool__image">
+						<figcaption class="tool__resume"><strong>PostgreSQL</strong> es una base de datos <em>relacional</em> que de igual forma puede ser <em>no relacional</em> ya que trabaja con documentos. Nos permite tener información en formato <strong>JSON</strong> y <strong>JSONB</strong> y es ideal para contruir aplicaciones rápidas, robustas y elegantes.</figcaption>
 					</figure>
 					<figure class="tool node">
 						<img src="public/image/node.png" class="tool__image">
