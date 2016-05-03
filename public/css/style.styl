@@ -7,7 +7,7 @@ primaryColor = #2196F3
 secondaryColor = #1976D2
 accentColor = #4CAF50
 Grey = #B6B6B6
-myBlack = #212121
+myBlack = #2e3436
 
 /*Animations*/
 @keyframes borderBottom__menu
@@ -50,15 +50,16 @@ body
 	color white
 	transition all .3s ease
 	&:hover
-		color myBlack
+		color primaryColor
 // Section Container Master
 .container-master
 	display flex
 	& .container__myself
 		flex 1 1 40%
-		background-color secondaryColor
+		background-color myBlack
 		color white
 		height 100vh
+		z-index 2
 	& .container__articles
 		display flex
 		flex-direction column
@@ -70,19 +71,15 @@ body
 	display flex
 	flex-flow column wrap
 	height 100%
-	border-right 5px solid accentColor
-	box-shadow 2px 0 5px Grey
+	box-shadow 2px 0 5px myBlack
 	&__container__avatar
 		margin 0
 		width 55%
 		^[0]__avatar
-			box-shadow 2px 2px 10px myBlack
 			border 3px solid primaryColor
 			width @width
 			border-radius 50%
 			transition all .2s ease
-			&:hover
-				box-shadow none
 	&__container__menu
 	&__menu__action
 	&__menu__action--float
@@ -127,7 +124,7 @@ body
 				transform rotate3d(0, 0, 0, 0)
 				&:hover
 					transform rotate3d(0, 0, 1, -360deg)
-					color myBlack
+					color primaryColor
 
 // Section Container Articles
 .container__articles
@@ -144,7 +141,7 @@ body
 
 // Section Menu
 .header
-	background-color primaryColor
+	background-color secondaryColor
 	box-shadow 0 2px 4px Grey
 	width 100%
 	z-index 1
@@ -169,7 +166,7 @@ body
 		bottom 0
 		width 100%
 		height 0
-		background-color secondaryColor
+		background-color primaryColor
 	&--active:after
 		content ""
 		opacity 1
@@ -178,7 +175,7 @@ body
 		bottom 0
 		width 100%
 		height 5px
-		background-color secondaryColor
+		background-color primaryColor
 	&:before
 		content ""
 		opacity 0
@@ -187,7 +184,7 @@ body
 		top 0
 		width 100%
 		height 0
-		background-color secondaryColor
+		background-color primaryColor
 	&--active:before
 		content ""
 		opacity 1
@@ -196,7 +193,7 @@ body
 		top 0
 		width 100%
 		height 5px
-		background-color secondaryColor
+		background-color primaryColor
 	&:hover:after
 		animation-name borderBottom__menu
 		animation-duration .3s
@@ -245,7 +242,7 @@ body
 		text-decoration none
 		color white
 		&:hover ^[0]__work__description
-			background-color secondaryColor
+			background-color primaryColor
 	&__work
 		display flex
 		flex-direction column
