@@ -5,7 +5,7 @@ $(document).ready(function () {
 	var fontMaterial = new FontFaceObserver('Material Icons')
 
 	Promise.all([fontKarla.load(), fontMaterial.load()]).then(function () {
-		console.log('Fonts Karla and Material Icons available')
+		alert('Fonts Karla and Material Icons available')
 	})
 
 	if ($(window).height() < 500){
