@@ -1,4 +1,13 @@
 $(document).ready(function () {
+
+	// Cargamos fuentes web con Font Face Observer
+	var fontKarla = new FontFaceObserver('Karla')
+	var fontMaterial = new FontFaceObserver('Material Icons')
+
+	Promise.all([fontKarla.load(), fontMaterial.load()]).then(function () {
+		console.log('Fonts Karla and Material Icons available')
+	})
+
 	if ($(window).height() < 500){
 		alert('Recomendación: Rota tu smartphone para mejor experiencia')
 	}
