@@ -43,8 +43,9 @@ myBlack = #2e3436
 
 
 body
-	font 16px 'Karla', sans-serif
 	color myBlack
+	font-family 'Karla', sans-serif
+	font-size 16px
 
 .jf-links
 	color white
@@ -55,7 +56,7 @@ body
 .container-master
 	display flex
 	& .container__myself
-		flex 1 1 40%
+		width 40%
 		background-color myBlack
 		color white
 		height 100vh
@@ -63,7 +64,7 @@ body
 	& .container__articles
 		display flex
 		flex-direction column
-		flex 1 1 60%
+		width 60%
 		height 100vh
 
 // Section Container Myself
@@ -427,6 +428,9 @@ body
 	// Section Container Master
 	.container-master
 		flex-direction column
+		& .container__myself
+		& .container__articles
+			width 100%
 
 	// Section Container Avatar
 	.container__avatar
