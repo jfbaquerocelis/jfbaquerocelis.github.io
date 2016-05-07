@@ -1,16 +1,30 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 07/05/2016 18:21
+  	*/
+
 @font-face {
-	font-family: "flaticon";
-	src: url("../../font/flaticon/flaticon.eot");
-	src: url("../../font/flaticon/flaticon.eot#iefix") format("embedded-opentype"),
-	url("../../font/flaticon/flaticon.woff") format("woff"),
-	url("../../font/flaticon/flaticon.ttf") format("truetype"),
-	url("../../font/flaticon/flaticon.svg") format("svg");
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Flaticon";
+  src: url("../../font/flaticon/Flaticon.eot");
+  src: url("../../font/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../../font/flaticon/Flaticon.woff") format("woff"),
+       url("../../font/flaticon/Flaticon.ttf") format("truetype"),
+       url("../../font/flaticon/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-[class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'flaticon' !important;
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../../font/flaticon/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="icon-"], [class*=" icon-"],
+[class^="icon-"], [class*=" icon-"] {   
+	    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'Flaticon' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -22,18 +36,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.icon-bitbucket:before {
-	content: "\e000";
-}
-.icon-facebook:before {
-	content: "\e001";
-}
-.icon-github:before {
-	content: "\e002";
-}
-.icon-google:before {
-	content: "\e003";
-}
-.icon-twitter:before {
-	content: "\e004";
-}
+
+.icon-bitbucket:before { content: "\f100"; }
+.icon-facebook:before { content: "\f101"; }
+.icon-github:before { content: "\f102"; }
+.icon-linkedin:before { content: "\f103"; }
+.icon-twitter:before { content: "\f104"; }
