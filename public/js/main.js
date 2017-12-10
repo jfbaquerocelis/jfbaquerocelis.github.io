@@ -1,65 +1,104 @@
 $(document).ready(function () {
-	// Code for text-decoration out in tags "a"
-	$('a').click(function () {
-		$(this).css('text-decoration', 'none')
+	if ($(window).height() < 500){
+		alert('Recomendación: Rota tu smartphone para mejor experiencia')
+	}
+
+	$('.header__menu-list__link').click(function (e) {
+		e.preventDefault()
+		var hash = this.hash
+		// Creamos un each para quitar clase a cada item antes de pornerla al que se le está dando click
+		$('.header__menu-list__link').each(function () {
+			$(this).removeClass('header__menu-list__link--active')
+		})
+		$(this).addClass('header__menu-list__link--active')
+
+		show_hide('.welcome', hash)
+		show_hide('.portfolio', hash)
+		show_hide('.my-tools', hash)
 	})
 
-	/*Function show Section Contact*/
-	$('.Button-contact').on('click', function (e) {
-		e.preventDefault();
-		$('.Contact').css('display', 'block');
-		setTimeout(function () {
-			$('.Contact-content').css('display', 'block');
-		}, 400)
-		$('.blanketBody').css('display', 'block');
+	// En versión movil, cuando demos click en el icono de menu, mostramos los items de menú
+	$('.myself__menu__action, .myself__menu__action--float').click(function () {
+		$('.blanketBody').fadeIn('fast')
+		$('.myself__container__menu').animate({
+			right : 0
+		})
 	})
-
-	/*Function hide Section Contact*/
-	$('.Contact-buttonCancel').on('click', function (e) {
-		e.preventDefault();
-		$('.Contact').fadeOut('slow');
-		$('.Contact-content').fadeOut('slow');
-		$('.blanketBody').fadeOut('fast');
-	})
-
-	/*Function show Section Menu*/
-	$('.Header-menuButton').on('click', function (e) {
-		e.preventDefault();
-		$('.contentMenu').css('animation-name','showMenu');
-		$('.blanketBody').fadeIn('fast');
-		$('.contentMenu').css({
-			'display' : 'block'
-		});
-	})
-
-	/*Function hide Section Menu*/
 	$('.blanketBody').on('click', function () {
-		$('.contentMenu').css('animation-name','hideMenu');
-		setTimeout(function () {
-			$('.contentMenu').css('display', 'none');
-		}, 600)
-		$('.Contact').fadeOut('slow');
-		$('.Contact-content').fadeOut('slow');
-		$(this).fadeOut('slow');
+		$('.blanketBody').fadeOut('fast')
+		$('.myself__container__menu').animate({
+			right : '-100%'
+		})
 	})
 
-	/*Function for show Sections according listItems clicked*/
-	$('.listMenu li a').on('click', function (e) {
-		e.preventDefault();
-		$('section').fadeOut('fast');
-		$(this.hash).fadeIn('fast');
-		$('.listMenu li a').each(function (i) {
-			this.style.color = "#333"
-			this.style.marginLeft = "0"
+	// Creamos los efectos necesarios para el menú de smartphones
+	$('.myself__menu__link').click(function (e) {
+		e.preventDefault()
+		var hash = this.hash
+
+		// Creamos un each para quitar clase a cada item antes de pornerla al que se le está dando click
+		$('.myself__menu__link').each(function () {
+			$(this).removeClass('myself__menu__link--active')
 		})
-		$(this).css({
-			'color' : 'Teal',
-			'margin-left' : '10px'
+		$(this).addClass('myself__menu__link--active')
+
+		$('.myself__menu__action--float').fadeOut('fast')
+
+		$('.myself__container__menu').animate({
+			right : '-100%'
 		})
-		$('.contentMenu').css('animation-name','hideMenu');
+		$('.blanketBody').fadeOut('slow')
+
 		setTimeout(function () {
-			$('.contentMenu').css('display', 'none');
-		}, 600)
-		$('.blanketBody').fadeOut('fast');
+			$('.container__articles').show()
+			$('body, html').animate({
+				scrollTop : $('.container__articles').offset().top
+			}, 1000)
+		}, 200)
+		setTimeout(function () {
+			show_hide('.welcome', hash)
+			show_hide('.portfolio', hash)
+			show_hide('.my-tools', hash)
+			$('.myself__menu__action--float').fadeIn('fast')
+			$('.container__myself').fadeOut('slow')
+		}, 530)
+	})
+
+	// Cuando damos click en la imagen, mostramos la información principal del portafolio
+	$('.myself__container__menu .myself__logo').click(function () {
+
+		$('.myself__container__menu').animate({
+			right : '-100%'
+		})
+		$('.blanketBody').fadeOut('slow')
+
+		if ($('.container__myself').css('display') === 'none'){
+			setTimeout(function () {
+				$('.container__articles').hide()
+				$('body, html').animate({
+					scrollTop : $('.container__myself').offset().top
+				}, 1000)
+			}, 200)
+			setTimeout(function () {
+				$('.myself__menu__action--float').fadeOut('fast')
+				$('.container__myself').fadeIn('slow')
+			}, 530)
+		}
+
 	})
 })
+
+// Esta función recibe el nombre de cada article para aplicar el efecto de entrada y salida
+function show_hide(article, hash) {
+	if($(article).hasClass('article--show')){
+		$(article).removeClass('article--show')
+		$(article).addClass('article--hide')
+		setTimeout(function () {
+			$(article).css('display', 'none')
+		}, 510)
+	}
+	setTimeout(function () {
+		$(hash).addClass('article--show')
+		$(hash).css('display', 'flex')
+	}, 520)
+}
