@@ -4,21 +4,13 @@
 
 vendor-prefixes = o ms webkit moz official
 
-primaryColor = #2196F3
-secondaryColor = #1976D2
-accentColor = #4CAF50
+primaryColor = #607D8B
+secondaryColor = #455A64
+accentColor = #7C4DFF
 Grey = #B6B6B6
 myBlack = #2e3436
 
 /*Animations*/
-@keyframes borderBottom__menu
-	from
-		height 0
-		opacity 0
-	to
-		height 5px
-		opacity 1
-
 @keyframes showUp
 	from
 		left 100%
@@ -29,35 +21,33 @@ myBlack = #2e3436
 	from
 		left 0
 	to
-		right 100%
+		left -100%
 
-@keyframes shakeUp
-	0%
-		opacity 1
-		top 0
-	50%
-		opacity .5rem
-		top -.8rem
-	100%
-		opacity 1
-		top 0
 
+/* UI Components */
+.article--hide
+	left -100%
+	animation-name hideOut
+	animation-duration .5s
+.article--show
+	left 0
+	animation-name showUp
+	animation-duration .5s
 
 body
 	color myBlack
 	font-family 'Karla', sans-serif
-	font-size 16px
 
 .jf-links
 	color white
 	transition all .3s ease
 	&:hover
-		color primaryColor
+		color accentColor
 // Section Container Master
 .container-master
 	display flex
 	& .container__myself
-		width 40%
+		width 30%
 		background-color myBlack
 		color white
 		height 100vh
@@ -65,7 +55,7 @@ body
 	& .container__articles
 		display flex
 		flex-direction column
-		width 60%
+		width 70%
 		height 100vh
 
 // Section Container Myself
@@ -73,18 +63,17 @@ body
 	display flex
 	flex-flow column wrap
 	height 100%
-	box-shadow 2px 0 5px myBlack
+	box-shadow 2px 0 4px myBlack
 	&__container__avatar
 		margin 0
 		width 55%
 		^[0]__avatar
-			border 3px solid primaryColor
+			border 3px solid accentColor
 			width @width
 			border-radius 50%
 			transition all .2s ease
 	&__container__menu
 	&__menu__action
-	&__menu__action--float
 		display none
 	&__profile
 		display flex
@@ -126,15 +115,16 @@ body
 				transform rotate3d(0, 0, 0, 0)
 				&:hover
 					transform rotate3d(0, 0, 1, -360deg)
-					color primaryColor
+					color accentColor
 
 // Section Container Articles
 .container__articles
 	overflow-x hidden
 	overflow-y scroll
 .welcome, .portfolio, .my-tools
-	padding 0 4rem
 	display none
+	position relative
+	padding 0 4rem
 	^[0]__title
 		border-bottom 1px solid Grey
 		margin-bottom .5rem
@@ -142,33 +132,25 @@ body
 		margin .5rem 0 0
 
 // Section Menu
-.header
-	background-color secondaryColor
-	box-shadow 0 2px 4px Grey
+.menu
+	display flex
+	justify-content flex-end
+	margin-bottom 2rem
 	width 100%
 	z-index 1
-.header__menu
-	display flex
-	justify-content center
-.header__menu-list
+.menu-list
 	display flex
 	margin 0
 	padding 0
-.header__menu-list__link
+.menu-list__link
+	color myBlack
 	list-style-type none
-	color white
 	text-decoration none
-	padding 1rem 1.1rem
+	padding .8rem 1rem
 	position relative
-	&:after
-		content ""
-		opacity 0
-		position absolute
-		left 0
-		bottom 0
-		width 100%
-		height 0
-		background-color primaryColor
+	&:hover
+		color accentColor
+		transition .5s ease all
 	&--active:after
 		content ""
 		opacity 1
@@ -176,42 +158,19 @@ body
 		left 0
 		bottom 0
 		width 100%
-		height 5px
-		background-color primaryColor
-	&:before
-		content ""
-		opacity 0
-		position absolute
-		left 0
-		top 0
-		width 100%
-		height 0
-		background-color primaryColor
-	&--active:before
-		content ""
-		opacity 1
-		position absolute
-		left 0
-		top 0
-		width 100%
-		height 5px
-		background-color primaryColor
-	&:hover:after
-		animation-name borderBottom__menu
-		animation-duration .3s
-		animation-fill-mode forwards
-	&:hover:before
-		animation-name borderBottom__menu
-		animation-duration .3s
-		animation-fill-mode forwards
+		height 3px
+		background-color accentColor
+	&--active .menu-list__item
+		color accentColor
+	.menu-list__item
+		display flex
+		align-items center
 
 // Section Welcome
 .welcome
 	display flex
 	flex-flow column nowrap
 	align-items center
-	&__title
-		margin-top 1.5rem
 	&__description
 		margin-bottom 2.5rem
 	&__community
@@ -228,41 +187,30 @@ body
 		padding .5rem .4rem
 		width 60%
 		margin 1rem auto
-		background-color rgba(0, 200, 83, .1)
+		background-color rgba(124, 77, 255, .1)
 		font-size .95rem
 	&__repos
 		color myBlack
 		&:hover
-			color secondaryColor
+			color accentColor
 	&__container-works
 		display flex
-		flex-flow row wrap
+		flex-flow column wrap
 		align-items center
 		justify-content center
 		flex 1 0 auto
-	&__go-to
-		text-decoration none
-		color white
-		&:hover ^[0]__work__description
-			background-color primaryColor
 	&__work
+		color myBlack
+		margin .1rem 0
+		padding 0 .4rem
 		display flex
-		flex-direction column
 		align-items center
-		margin .2rem .5rem
-		width 8rem
-		height auto
-		border 1px solid Grey
-		border-radius 5px
+		text-decoration none
+		&:hover
+			text-decoration underline
 		&__logo
-			width 100%
-			padding .5rem 0
-		&__description
-			background-color accentColor
-			width 100%
-			padding .3rem 0
-			text-align center
-			transition .2s all ease
+			height 5rem
+			margin-right 1rem
 	&__container-educations
 		display flex
 		flex-direction column
@@ -277,7 +225,7 @@ body
 		margin .2rem 0
 		transition .2s all ease
 		&:hover
-			border-left 5px solid secondaryColor
+			border-left 5px solid accentColor
 		&:hover &__info
 			cursor pointer
 			text-decoration underline
@@ -300,7 +248,7 @@ body
 		padding .5rem .4rem
 		width 60%
 		margin 1rem auto
-		background-color rgba(0, 200, 83, .1)
+		background-color rgba(124, 77, 255, .1)
 		font-size .95rem
 	&__container-tool
 		display flex
@@ -340,26 +288,9 @@ body
 	background-color rgba(144, 199, 65, .1)
 	border-bottom 2px solid #90c741
 
-/* UI Components */
-.article--hide
-	position relative
-	left 100%
-	top 0
-	animation-name hideOut
-	animation-duration .5s
-.article--show
-	display flex
-	position relative
-	left 0
-	top 0
-	animation-name showUp
-	animation-duration .5s
-.shake-up
-	position relative
-	top 0
-	animation-name shakeUp
-	animation-duration .8s
-	animation-iteration-count infinite
+// Section Control Actions
+.control-actions
+	display none
 
 // *************************** Viewport width ******************************
 @media screen and (min-width : 1500px)
@@ -370,12 +301,12 @@ body
 	.header
 		&__menu-list__link
 			padding 1.5rem 2rem
-		
+
 	// Section Container Articles
 	.welcome, .portfolio, .my-tools
 		padding 0 8rem
 		margin 3rem 0
-	
+
 	// Section container myself
 	.myself
 		&__footer
@@ -406,7 +337,7 @@ body
 		padding 0 1.5rem
 	.myself__fullname
 		font-size 1.7rem
-	
+
 	// Section Container Tools
 	.tool
 		flex 1 1 auto
@@ -426,6 +357,21 @@ body
 		width 100vw
 		z-index 4
 
+	// Section Control Actions
+	.control-actions
+		background-color #fff
+		color accentColor
+		top 0
+		position absolute
+		width 100vw
+		justify-content space-between
+		z-index 9
+		box-shadow 0 1px 5px myBlack
+		&__home
+		&__menu
+			padding .6rem 2rem
+			font-size 2rem
+
 	// Section Container Master
 	.container-master
 		flex-direction column
@@ -436,20 +382,21 @@ body
 	// Section Container Avatar
 	.container__avatar
 		display none
-	
+
 	// Section Container Articles
 	.container__articles
 		display none
 	.welcome, .portfolio, .my-tools
 		display none
 		padding 0 2rem
+		margin-top 2.5rem
 		&__title
 			text-align center
 		&__blockquote
 			width 100%
-	.header
+	.menu
 		display none
-	
+
 	// Section Container myself
 	.myself
 		position relative
@@ -461,19 +408,6 @@ body
 			right .8rem
 			top .5rem
 			z-index 1
-		&__menu__action--float
-			position absolute
-			background-color rgba(0, 200, 83, .6)
-			color white
-			font-size 2rem
-			border-radius 50%
-			padding .8rem
-			bottom 0.7rem
-			right .5rem
-			z-index 10
-			box-shadow 2px 2px 10px myBlack
-			&:active
-				background-color accentColor
 		&__container__menu
 			display block
 			position fixed
@@ -485,17 +419,6 @@ body
 			z-index 11
 			padding 0 1rem
 			border-left 5px solid accentColor
-			.myself__logo
-				padding 2em 0 .5rem
-				width 100%
-			.myself__container__click-me
-				display flex
-				flex-direction column
-				align-items center
-				.myself__click-me
-					margin 0
-					text-align center
-					font-size .9rem
 			^[0]__menu
 				padding .8rem 0
 				margin 0
@@ -514,9 +437,12 @@ body
 					display flex
 					.material-icons
 						padding-right .5rem
-	
+
 	// Section container portfolio
 	.portfolio
 		&__work
-			margin .1rem
-			width 7rem
+			display block
+			box-sizing border-box
+			&__logo
+				margin 1rem .5rem 0
+				float left
