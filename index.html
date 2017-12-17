@@ -5,7 +5,7 @@
 	<meta name="description" content="John Fredy Baquero Celis - Ingeniero de Sistemas. Desarrollador Web Profesional" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link type="image/x-icon" href="public/image/codeico.png" rel="icon" />
-	
+
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
@@ -14,17 +14,18 @@
 </head>
 <body>
 	<div class="blanketBody"></div>
-	<span class="myself__menu__action--float material-icons">menu</span>
+
+	<div class="control-actions">
+		<span class="control-actions__home material-icons">home</span>
+		<span class="control-actions__menu material-icons">menu</span>
+	</div>
+
 	<div class="container-master">
+		<!-- Éste es el menú para dispositivos móviles y tablet's -->
 		<div class="myself__container__menu">
-			<img src="public/image/2jfbaquerocelis.png" class="myself__logo" />
-			<div class="myself__container__click-me">
-				<i class="material-icons shake-up">arrow_upward</i>
-				<p class="myself__click-me">Click a la imagen para volver a la primera vista.</p>
-			</div>
 			<ul class="myself__menu">
 				<a href="#welcome" class="myself__menu__link">
-					<li class="myself__menu__item"><i class="material-icons">favorite_border</i>Inicio</li>
+					<li class="myself__menu__item"><i class="material-icons">favorite</i>Acerca de Mi</li>
 				</a>
 				<a href="#portfolio" class="myself__menu__link">
 					<li class="myself__menu__item"><i class="material-icons">work</i>Mi Portafolio</li>
@@ -34,25 +35,25 @@
 				</a>
 			</ul>
 		</div>
+
+		<!-- Esta es la sección principal, donde se muestra la información básica -->
 		<section class="container__myself">
 			<span class="myself__menu__action material-icons">menu</span>
+
 			<article class="myself">
 				<div class="myself__profile">
 					<figure class="myself__container__avatar">
 						<img src="public/image/john.jpg" class="myself__avatar">
 					</figure>
-					<figure class="myself__container-logo">
-						<img src="public/image/jfbaquerocelis.png" class="myself__logo" />
-					</figure>
 					<h1 class="myself__fullname">John Fredy Baquero Celis</h1>
-					<p class="myself__description">Ingeniero de Sistemas - Javascript Developer</p>
+					<p class="myself__description">Ingeniero de Sistemas - Desarrollador Web</p>
 					<p class="myself__description">Organizador de <a href="http://meetup.com/monteriajs" class="jf-links myself__community" target="_blank">MonteríaJS</a></p>
 				</div>
 				<div class="myself__footer">
 					<div class="myself__footer__by">
 						<p>Created by <a href="https://twitter.com/noverflow" class="jf-links myself__footer__created">jfbaquerocelis</a></p>
 						<p>Icons Design by <a href="http://www.freepik.es/" class="jf-links myself__footer__created">Freepik</a></p>
-						<p>© 2016</p>
+						<p>© 2018</p>
 					</div>
 					<div class="myself__footer__social">
 						<a class="myself__footer__link" href="https://co.linkedin.com/in/john-baquero-celis-68131a120" target="_blank">
@@ -72,55 +73,42 @@
 			</article>
 		</section>
 
+		<!-- Éste contenedor muestra los artículos que actualmente están en la página -->
 		<section class="container__articles">
-			<header class="header">
-				<nav class="header__menu">
-					<ul class="header__menu-list">
-						<a href="#welcome" class="header__menu-list__link">
-							<li class="header__menu-list__item">Inicio</li>
-						</a>
-						<a href="#portfolio" class="header__menu-list__link">
-							<li class="header__menu-list__item">Mi Portafolio</li>
-						</a>
-						<a href="#my-tools" class="header__menu-list__link">
-							<li class="header__menu-list__item">Mis Herramientas</li>
-						</a>
-					</ul>
-				</nav>
-			</header>
-			
+			<nav class="menu">
+				<ul class="menu-list">
+					<a href="#welcome" class="menu-list__link menu-list__link--active">
+						<li class="menu-list__item"><i class="material-icons">favorite</i>Acerca de Mi</li>
+					</a>
+					<a href="#portfolio" class="menu-list__link">
+						<li class="menu-list__item"><i class="material-icons">work</i>Mi Portafolio</li>
+					</a>
+					<a href="#my-tools" class="menu-list__link">
+						<li class="menu-list__item"><i class="material-icons">build</i>Mis Herramientas</li>
+					</a>
+				</ul>
+			</nav>
+
 			<article class="welcome article--show" id="welcome">
-				<h2 class="welcome__title">Hola! Quiero darte la bienvenida.</h2>
-				<p class="welcome__description">Mi nombre es <strong>John Fredy</strong>, soy un amante de <strong>javascript</strong> y el desarrollo web, con él he aprendido muchas cosas y con él pienso cambiar el mundo. <br/> Si tú también piensas lo mismo <strong><em>¡Excelente!</em></strong> <br />Me gusta aprender y quiero hacer esto que me apasiona enseñándolo a otras personas y que esas personas compartan esa misma filosofía. Y claro, no estoy solo, tengo la ayuda de <strong>Javascript</strong> y otros más. <br /><br />Hago parte de una gran comunidad llamada <a class="welcome__community" target="_blank" href="http://colombia-dev.org">Colombia.dev</a> y soy organizador de la comunidad <a class="welcome__community" target="_blank" href="http://www.meetup.com/monteriajs">MonteríaJS</a>, así que eres bienvenid@!</p>
-				<h2 class="welcome__title">¿Necesitas una aplicación/website?</h2>
-				<p class="welcome__description">Has llegado al lugar indicado. ¿Quieres conocer cómo trabajo? sigue navegando a través de mi sitio web y verás que hago en realidad, mi portafolio, mis estudios, redes sociales, en fin... Todo!</p>
-				<h2 class="welcome__title">Escribeme <i class="material-icons">thumb_up</i></h2>
-				<p class="welcome__description">Estaré encantado de recibir tus comentarios o simplemente tener una conversación. Podrás encontrar mis redes sociales en la página principal o si deseas, puedes escribirme a mi correo <a class="welcome__community" href="mailto:jfbaquerocelis@gmail.com" target="_blank">jfbaquerocelis@gmail.com</a>. En caso tal de que tengas un feedback o algún comentario con respecto a mi portafolio, por favor, házmelo saber.</p>
+				<h2 class="welcome__title">Hola! Bienvenido a mi portafolio.</h2>
+				<p class="welcome__description">Mi nombre es <strong>John</strong>, soy desarrollador web y vivo en la ciudad de Montería. Mi lenguaje de programación favorito es <strong>javascript</strong>, con él he aprendido muchas cosas y con él desarrollo actualmente. Mi objetivo es usarlo como herramienta para crear soluciones tecnológicas que puedan contribuir al desarrollo de la sociedad. <br /> Me gusta compartir lo que sé con otras personas y que esas personas compartan esa misma filosofía. <br /><br />Hago parte de una gran comunidad llamada <a class="welcome__community" target="_blank" href="http://colombia-dev.org">Colombia.dev</a> y soy organizador de la comunidad <a class="welcome__community" target="_blank" href="http://www.meetup.com/monteriajs">MonteríaJS</a>, así que eres bienvenid@!</p>
+				<h2 class="welcome__title">¿Necesitas una aplicación, sitio web o algo similar?</h2>
+				<p class="welcome__description">Has llegado al lugar indicado. Actualmente hago parte de un excelente grupo de trabajo, dispuesto a solucionar tu problema desarrollando software a la medida. <br> <br> Puedes contactarme para tomarnos un café y así hablar de tu idea. Podrás encontrar mis redes sociales en la página principal o si deseas, puedes escribirme a mi correo <a class="welcome__community" href="https://mail.google.com/mail/?view=cm&fs=1&to=jfbaquerocelis@gmail.com" target="_blank">jfbaquerocelis@gmail.com</a>. En caso tal de que tengas algún comentario con respecto a mi portafolio, por favor, házmelo saber.</p>
 			</article>
 
 			<article class="portfolio" id="portfolio">
-
 				<h2 class="portfolio__title">Mi Portafolio</h2>
-				<p class="portfolio__description">En esta zona podrás encontrar los enlaces de los repositorios y los trabajos que he realizado, talleres, pruebas, inventos, etc. Todo lo que sé hacer con las herramientas que uso, frameworks, librerías, etc.</p>
-				<blockquote class="portfolio__blockquote">Los trabajos que no tienen enlace son proyectos internos de la empresa. Pero estos trabajos podrás verlos en <a target="_blank" class="portfolio__repos" href="https://github.com/jfbaquerocelis">Github</a> y <a target="_blank" class="portfolio__repos" href="https://bitbucket.org/noverflow">Bitbucket</a></blockquote>
+				<p class="portfolio__description">En esta sección vas a encontrar algunos proyectos que he trabajado, también algunos talleres, pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
+				<blockquote class="portfolio__blockquote">Actualmente uso <a target="_blank" class="portfolio__repos" href="https://github.com/jfbaquerocelis">Github</a> y <a target="_blank" class="portfolio__repos" href="https://bitbucket.org/noverflow">Bitbucket</a> para guardar y trabajar los proyectos que desarrollo a través del sistema de control de versiones <strong>GIT</strong>.</blockquote>
+
 				<div class="portfolio__container-works">
-					<a href="http://acopterfar.org" class="portfolio__go-to" target="_blank">
-						<figure class="portfolio__work">
-							<img src="public/image/acopterfar.png" class="portfolio__work__logo">
-							<figcaption class="portfolio__work__description">Acopterfar</figcaption>
-						</figure>
+					<a href="https://play.google.com/store/apps/details?id=com.metrosinu.busser.katana&hl=es" class="portfolio__work" target="_blank">
+						<img src="public/image/busser.png" class="portfolio__work__logo">
+						<p class="portfolio__work__description"><strong>Busser</strong> es una aplicación android enfocada en la movilidad a través del servicio de transporte público que permite a los usuarios observar buses en tiempo real, información básica, saber qué ruta es la óptima para movilizarse de un punto a otro, etc. Mi papel en éste proyecto fue <strong>Desarrollador Javascript Full Stack</strong>.</p>
 					</a>
-					<a href="https://bitbucket.org/noverflow/teletaxi/" class="portfolio__go-to" target="_blank">
-						<figure class="portfolio__work">
-							<img src="public/image/teletaxi.png" class="portfolio__work__logo">
-							<figcaption class="portfolio__work__description">Teletaxi S.A.S</figcaption>
-						</figure>
-					</a>
-					<a href="http://biointek.com" class="portfolio__go-to" target="_blank">
-						<figure class="portfolio__work">
-							<img src="public/image/biointek.png" class="portfolio__work__logo">
-							<figcaption class="portfolio__work__description">BIOINTEK S.A.S</figcaption>
-						</figure>
+					<a href="https://teletaxi.co" class="portfolio__work" target="_blank">
+						<img src="public/image/teletaxi.png" class="portfolio__work__logo">
+						<p class="portfolio__work__description"><strong>Taxadministrador</strong> es un sistema de gestión de flotas (taxis) el cual cuenta con varias funcionalidades que ayudan a la empresa a generar tarjetas de control a partir de la información del conductor y del vehículo, notificar sobre vencimientos de documentos importantes, generar reportes, entre otras funcionalidades. Mi papel en éste proyecto fue <strong>Desarrollador Javascript Full Stack</strong>.</p>
 					</a>
 				</div>
 
@@ -143,17 +131,17 @@
 						</a>
 					</div>
 				</div>
-				
+
 			</article>
 
 			<article class="my-tools" id="my-tools">
 				<h2 class="my-tools__title">Mis Herramientas</h2>
-				<p class="my-tools__description">Y como buen desarrollador web, necesito herramientas que me ayuden a ayudarte. Estas son las que uso actualmente.</p>
-				<blockquote class="my-tools__blockquote">Frameworks como <strong>AngularJS</strong>, <strong>EmberJS</strong>, <strong>MaterializeCSS</strong>, <strong>ExpressJS</strong>, etc. Son herramientas que también uso dependiendo el proyecto.</blockquote>
+				<p class="my-tools__description">A continuación, te mostraré las herramientas con las que trabajo actualmente.</p>
+				<blockquote class="my-tools__blockquote">Frameworks como <strong>EmberJS</strong>, <strong>VueJS</strong>, <strong>MaterializeCSS</strong>, <strong>BulmaCSS</strong>, etc. Son herramientas que también uso dependiendo el proyecto.</blockquote>
 				<div class="my-tools__container-tool">
 					<figure class="tool html">
 						<img src="public/image/html5.png" class="tool__image">
-						<figcaption class="tool__resume"><strong>HTML</strong> mantendrá tu sitio web con una estructura fuerte, así la información estará organizada.</figcaption>
+						<figcaption class="tool__resume"><strong>HTML</strong> dará a tu sitio web o aplicación la estructura necesaria para mantener organizada la información.</figcaption>
 					</figure>
 					<figure class="tool css">
 						<img src="public/image/css3.png" class="tool__image">
@@ -169,7 +157,7 @@
 					</figure>
 					<figure class="tool mongodb">
 						<img src="public/image/mongoDB.png" class="tool__image">
-						<figcaption class="tool__resume"><strong>MongoDB</strong> es una base de datos <em>no relacional</em> que nos permite tener información en un formato <strong>JSON</strong>. Ideal para contruir aplicaciones rápidas y elegantes.</figcaption>
+						<figcaption class="tool__resume"><strong>MongoDB</strong> es una base de datos <em>no relacional</em> que nos permite tener información en un formato <strong>JSON</strong>, ideal para contruir aplicaciones rápidas, escalables y elegantes.</figcaption>
 					</figure>
 					<figure class="tool postgresql">
 						<img src="public/image/postgreSQL.png" class="tool__image">
@@ -177,13 +165,12 @@
 					</figure>
 					<figure class="tool node">
 						<img src="public/image/node.png" class="tool__image">
-						<figcaption class="tool__resume"><strong>NodeJS</strong> es <strong>Javascript</strong> del lado del servidor. Todas las características de este gran lenguaje pueden ser usadas para crear sistemas, aplicaciones, API's REST, y muchas cosas más en tiempo real. De esta forma la información estará al alcance de todos!</figcaption>
+						<figcaption class="tool__resume"><strong>NodeJS</strong> es la plataforma en la cual creamos el back-end de nuestra aplicación web. Es <strong>Javascript</strong> del lado del servidor. De esta forma el stack de desarrollo nos permitirá tener un desarrollo ágil, robusto y seguro!</figcaption>
 					</figure>
 				</div>
 		</section>
 	</div>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 	<script src="public/js/main.js"></script>
 </body>
 </html>
