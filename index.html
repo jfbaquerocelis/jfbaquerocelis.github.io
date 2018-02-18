@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link type="image/x-icon" href="public/image/codeico.png" rel="icon" />
 
-	<link href='https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
 	<link rel="stylesheet" href="public/css/style.css" />
@@ -16,8 +17,8 @@
 	<div class="blanketBody"></div>
 
 	<div class="control-actions">
-		<span class="control-actions__home material-icons">home</span>
-		<span class="control-actions__menu material-icons">menu</span>
+		<span class="control-actions__home"><i class="fa fa-home"></i></span>
+		<span class="control-actions__menu"><i class="fa fa-bars"></i></span>
 	</div>
 
 	<div class="container-master">
@@ -25,20 +26,20 @@
 		<div class="myself__container__menu">
 			<ul class="myself__menu">
 				<a href="#welcome" class="myself__menu__link">
-					<li class="myself__menu__item"><i class="material-icons">favorite</i>Acerca de Mi</li>
+					<li class="myself__menu__item"><i class="fa fa-star"></i>Acerca de Mi</li>
 				</a>
 				<a href="#portfolio" class="myself__menu__link">
-					<li class="myself__menu__item"><i class="material-icons">work</i>Mi Portafolio</li>
+					<li class="myself__menu__item"><i class="fa fa-briefcase"></i>Mi Portafolio</li>
 				</a>
 				<a href="#my-tools" class="myself__menu__link">
-					<li class="myself__menu__item"><i class="material-icons">build</i>Mis Herramientas</li>
+					<li class="myself__menu__item"><i class="fa fa-code"></i>Mis Herramientas</li>
 				</a>
 			</ul>
 		</div>
 
 		<!-- Esta es la sección principal, donde se muestra la información básica -->
 		<section class="container__myself">
-			<span class="myself__menu__action material-icons">menu</span>
+			<span class="myself__menu__action"><i class="fa fa-bars"></i></span>
 
 			<article class="myself">
 				<div class="myself__profile">
@@ -51,22 +52,21 @@
 				</div>
 				<div class="myself__footer">
 					<div class="myself__footer__by">
-						<p>Created by <a href="https://twitter.com/noverflow" class="jf-links myself__footer__created">jfbaquerocelis</a></p>
-						<p>Icons Design by <a href="http://www.freepik.es/" class="jf-links myself__footer__created">Freepik</a></p>
+						<p>Made with <i class="fa fa-heart" style="color:#e75353;"></i> by <a href="https://twitter.com/noverflow" class="jf-links myself__footer__created">jfbaquerocelis</a></p>
 						<p>© 2018</p>
 					</div>
 					<div class="myself__footer__social">
 						<a class="myself__footer__link" href="https://co.linkedin.com/in/john-baquero-celis-68131a120" target="_blank">
-							<span class="link-linkedin icon-linkedin"></span>
+							<i class="fab fa-linkedin"></i>
 						</a>
 						<a class="myself__footer__link" href="https://twitter.com/noverflow" target="_blank">
-							<span class="link-twitter icon-twitter"></span>
+							<i class="fab fa-twitter-square"></i>
 						</a>
 						<a class="myself__footer__link" href="https://github.com/jfbaquerocelis" target="_blank">
-							<span class="link-github icon-github"></span>
+							<i class="fab fa-github-square"></i>
 						</a>
 						<a class="myself__footer__link" href="https://bitbucket.org/noverflow" target="_blank">
-							<span class="link-bitbucket icon-bitbucket"></span>
+							<i class="fab fa-bitbucket"></i>
 						</a>
 					</div>
 				</div>
@@ -78,37 +78,98 @@
 			<nav class="menu">
 				<ul class="menu-list">
 					<a href="#welcome" class="menu-list__link menu-list__link--active">
-						<li class="menu-list__item"><i class="material-icons">favorite</i>Acerca de Mi</li>
+						<li class="menu-list__item"><i class="fa fa-star"></i>Acerca de Mi</li>
 					</a>
 					<a href="#portfolio" class="menu-list__link">
-						<li class="menu-list__item"><i class="material-icons">work</i>Mi Portafolio</li>
+						<li class="menu-list__item"><i class="fa fa-briefcase"></i>Mi Portafolio</li>
 					</a>
 					<a href="#my-tools" class="menu-list__link">
-						<li class="menu-list__item"><i class="material-icons">build</i>Mis Herramientas</li>
+						<li class="menu-list__item"><i class="fa fa-code"></i>Mis Herramientas</li>
 					</a>
 				</ul>
 			</nav>
 
 			<article class="welcome article--show" id="welcome">
-				<h2 class="welcome__title">Hola! Bienvenido a mi portafolio.</h2>
+				<h2 class="welcome__title">¡Hola! Bienvenido a mi portafolio.</h2>
 				<p class="welcome__description">Mi nombre es <strong>John</strong>, soy desarrollador web y vivo en la ciudad de Montería. Mi lenguaje de programación favorito es <strong>javascript</strong>, con él he aprendido muchas cosas y con él desarrollo actualmente. Mi objetivo es usarlo como herramienta para crear soluciones tecnológicas que puedan contribuir al desarrollo de la sociedad. <br /> Me gusta compartir lo que sé con otras personas y que esas personas compartan esa misma filosofía. <br /><br />Hago parte de una gran comunidad llamada <a class="welcome__community" target="_blank" href="http://colombia-dev.org">Colombia.dev</a> y soy organizador de la comunidad <a class="welcome__community" target="_blank" href="http://www.meetup.com/monteriajs">MonteríaJS</a>, así que eres bienvenid@!</p>
 				<h2 class="welcome__title">¿Necesitas una aplicación, sitio web o algo similar?</h2>
-				<p class="welcome__description">Has llegado al lugar indicado. Actualmente hago parte de un excelente grupo de trabajo, dispuesto a solucionar tu problema desarrollando software a la medida. <br> <br> Puedes contactarme para tomarnos un café y así hablar de tu idea. Podrás encontrar mis redes sociales en la página principal o si deseas, puedes escribirme a mi correo <a class="welcome__community" href="https://mail.google.com/mail/?view=cm&fs=1&to=jfbaquerocelis@gmail.com" target="_blank">jfbaquerocelis@gmail.com</a>. En caso tal de que tengas algún comentario con respecto a mi portafolio, por favor, házmelo saber.</p>
+				<p class="welcome__description">Has llegado al lugar indicado. Actualmente hago parte de un excelente grupo de trabajo, dispuesto a solucionar tu problema desarrollando software a la medida. <br> <br> Puedes contactarme para tomarnos un café y así hablar de tu idea. Podrás encontrar mis redes sociales en la página principal o si deseas, puedes escribirme a mi correo <a class="welcome__community" href="https://mail.google.com/mail/?view=cm&fs=1&to=jfbaquerocelis@gmail.com" target="_blank">jfbaquerocelis@gmail.com</a>. <br><br> En caso tal de que tengas algún comentario con respecto a mi portafolio, por favor, házmelo saber.</p>
 			</article>
 
 			<article class="portfolio" id="portfolio">
 				<h2 class="portfolio__title">Mi Portafolio</h2>
-				<p class="portfolio__description">En esta sección vas a encontrar algunos proyectos que he trabajado, también algunos talleres, pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
+				<p class="portfolio__description">En esta sección vas a encontrar algunos proyectos en los que he trabajado, también algunos talleres, pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
 				<blockquote class="portfolio__blockquote">Actualmente uso <a target="_blank" class="portfolio__repos" href="https://github.com/jfbaquerocelis">Github</a> y <a target="_blank" class="portfolio__repos" href="https://bitbucket.org/noverflow">Bitbucket</a> para guardar y trabajar los proyectos que desarrollo a través del sistema de control de versiones <strong>GIT</strong>.</blockquote>
 
 				<div class="portfolio__container-works">
-					<a href="https://play.google.com/store/apps/details?id=com.metrosinu.busser.katana&hl=es" class="portfolio__work" target="_blank">
-						<img src="public/image/busser.png" class="portfolio__work__logo">
-						<p class="portfolio__work__description"><strong>Busser</strong> es una aplicación android enfocada en la movilidad a través del servicio de transporte público que permite a los usuarios observar buses en tiempo real, información básica, saber qué ruta es la óptima para movilizarse de un punto a otro, etc. Mi papel en éste proyecto fue <strong>Desarrollador Javascript Full Stack</strong>.</p>
-					</a>
 					<a href="https://teletaxi.co" class="portfolio__work" target="_blank">
 						<img src="public/image/teletaxi.png" class="portfolio__work__logo">
-						<p class="portfolio__work__description"><strong>Taxadministrador</strong> es un sistema de gestión de flotas (taxis) el cual cuenta con varias funcionalidades que ayudan a la empresa a generar tarjetas de control a partir de la información del conductor y del vehículo, notificar sobre vencimientos de documentos importantes, generar reportes, entre otras funcionalidades. Mi papel en éste proyecto fue <strong>Desarrollador Javascript Full Stack</strong>.</p>
+						<div class="portfolio__work__info">
+							<p class="portfolio__work__info__description"><strong>Taxadministrador</strong> es un sistema de gestión de flotas (taxis) el cual cuenta con varias funcionalidades que ayudan a la empresa a generar tarjetas de control a partir de la información del conductor y del vehículo, notificar sobre vencimientos de documentos importantes, generar reportes, entre otras funcionalidades.</p>
+							<div class="portfolio__work__info__tools">
+								<div class="portfolio__work__info__tools__role">Desarrollador Javascript Full-Stack</div>
+								<div>
+									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
+									<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
+									<i class="fab fa-html5 fa-lg" style="color:#e57f16;"></i>
+									<i class="fab fa-css3 fa-lg" style="color:#428ae3;"></i>
+									<i class="fab fa-js fa-lg" style="color:#ffeb00;"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="https://play.google.com/store/apps/details?id=com.metrosinu.busser.katana&hl=es" class="portfolio__work" target="_blank">
+						<img src="public/image/busser.png" class="portfolio__work__logo">
+						<div class="portfolio__work__info">
+							<p class="portfolio__work__info__description"><strong>Busser</strong> es una aplicación android enfocada a la movilidad a través del servicio de transporte público que permite a los usuarios observar buses en tiempo real, información básica, saber qué ruta es la óptima para movilizarse de un punto a otro, etc. En éste proyecto se desarrolló un <strong>API</strong> en <strong>JSONAPI</strong> y se crearon <strong>namespaces</strong> para el envío de información en tiempo real a través de <strong>WebSockets</strong>.</p>
+							<div class="portfolio__work__info__tools">
+								<div class="portfolio__work__info__tools__role">Desarrollador Back-end</div>
+								<div>
+									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="portfolio__work" target="_blank">
+						<img src="public/image/yipgo.png" class="portfolio__work__logo">
+						<div class="portfolio__work__info">
+							<p class="portfolio__work__info__description"><strong>YipGO</strong> es una aplicación android enfocada al proyecto <strong>Última Milla</strong> de la empresa <strong>Metrosinú</strong> que permite a los operadores del servicio recibir solicitudes en tiempo real de los usuarios que requieran ser movilizados hacia el paradero más cercano.</p>
+							<div class="portfolio__work__info__tools">
+								<div class="portfolio__work__info__tools__role">Desarrollador Back-end</div>
+								<div>
+									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="https://192.95.33.90/dashboard" class="portfolio__work" target="_blank">
+						<img src="public/image/dashboard.png" class="portfolio__work__logo">
+						<div class="portfolio__work__info">
+							<p class="portfolio__work__info__description"><strong>Dashboard Busser</strong> es una aplicación web que permite manejar la información principal de las aplicaciones móviles <strong>Busser</strong> y <strong>YipGO</strong>. Permite al usuario crear nuevas rutas, paraderos, trayectos y observar métricas que ayudan a observar mejor la información.</p>
+							<div class="portfolio__work__info__tools">
+								<div class="portfolio__work__info__tools__role">Desarrollador Front-end</div>
+								<div>
+									<i class="fab fa-ember fa-lg" style="color:#E04E39;"></i>
+									<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="portfolio__work" target="_blank">
+						<img src="public/image/vrm.png" class="portfolio__work__logo">
+						<div class="portfolio__work__info">
+							<p class="portfolio__work__info__description"><strong>VRM</strong> es una aplicación web responsiva que se encarga de recolectar reportes y realizar métricas a partir de sus atributos. Ésta aplicación fue realizada para el área de mantenimiento de la empresa <strong>Metrosinú</strong>.</p>
+							<div class="portfolio__work__info__tools">
+								<div class="portfolio__work__info__tools__role">Desarrollador Javascript Full-Stack</div>
+								<div>
+									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
+									<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
+									<i class="fab fa-html5 fa-lg" style="color:#e57f16;"></i>
+									<i class="fab fa-css3 fa-lg" style="color:#428ae3;"></i>
+									<i class="fab fa-js fa-lg" style="color:#ffeb00;"></i>
+								</div>
+							</div>
+						</div>
 					</a>
 				</div>
 
@@ -136,38 +197,100 @@
 
 			<article class="my-tools" id="my-tools">
 				<h2 class="my-tools__title">Mis Herramientas</h2>
-				<p class="my-tools__description">A continuación, te mostraré las herramientas con las que trabajo actualmente.</p>
-				<blockquote class="my-tools__blockquote">Frameworks como <strong>EmberJS</strong>, <strong>VueJS</strong>, <strong>MaterializeCSS</strong>, <strong>BulmaCSS</strong>, etc. Son herramientas que también uso dependiendo el proyecto.</blockquote>
-				<div class="my-tools__container-tool">
-					<figure class="tool html">
-						<img src="public/image/html5.png" class="tool__image">
-						<figcaption class="tool__resume"><strong>HTML</strong> dará a tu sitio web o aplicación la estructura necesaria para mantener organizada la información.</figcaption>
-					</figure>
-					<figure class="tool css">
-						<img src="public/image/css3.png" class="tool__image">
-						<figcaption class="tool__resume"><strong>CSS</strong> es fundamental en un sitio web, la interfaz y experiencia de usuario son necesarias para generar emociones positivas en tus clientes.</figcaption>
-					</figure>
-					<figure class="tool javascript">
-						<img src="public/image/js.png" class="tool__image">
-						<figcaption class="tool__resume"><strong>Javascript</strong> es el lenguaje de la web. Con él, tu sitio web será más dinámico y tendrá una mejor interacción con el usuario.</figcaption>
-					</figure>
-					<figure class="tool stylus">
-						<img src="public/image/stylus.png" class="tool__image">
-						<figcaption class="tool__resume"><strong>Stylus</strong> es uno de los pre-procesadores <strong>CSS</strong> más populares en el mundo front-end. Es uno de mis favoritos y lo uso a menudo para optimizar mi código.</figcaption>
-					</figure>
-					<figure class="tool mongodb">
-						<img src="public/image/mongoDB.png" class="tool__image">
-						<figcaption class="tool__resume"><strong>MongoDB</strong> es una base de datos <em>no relacional</em> que nos permite tener información en un formato <strong>JSON</strong>, ideal para contruir aplicaciones rápidas, escalables y elegantes.</figcaption>
-					</figure>
-					<figure class="tool postgresql">
-						<img src="public/image/postgreSQL.png" class="tool__image">
-						<figcaption class="tool__resume"><strong>PostgreSQL</strong> es una base de datos <em>relacional</em> que de igual forma puede ser <em>no relacional</em> ya que trabaja con documentos. Nos permite tener información en formato <strong>JSON</strong> y <strong>JSONB</strong> y es ideal para contruir aplicaciones rápidas, robustas y elegantes.</figcaption>
-					</figure>
-					<figure class="tool node">
-						<img src="public/image/node.png" class="tool__image">
-						<figcaption class="tool__resume"><strong>NodeJS</strong> es la plataforma en la cual creamos el back-end de nuestra aplicación web. Es <strong>Javascript</strong> del lado del servidor. De esta forma el stack de desarrollo nos permitirá tener un desarrollo ágil, robusto y seguro!</figcaption>
-					</figure>
+				<p class="my-tools__description">A continuación, te mostraré las herramientas con las que trabajo actualmente y el nivel de acuerdo a mi experiencia.</p>
+
+				<div class="my-tools__container">
+					<div class="my-tools__tool">
+						<div class="my-tools__tool__name">
+							<i class="fab fa-html5" style="color:#f16529;"></i>
+							HTML
+						</div>
+						<div class="my-tools__tool__content-bar">
+							<div class="my-tools__tool__content-bar__bar" data-percent="100" data-color="#f16529">100%</div>
+						</div>
+					</div>
+
+					<div class="my-tools__tool">
+						<div class="my-tools__tool__name">
+							<i class="fab fa-css3" style="color:#0170ba;"></i>
+							CSS
+						</div>
+						<div class="my-tools__tool__content-bar">
+							<div class="my-tools__tool__content-bar__bar" data-percent="90" data-color="#0170ba">90%</div>
+						</div>
+					</div>
+
+					<div class="my-tools__tool">
+						<div class="my-tools__tool__name">
+							<i class="fab fa-js" style="color:#fce94f;"></i>
+							Javascript
+						</div>
+						<div class="my-tools__tool__content-bar">
+							<div class="my-tools__tool__content-bar__bar" data-percent="95" data-color="#fce94f">95%</div>
+						</div>
+					</div>
+
+					<div class="my-tools__tool">
+						<div class="my-tools__tool__name">
+							<i class="fab fa-sass" style="color:#c6538c;"></i>
+							Sass
+						</div>
+						<div class="my-tools__tool__content-bar">
+							<div class="my-tools__tool__content-bar__bar" data-percent="80" data-color="#c6538c">80%</div>
+						</div>
+					</div>
+
+					<div class="my-tools__tool">
+						<div class="my-tools__tool__name">
+							<i class="fab fa-node-js" style="color:#90c741;"></i>
+							NodeJS
+						</div>
+						<div class="my-tools__tool__content-bar">
+							<div class="my-tools__tool__content-bar__bar" data-percent="86" data-color="#90c741">86%</div>
+						</div>
+					</div>
+
+					<div class="my-tools__tool">
+						<div class="my-tools__tool__name">
+							<i class="fab fa-ember" style="color:#E04E39;"></i>
+							EmberJS
+						</div>
+						<div class="my-tools__tool__content-bar">
+							<div class="my-tools__tool__content-bar__bar" data-percent="90" data-color="#E04E39">90%</div>
+						</div>
+					</div>
+
+					<div class="my-tools__tool">
+						<div class="my-tools__tool__name">
+							<i class="fab fa-angular" style="color:#f44336;"></i>
+							Angular
+						</div>
+						<div class="my-tools__tool__content-bar">
+							<div class="my-tools__tool__content-bar__bar" data-percent="60" data-color="#f44336">60%</div>
+						</div>
+					</div>
+
+					<div class="my-tools__tool">
+						<div class="my-tools__tool__name">
+							<i class="fa fa-database" style="color:#565656;"></i>
+							MongoDB
+						</div>
+						<div class="my-tools__tool__content-bar">
+							<div class="my-tools__tool__content-bar__bar" data-percent="90" data-color="#565656">90%</div>
+						</div>
+					</div>
+
+					<div class="my-tools__tool">
+						<div class="my-tools__tool__name">
+							<i class="fa fa-database" style="color:#2196F3;"></i>
+							PostgreSQL
+						</div>
+						<div class="my-tools__tool__content-bar">
+							<div class="my-tools__tool__content-bar__bar" data-percent="90" data-color="#2196F3">90%</div>
+						</div>
+					</div>
 				</div>
+			</article>
 		</section>
 	</div>
 
