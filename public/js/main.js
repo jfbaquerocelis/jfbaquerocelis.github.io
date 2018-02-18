@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	let blanketBody = document.querySelector('.blanketBody');
 	let containerMenu = document.querySelector('.myself__container__menu');
 	let containerMySelf = document.querySelector('.container__myself');
+	let Bars = document.querySelectorAll('.my-tools__tool__content-bar__bar');
 
 	function ActiveMenuItems(instance, classActive, classMenu) {
 		if (!instance.classList.contains(classActive)) {
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				let article = document.querySelector(item.hash);
 
 				if (item.classList.contains(classActive))
-				item.classList.remove(classActive);
+					item.classList.remove(classActive);
 
 				if (article.classList.contains('article--show')) {
 					article.classList.remove('article--show');
@@ -45,12 +46,17 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	}
 
-
 	menuItems.forEach(function (m_item) {
 		m_item.addEventListener('click', function (e) {
 			e.preventDefault();
 
 			ActiveMenuItems(this, 'menu-list__link--active', '.menu-list__link');
+			// Para activar la opción de las barras en la sección de herramientas, vamos a decirle a javascript que se active la función cuando se encuentre en la ruta #my-tools
+			if (this.hash === "#my-tools") {
+				setTimeout(progressBar, 900);
+			} else {
+				Bars.forEach(bar => bar.style.width = '0');
+			}
 		});
 	});
 
@@ -69,6 +75,13 @@ document.addEventListener('DOMContentLoaded', function () {
 			}, 505);
 
 			ActiveMenuItems(this, 'myself__menu__link--active', '.myself__menu__link');
+
+			// Para activar la opción de las barras en la sección de herramientas, vamos a decirle a javascript que se active la función cuando se encuentre en la ruta #my-tools
+			if (this.hash === "#my-tools") {
+				setTimeout(progressBar, 900);
+			} else {
+				Bars.forEach(bar => bar.style.width = '0');
+			}
 		});
 	});
 
@@ -102,77 +115,20 @@ document.addEventListener('DOMContentLoaded', function () {
 		containerMenu.style.right = "-100%";
 		containerMenu.style.transition = "right .5s ease";
 	});
-});
 
-// $(document).ready(function () {
-// 	// En versión movil, cuando demos click en el icono de menu, mostramos los items de menú
-// 	$('.myself__menu__action, .myself__menu__action--float').click(function () {
-// 		$('.blanketBody').fadeIn('fast')
-// 		$('.myself__container__menu').animate({
-// 			right : 0
-// 		})
-// 	})
-// 	$('.blanketBody').on('click', function () {
-// 		$('.blanketBody').fadeOut('fast')
-// 		$('.myself__container__menu').animate({
-// 			right : '-100%'
-// 		})
-// 	})
-//
-// 	// Creamos los efectos necesarios para el menú de smartphones
-// 	$('.myself__menu__link').click(function (e) {
-// 		e.preventDefault()
-// 		var hash = this.hash
-//
-// 		// Creamos un each para quitar clase a cada item antes de pornerla al que se le está dando click
-// 		$('.myself__menu__link').each(function () {
-// 			$(this).removeClass('myself__menu__link--active')
-// 		})
-// 		$(this).addClass('myself__menu__link--active')
-//
-// 		$('.myself__menu__action--float').fadeOut('fast')
-//
-// 		$('.myself__container__menu').animate({
-// 			right : '-100%'
-// 		})
-// 		$('.blanketBody').fadeOut('slow')
-//
-// 		setTimeout(function () {
-// 			$('.container__articles').show()
-// 			$('body, html').animate({
-// 				scrollTop : $('.container__articles').offset().top
-// 			}, 1000)
-// 		}, 200)
-// 		setTimeout(function () {
-// 			show_hide('.welcome', hash)
-// 			show_hide('.portfolio', hash)
-// 			show_hide('.my-tools', hash)
-// 			$('.myself__menu__action--float').fadeIn('fast')
-// 			$('.container__myself').fadeOut('slow')
-// 		}, 530)
-// 	})
-//
-// 	// Cuando damos click en la imagen, mostramos la información principal del portafolio
-// 	$('.myself__container__menu .myself__logo').click(function () {
-//
-// 		$('.myself__container__menu').animate({
-// 			right : '-100%'
-// 		})
-// 		$('.blanketBody').fadeOut('slow')
-//
-// 		if ($('.container__myself').css('display') === 'none'){
-// 			setTimeout(function () {
-// 				$('.container__articles').hide()
-// 				$('body, html').animate({
-// 					scrollTop : $('.container__myself').offset().top
-// 				}, 1000)
-// 			}, 200)
-// 			setTimeout(function () {
-// 				$('.myself__menu__action--float').fadeOut('fast')
-// 				$('.container__myself').fadeIn('slow')
-// 			}, 530)
-// 		}
-//
-// 	})
-// })
-//
+	// Vamos a crear esta función para animar las barras de cada herramienta de desarrollo en la sección de Herramientas
+	function progressBar() {
+		let width = 1;
+		Bars.forEach(bar => {
+			setInterval(function () {
+				if (width >= bar.dataset.percent) {
+					clearInterval(this);
+				} else {
+					width++;
+					bar.style.backgroundColor = bar.dataset.color;
+					bar.style.width = `${width}%`;
+				}
+			}, 25)
+		})
+	}
+});

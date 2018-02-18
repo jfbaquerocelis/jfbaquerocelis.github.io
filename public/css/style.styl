@@ -1,6 +1,4 @@
 @import 'nib/vendor'
-@import 'vendor/flaticon.css'
-@import 'vendor/material-icons.css'
 
 vendor-prefixes = o ms webkit moz official
 
@@ -22,7 +20,6 @@ myBlack = #2e3436
 		left 0
 	to
 		left -100%
-
 
 /* UI Components */
 .article--hide
@@ -112,9 +109,7 @@ body
 				text-decoration none
 				font-size 1.6rem
 				transition all .3s ease
-				transform rotate3d(0, 0, 0, 0)
 				&:hover
-					transform rotate3d(0, 0, 1, -360deg)
 					color accentColor
 
 // Section Container Articles
@@ -151,15 +146,6 @@ body
 	&:hover
 		color accentColor
 		transition .5s ease all
-	&--active:after
-		content ""
-		opacity 1
-		position absolute
-		left 0
-		bottom 0
-		width 100%
-		height 3px
-		background-color accentColor
 	&--active .menu-list__item
 		color accentColor
 	.menu-list__item
@@ -200,16 +186,30 @@ body
 		justify-content center
 		flex 1 0 auto
 	&__work
+		border-left 4px solid accentColor
 		color myBlack
-		margin .1rem 0
+		text-align justify
+		margin 1rem 0
 		padding 0 .4rem
 		display flex
 		align-items center
 		text-decoration none
-		&:hover
-			text-decoration underline
+		&__info
+			&__description
+				margin 0
+				padding-bottom .5rem
+				border-bottom 1px solid #dedede
+				&:hover
+					text-decoration underline
+			&__tools
+				display flex
+				justify-content space-between
+				margin-top .5rem
+				&__role
+					font-style italic
+					color #565656
 		&__logo
-			height 5rem
+			height 6rem
 			margin-right 1rem
 	&__container-educations
 		display flex
@@ -242,51 +242,28 @@ body
 	flex-flow column nowrap
 	justify-content center
 	align-items center
-	&__blockquote
-		border-left 5px solid accentColor
-		align-self flex-start
-		padding .5rem .4rem
-		width 60%
-		margin 1rem auto
-		background-color rgba(124, 77, 255, .1)
-		font-size .95rem
-	&__container-tool
+	&__container
 		display flex
-		flex-flow row wrap
-		margin .5rem 0
-.tool
-	display flex
-	align-items center
-	margin .2rem .1rem
-	padding .2rem .4rem
-	flex 1 1 45%
-	font-size .9rem
-	&__image
-		width 4rem
-		padding-right .5rem
-	&__resume
-		width 80%
-.html
-	background-color rgba(241, 101, 41, .1)
-	border-bottom 2px solid #f16529
-.css
-	background-color rgba(1, 112, 186, .1)
-	border-bottom 2px solid #0170ba
-.javascript
-	background-color rgba(252, 233, 79, .1)
-	border-bottom 2px solid #fce94f
-.stylus
-	background-color rgba(46, 52, 54, .1)
-	border-bottom 2px solid #2e3436
-.mongodb
-	background-color rgba(78, 177, 63, .1)
-	border-bottom 2px solid #4eb13f
-.postgresql
-	background-color rgba(51, 103, 145, .1)
-	border-bottom 2px solid #336791
-.node
-	background-color rgba(144, 199, 65, .1)
-	border-bottom 2px solid #90c741
+		flex-wrap wrap
+		width 100%
+		justify-content space-between
+		margin-top 2rem
+	&__tool
+		display flex
+		flex-direction column
+		margin .5rem
+		font-size 1.5rem
+		width 45%
+		&__content-bar
+			background-color #dedede
+			border-radius 20px
+			width 100%
+			&__bar
+				font-size 1.15rem
+				text-align center
+				border-radius 20px
+				padding .2rem 0
+				color white
 
 // Section Control Actions
 .control-actions
@@ -359,8 +336,9 @@ body
 
 	// Section Control Actions
 	.control-actions
-		background-color #fff
-		color accentColor
+		background-color myBlack
+		font-size .5rem
+		color white
 		top 0
 		position absolute
 		width 100vw
@@ -370,7 +348,7 @@ body
 		&__home
 		&__menu
 			padding .6rem 2rem
-			font-size 2rem
+			font-size 1.5rem
 
 	// Section Container Master
 	.container-master
@@ -404,7 +382,7 @@ body
 		&__menu__action
 			display block
 			position absolute
-			font-size 2.5rem
+			font-size 2rem
 			right .8rem
 			top .5rem
 			z-index 1
@@ -441,8 +419,17 @@ body
 	// Section container portfolio
 	.portfolio
 		&__work
-			display block
-			box-sizing border-box
+			display inline-block
 			&__logo
-				margin 1rem .5rem 0
 				float left
+			&__info__tools
+				flex-direction column
+				align-items center
+				&__role
+					margin-bottom .6rem
+
+	// Section Tools
+	.my-tools__tool
+		width 100vw
+		&__content-bar
+			width 100%
