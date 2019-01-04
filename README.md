@@ -12,4 +12,4 @@ Aquí podrás encontrar todo con respecto a mi trabajo, si tienes algo que aport
 * [Twitter](http://twitter.com/noverflow)
 * [Facebook](http://facebook.com/noverflow)
 
-> Versión 1.0.3
+> Versión 1.0.4
