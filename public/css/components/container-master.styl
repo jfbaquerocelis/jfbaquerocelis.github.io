@@ -1,0 +1,24 @@
+// Section Container Master
+.container-master
+	display flex
+	& .container__myself
+		background url('../image/background.jpg') center/cover
+		color white
+		height 100vh
+		position relative
+		width 30%
+		z-index 2
+		&:after
+			background-color $black
+			content ""
+			height 100%
+			opacity .5
+			position absolute
+			top 0
+			width 100%
+			z-index -1
+	& .container__articles
+		display flex
+		flex-direction column
+		width 70%
+		height 100vh

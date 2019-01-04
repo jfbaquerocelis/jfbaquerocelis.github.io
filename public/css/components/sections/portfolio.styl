@@ -1,0 +1,54 @@
+// Section Portfolio
+.portfolio
+	flex-direction column
+	align-items center
+	&__blockquote
+		border-left 5px solid $accent
+		padding .5rem .4rem
+		width 60%
+		margin 1rem auto
+		background-color rgba(17, 157, 164, .1)
+		font-size .95rem
+	&__repos
+		color $black
+		&:hover
+			color $accent
+	&__container-works
+		display flex
+		flex-direction column
+		flex 1 0 auto
+		width 100%
+	// Nuevo diseño
+	&__works
+		display flex
+		overflow-y hidden
+		overflow-x auto
+		padding .5rem 0
+		&__item
+			display flex
+			flex-direction column
+			justify-content center
+			margin 0 1.5rem
+			&:hover
+				animation effectWorks .4s ease-in forwards
+			&__logo
+				width 4.6rem
+		&-descriptions
+			display flex
+			justify-content center
+			&__item
+				width 80%
+				display none
+				&__title__link
+					color $accent
+				&__resume
+					border-bottom 1px solid #dedede
+					margin 0
+					padding-bottom .5rem
+			&__tools
+				display flex
+				justify-content space-between
+				margin-top .5rem
+				&__role
+					font-style italic
+					color #565656

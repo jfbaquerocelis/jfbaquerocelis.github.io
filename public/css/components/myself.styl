@@ -1,0 +1,55 @@
+// Section Container Myself
+.myself
+	display flex
+	flex-flow column wrap
+	height 100%
+	&__container__avatar
+		margin 0
+		width 55%
+		^[0]__avatar
+			border 2px solid $accent
+			width @width
+			border-radius 50%
+			transition all .2s ease
+	&__container__menu
+	&__menu__action
+		display none
+	&__profile
+		display flex
+		flex-flow column wrap
+		align-items center
+		justify-content center
+		flex 1 1 auto
+		text-align center
+	&__container-logo
+		margin 0
+		width 70%
+		^[0]__logo
+			width 100%
+	&__fullname
+		margin 1rem 0 0
+		font-weight 400
+	&__description
+		margin 0 0 .5rem
+	&__footer
+		display flex
+		flex-flow row wrap
+		justify-content space-around
+		&__by
+			text-align center
+			font-size .85rem
+			letter-spacing 1px
+			& p
+				margin .4rem 0
+		&__social
+			display flex
+			justify-content space-around
+			align-items center
+			& .myself__footer__link
+				padding 0 .5rem
+				color white
+				text-decoration none
+				font-size 1.6rem
+				transition all .3s ease
+				&:hover
+					color $accent
