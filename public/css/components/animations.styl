@@ -1,0 +1,70 @@
+/*Animations*/
+@keyframes showUp
+	from
+		top 100%
+	to
+		top 0
+
+@keyframes hideOut
+	from
+		left 0
+	to
+		left -100%
+
+// Esta animación se ejecuta cuando se hace hover sobre los proyectos que se han realizado en el portafolio
+@keyframes effectWorks
+	0%
+		transform scale3d(1, 1, 1)
+		filter grayscale(100%)
+	50%
+		transform scale3d(1.1, 1.1, 1.1)
+		filter grayscale(50%)
+	100%
+		transform scale3d(1, 1, 1)
+		filter grayscale(0%)
+
+// Esta animación se ejecuta cuando se hace clickea otro item
+@keyframes effectWorksInvert
+	0%
+		transform scale3d(1, 1, 1)
+		filter grayscale(0%)
+	50%
+		transform scale3d(1.1, 1.1, 1.1)
+		filter grayscale(50%)
+	100%
+		transform scale3d(1, 1, 1)
+		filter grayscale(100%)
+
+// Esta animación corresponde al texto de cada item al momento de seleccionarse
+@keyframes portfolioOut
+	0%
+		transform scale3d(1, 1, 1)
+		opacity 1
+	25%
+		transform scale3d(1.1, 1.1, 1.1)
+		opacity .7
+	50%
+		transform scale3d(.8, .8, .8)
+		opacity .5
+	75%
+		transform scale3d(.5, .5, .5)
+		opacity .2
+	100%
+		transform scale3d(0, 0, 0)
+		opacity 0
+@keyframes portfolioIn
+	0%
+		transform scale3d(0, 0, 0)
+		opacity 0
+	25%
+		transform scale3d(.5, .5, .5)
+		opacity .2
+	50%
+		transform scale3d(.8, .8, .8)
+		opacity .5
+	75%
+		transform scale3d(1.1, 1.1, 1.1)
+		opacity .7
+	100%
+		transform scale3d(1, 1, 1)
+		opacity 1

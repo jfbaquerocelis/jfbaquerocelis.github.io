@@ -5,8 +5,7 @@
 	<meta name="description" content="John Fredy Baquero Celis - Ingeniero de Sistemas. Desarrollador Web Profesional" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link type="image/x-icon" href="public/image/codeico.png" rel="icon" />
-
-	<link href='https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
@@ -17,7 +16,6 @@
 	<div class="blanketBody"></div>
 
 	<div class="control-actions">
-		<span class="control-actions__home"><i class="fa fa-home"></i></span>
 		<span class="control-actions__menu"><i class="fa fa-bars"></i></span>
 	</div>
 
@@ -25,6 +23,9 @@
 		<!-- Éste es el menú para dispositivos móviles y tablet's -->
 		<div class="myself__container__menu">
 			<ul class="myself__menu">
+				<a href="#home" class="myself__menu__link">
+					<li class="myself__menu__item"><i class="fa fa-home"></i>Inicio</li>
+				</a>
 				<a href="#welcome" class="myself__menu__link">
 					<li class="myself__menu__item"><i class="fa fa-star"></i>Acerca de Mi</li>
 				</a>
@@ -48,12 +49,13 @@
 					</figure>
 					<h1 class="myself__fullname">John Fredy Baquero Celis</h1>
 					<p class="myself__description">Ingeniero de Sistemas - Desarrollador Web</p>
+					<p class="myself__description">CEO en <a href="http://www.isd-group.co" class="jf-links myself__community" target="_blank">ISD GROUP</a></p>
 					<p class="myself__description">Organizador de <a href="http://meetup.com/monteriajs" class="jf-links myself__community" target="_blank">MonteríaJS</a></p>
 				</div>
 				<div class="myself__footer">
 					<div class="myself__footer__by">
-						<p>Made with <i class="fa fa-heart" style="color:#e75353;"></i> by <a href="https://twitter.com/noverflow" class="jf-links myself__footer__created">jfbaquerocelis</a></p>
-						<p>© 2018</p>
+						<p>Hecho con <i class="fa fa-heart" style="color:#e75353;"></i> por <a href="https://twitter.com/noverflow" class="jf-links myself__footer__created">jfbaquerocelis</a></p>
+						<p>© 2019</p>
 					</div>
 					<div class="myself__footer__social">
 						<a class="myself__footer__link" href="https://co.linkedin.com/in/john-baquero-celis-68131a120" target="_blank">
@@ -99,15 +101,42 @@
 			<article class="portfolio" id="portfolio">
 				<h2 class="portfolio__title">Mi Portafolio</h2>
 				<p class="portfolio__description">En esta sección vas a encontrar algunos proyectos en los que he trabajado, también algunos talleres, pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
-				<blockquote class="portfolio__blockquote">Actualmente uso <a target="_blank" class="portfolio__repos" href="https://github.com/jfbaquerocelis">Github</a> y <a target="_blank" class="portfolio__repos" href="https://bitbucket.org/noverflow">Bitbucket</a> para guardar y trabajar los proyectos que desarrollo a través del sistema de control de versiones <strong>GIT</strong>.</blockquote>
+				<blockquote class="portfolio__blockquote">Para ver en detalle la información de los trabajos que he realizado y en los que he participado, puedes seleccionarlos dando click en el logo respectivo.</blockquote>
 
 				<div class="portfolio__container-works">
-					<a href="https://teletaxi.co" class="portfolio__work" target="_blank">
-						<img src="public/image/teletaxi.png" class="portfolio__work__logo">
-						<div class="portfolio__work__info">
-							<p class="portfolio__work__info__description"><strong>Taxadministrador</strong> es un sistema de gestión de flotas (taxis) el cual cuenta con varias funcionalidades que ayudan a la empresa a generar tarjetas de control a partir de la información del conductor y del vehículo, notificar sobre vencimientos de documentos importantes, generar reportes, entre otras funcionalidades.</p>
-							<div class="portfolio__work__info__tools">
-								<div class="portfolio__work__info__tools__role">Desarrollador Javascript Full-Stack</div>
+					<div class="portfolio__works">
+						<a href="#taxadministrador" class="portfolio__works__item portfolio-item--out">
+							<img src="public/image/taxadministrador.png" class="portfolio__works__item__logo">
+						</a>
+						<a href="#busser" class="portfolio__works__item portfolio-item--out">
+							<img src="public/image/busser.png" class="portfolio__works__item__logo">
+						</a>
+						<a href="#yipgo" class="portfolio__works__item portfolio-item--out">
+							<img src="public/image/yipgo.png" class="portfolio__works__item__logo">
+						</a>
+						<a href="#dashboard" class="portfolio__works__item portfolio-item--out">
+							<img src="public/image/dashboard.png" class="portfolio__works__item__logo">
+						</a>
+						<a href="#vrm" class="portfolio__works__item portfolio-item--out">
+							<img src="public/image/vrm.png" class="portfolio__works__item__logo">
+						</a>
+						<a href="#mipie" class="portfolio__works__item portfolio-item--out">
+							<img src="public/image/mipie.png" class="portfolio__works__item__logo">
+						</a>
+					</div>
+
+					<section class="portfolio__works-descriptions">
+						<!-- TAXADMINISTRADOR -->
+						<article class="portfolio__works-descriptions__item portfolio--out" id="taxadministrador">
+							<h3 class="portfolio__works-descriptions__item__title">
+								TAXADMINISTRADOR
+								<a href="http://66.70.138.23/" target="_blank" class="portfolio__works-descriptions__item__title__link"><i class="fa fa-link"></i></a>
+							</h3>
+							<p class="portfolio__works-descriptions__item__resume"><strong>Taxadministrador</strong> es un sistema generador de tarjetas de control el cual cuenta con varias funcionalidades
+							que ayudan a la empresa a gestionar la información de los vehículos vinculados a la empresa,
+							notificar sobre vencimientos de documentos importantes, generar reportes, entre otras funcionalidades.</p>
+							<div class="portfolio__works-descriptions__tools">
+								<div class="portfolio__works-descriptions__tools__role">Desarrollador Javascript Full-Stack</div>
 								<div>
 									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
 									<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
@@ -116,51 +145,64 @@
 									<i class="fab fa-js fa-lg" style="color:#ffeb00;"></i>
 								</div>
 							</div>
-						</div>
-					</a>
-					<a href="https://play.google.com/store/apps/details?id=com.metrosinu.busser.katana&hl=es" class="portfolio__work" target="_blank">
-						<img src="public/image/busser.png" class="portfolio__work__logo">
-						<div class="portfolio__work__info">
-							<p class="portfolio__work__info__description"><strong>Busser</strong> es una aplicación android enfocada a la movilidad a través del servicio de transporte público que permite a los usuarios observar buses en tiempo real, información básica, saber qué ruta es la óptima para movilizarse de un punto a otro, etc. En éste proyecto se desarrolló un <strong>API</strong> en <strong>JSONAPI</strong> y se crearon <strong>namespaces</strong> para el envío de información en tiempo real a través de <strong>WebSockets</strong>.</p>
-							<div class="portfolio__work__info__tools">
-								<div class="portfolio__work__info__tools__role">Desarrollador Back-end</div>
+						</article>
+
+						<!-- BUSSER -->
+						<article class="portfolio__works-descriptions__item portfolio--out" id="busser">
+							<h3 class="portfolio__works-descriptions__item__title">
+								BUSSER
+								<a href="https://play.google.com/store/apps/details?id=com.metrosinu.busser.katana&hl=es" target="_blank" class="portfolio__works-descriptions__item__title__link"><i class="fa fa-link"></i></a>
+							</h3>
+							<p class="portfolio__works-descriptions__item__resume"><strong>Busser</strong> es una aplicación móvil enfocada a la movilidad a través del servicio de transporte público
+							que permite a los usuarios observar buses en tiempo real, información básica, saber qué ruta es la óptima para
+							movilizarse de un punto a otro, etc. En éste proyecto se desarrolló un <strong>API</strong> basada en <strong>JSONAPI</strong>
+							y a través de <strong>WebSockets</strong> se crearon <strong>namespaces</strong> para el envío de información en tiempo real.</p>
+							<div class="portfolio__works-descriptions__tools">
+								<div class="portfolio__works-descriptions__tools__role">Desarrollador Back-end</div>
 								<div>
 									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
 								</div>
 							</div>
-						</div>
-					</a>
-					<a href="#" class="portfolio__work" target="_blank">
-						<img src="public/image/yipgo.png" class="portfolio__work__logo">
-						<div class="portfolio__work__info">
-							<p class="portfolio__work__info__description"><strong>YipGO</strong> es una aplicación android enfocada al proyecto <strong>Última Milla</strong> de la empresa <strong>Metrosinú</strong> que permite a los operadores del servicio recibir solicitudes en tiempo real de los usuarios que requieran ser movilizados hacia el paradero más cercano.</p>
-							<div class="portfolio__work__info__tools">
-								<div class="portfolio__work__info__tools__role">Desarrollador Back-end</div>
+						</article>
+
+						<!-- YIPGO -->
+						<article class="portfolio__works-descriptions__item portfolio--out" id="yipgo">
+							<h3 class="portfolio__works-descriptions__item__title">
+								YIPGO
+							</h3>
+							<p class="portfolio__works-descriptions__item__resume"><strong>YipGO</strong> es una aplicación android enfocada al proyecto <strong>Última Milla</strong> de la empresa <strong>Metrosinú</strong> que permite a los operadores del servicio recibir solicitudes en tiempo real de los usuarios que requieran ser movilizados hacia el paradero más cercano.</p>
+							<div class="portfolio__works-descriptions__tools">
+								<div class="portfolio__works-descriptions__tools__role">Desarrollador Back-end</div>
 								<div>
 									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
 								</div>
 							</div>
-						</div>
-					</a>
-					<a href="https://192.95.33.90/dashboard" class="portfolio__work" target="_blank">
-						<img src="public/image/dashboard.png" class="portfolio__work__logo">
-						<div class="portfolio__work__info">
-							<p class="portfolio__work__info__description"><strong>Dashboard Busser</strong> es una aplicación web que permite manejar la información principal de las aplicaciones móviles <strong>Busser</strong> y <strong>YipGO</strong>. Permite al usuario crear nuevas rutas, paraderos, trayectos y observar métricas que ayudan a observar mejor la información.</p>
-							<div class="portfolio__work__info__tools">
-								<div class="portfolio__work__info__tools__role">Desarrollador Front-end</div>
+						</article>
+
+						<!-- BUSSER DASHBOARD -->
+						<article class="portfolio__works-descriptions__item portfolio--out" id="dashboard">
+							<h3 class="portfolio__works-descriptions__item__title">
+								BUSSER DASHBOARD
+								<a href="http://192.95.33.90/dashboard" target="_blank" class="portfolio__works-descriptions__item__title__link"><i class="fa fa-link"></i></a>
+							</h3>
+							<p class="portfolio__works-descriptions__item__resume"><strong>Dashboard Busser</strong> es una aplicación web que permite manejar la información principal de las aplicaciones móviles <strong>Busser</strong> y <strong>YipGO</strong>. Permite al usuario crear nuevas rutas, paraderos, trayectos y observar métricas que ayudan a manejar la información.</p>
+							<div class="portfolio__works-descriptions__tools">
+								<div class="portfolio__works-descriptions__tools__role">Desarrollador Front-end</div>
 								<div>
 									<i class="fab fa-ember fa-lg" style="color:#E04E39;"></i>
 									<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
 								</div>
 							</div>
-						</div>
-					</a>
-					<a href="#" class="portfolio__work" target="_blank">
-						<img src="public/image/vrm.png" class="portfolio__work__logo">
-						<div class="portfolio__work__info">
-							<p class="portfolio__work__info__description"><strong>VRM</strong> es una aplicación web responsiva que se encarga de recolectar reportes y realizar métricas a partir de sus atributos. Ésta aplicación fue realizada para el área de mantenimiento de la empresa <strong>Metrosinú</strong>.</p>
-							<div class="portfolio__work__info__tools">
-								<div class="portfolio__work__info__tools__role">Desarrollador Javascript Full-Stack</div>
+						</article>
+
+						<!-- VRM -->
+						<article class="portfolio__works-descriptions__item portfolio--out" id="vrm">
+							<h3 class="portfolio__works-descriptions__item__title">
+								VRM
+							</h3>
+							<p class="portfolio__works-descriptions__item__resume"><strong>VRM</strong> es una aplicación web responsiva que se encarga de recolectar reportes, manejar sus estados y realizar métricas a partir de ellos que buscan mejorar la calidad de los procesos. Ésta aplicación fue realizada para el área de mantenimiento de la empresa <strong>Metrosinú</strong>.</p>
+							<div class="portfolio__works-descriptions__tools">
+								<div class="portfolio__works-descriptions__tools__role">Desarrollador Javascript Full-Stack</div>
 								<div>
 									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
 									<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
@@ -169,44 +211,26 @@
 									<i class="fab fa-js fa-lg" style="color:#ffeb00;"></i>
 								</div>
 							</div>
-						</div>
-					</a>
-					<a href="https://mipie.funcentra.org" class="portfolio__work" target="_blank">
-						<img src="public/image/mipie.png" class="portfolio__work__logo">
-						<div class="portfolio__work__info">
-							<p class="portfolio__work__info__description"><strong>Mi Pie</strong> es una plataforma para la admisión y control de pacientes que padecen diabetes, además permite calcular el grupo de riesgo en que el paciente se encuentra y programar próximas citas a partir de su condición. Ésta aplicación fue realizada para la empresa <strong>Funcentra</strong>.</p>
-							<div class="portfolio__work__info__tools">
-								<div class="portfolio__work__info__tools__role">Desarrollador Javascript Full-Stack</div>
+						</article>
+
+						<!-- MI PIE -->
+						<article class="portfolio__works-descriptions__item portfolio--out" id="mipie">
+							<h3 class="portfolio__works-descriptions__item__title">
+								MI PIE
+								<a href="https://mipie.funcentra.org" target="_blank" class="portfolio__works-descriptions__item__title__link"><i class="fa fa-link"></i></a>
+							</h3>
+							<p class="portfolio__works-descriptions__item__resume"><strong>Mi Pie</strong> es una plataforma para la admisión y control de pacientes que padecen diabetes, además permite calcular el grupo de riesgo en que el paciente se encuentra y programar próximas citas a partir de su condición. En este proyecto se realizó un <strong>API</strong> basada en <strong>JSONAPI</strong> para crear los endpoints que atiende a la aplicación web construida con <strong>EmberJS</strong>.</p>
+							<div class="portfolio__works-descriptions__tools">
+								<div class="portfolio__works-descriptions__tools__role">Desarrollador Javascript Full-Stack</div>
 								<div>
 									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
 									<i class="fab fa-ember fa-lg" style="color:#E04E39;"></i>
 									<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
 								</div>
 							</div>
-						</div>
-					</a>
+						</article>
+					</section>
 				</div>
-
-				<h2 class="portfolio__title">Mis Estudios</h2>
-				<div class="portfolio__container-educations">
-					<div class="portfolio__education">
-						<img class="portfolio__education__image" src="public/image/unicordoba.png">
-						<a href="http://www.unicordoba.edu.co/" target="_blank" class="portfolio__education__info">
-							<p>Universidad de Córdoba</p>
-							<p>Ingeniería de Sistemas</p>
-							<p>2015</p>
-						</a>
-					</div>
-					<div class="portfolio__education">
-						<img class="portfolio__education__image" src="public/image/platzi.png">
-						<a href="https://platzi.com/@noverflow/" target="_blank" class="portfolio__education__info">
-							<p>Platzi.com</p>
-							<p>Mi Perfil</p>
-							<p>2015</p>
-						</a>
-					</div>
-				</div>
-
 			</article>
 
 			<article class="my-tools" id="my-tools">
@@ -236,11 +260,11 @@
 
 					<div class="my-tools__tool">
 						<div class="my-tools__tool__name">
-							<i class="fab fa-js" style="color:#fce94f;"></i>
+							<i class="fab fa-js" style="color:#ffe629;"></i>
 							Javascript
 						</div>
 						<div class="my-tools__tool__content-bar">
-							<div class="my-tools__tool__content-bar__bar" data-percent="95" data-color="#fce94f">95%</div>
+							<div class="my-tools__tool__content-bar__bar" data-percent="95" data-color="#ffe629">95%</div>
 						</div>
 					</div>
 
@@ -276,11 +300,21 @@
 
 					<div class="my-tools__tool">
 						<div class="my-tools__tool__name">
-							<i class="fab fa-angular" style="color:#f44336;"></i>
-							Angular
+							<i class="fab fa-git" style="color:#f64e27;"></i>
+							Git
 						</div>
 						<div class="my-tools__tool__content-bar">
-							<div class="my-tools__tool__content-bar__bar" data-percent="60" data-color="#f44336">60%</div>
+							<div class="my-tools__tool__content-bar__bar" data-percent="90" data-color="#f64e27">90%</div>
+						</div>
+					</div>
+
+					<div class="my-tools__tool">
+						<div class="my-tools__tool__name">
+							<i class="fab fa-vuejs" style="color:#4fc08d;"></i>
+							VueJS
+						</div>
+						<div class="my-tools__tool__content-bar">
+							<div class="my-tools__tool__content-bar__bar" data-percent="60" data-color="#4fc08d">60%</div>
 						</div>
 					</div>
 
