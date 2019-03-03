@@ -1,5 +1,4 @@
-# Hola! Bienvenido a mi portafolio :blush:
-Aquí podrás encontrar todo con respecto a mi trabajo, si tienes algo que aportar puedes escribirme a mis redes sociales :+1:.
+# Bienvenido a mi portafolio :blush:
 
 # Redes Sociales
 ```javascript
@@ -9,7 +8,4 @@ Aquí podrás encontrar todo con respecto a mi trabajo, si tienes algo que aport
   }
 ```
 
-* [Twitter](http://twitter.com/noverflow)
-* [Facebook](http://facebook.com/noverflow)
-
-> Versión 1.0.4
+> Versión 1.0.5
