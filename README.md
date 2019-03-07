@@ -1,15 +1,13 @@
-# Hola! Bienvenido a mi portafolio :blush:
-Aquí podrás encontrar todo con respecto a mi trabajo, si tienes algo que aportar puedes escribirme a mis redes sociales :+1:.
+# ¡Hola! Este es mi portafolio :blush:
+
+En él podrás encontrar todo lo relacionado con lo que hago a través de las herramientas que uso.
 
 # Redes Sociales
 ```javascript
-  const social_networks = {
-      'Twitter': '@noverflow',
-      'Gmail': 'jfbaquerocelis@gmail.com'
+  const socialNetworks = {
+    'Twitter': '@noverflow',
+    'Gmail': 'jfbaquerocelis@gmail.com'
   }
 ```
 
-* [Twitter](http://twitter.com/noverflow)
-* [Facebook](http://facebook.com/noverflow)
-
-> Versión 1.0.4
+> Versión 1.0.5

@@ -1,8 +1,8 @@
+'use strict'
+
 document.addEventListener('DOMContentLoaded', function () {
 	// Vamos a indicar al usuario que tiene la orientación horizontal, rotar su celular para una mejor experiencia de usuario
-	if (window.height < 500) {
-		alert('Recomendación: Rota tu smartphone para una mejor experiencia.')
-	}
+	if (window.height < 500) alert('Recomendación: Rota tu smartphone para una mejor experiencia.')
 
 	let menuItems = document.querySelectorAll('.menu-list__link')
 	let mySelfMenuItems = document.querySelectorAll('.myself__menu__link')
@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	let blanketBody = document.querySelector('.blanketBody')
 	let containerMenu = document.querySelector('.myself__container__menu')
 	let containerMySelf = document.querySelector('.container__myself')
-	let Bars = document.querySelectorAll('.my-tools__tool__content-bar__bar')
 	let portfolioItems = document.querySelectorAll('.portfolio__works__item')
 	let works = document.querySelectorAll('.portfolio__works-descriptions__item')
 
@@ -54,12 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			e.preventDefault()
 
 			ActiveMenuItems(this, 'menu-list__link--active', '.menu-list__link')
-			// Para activar la opción de las barras en la sección de herramientas, vamos a decirle a javascript que se active la función cuando se encuentre en la ruta #my-tools
-			if (this.hash === "#my-tools") {
-				setTimeout(progressBar, 900)
-			} else {
-				Bars.forEach(bar => bar.style.width = '0')
-			}
 		})
 	})
 
@@ -92,13 +85,6 @@ document.addEventListener('DOMContentLoaded', function () {
 				}, 505)
 
 				ActiveMenuItems(this, 'myself__menu__link--active', '.myself__menu__link')
-
-				// Para activar la opción de las barras en la sección de herramientas, vamos a decirle a javascript que se active la función cuando se encuentre en la ruta #my-tools
-				if (this.hash === "#my-tools") {
-					setTimeout(progressBar, 900)
-				} else {
-					Bars.forEach(bar => bar.style.width = '0')
-				}
 			}
 		})
 	})
@@ -122,22 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		containerMenu.style.left = "-100%"
 		containerMenu.style.transition = "left .5s ease"
 	})
-
-	// Vamos a crear esta función para animar las barras de cada herramienta de desarrollo en la sección de Herramientas
-	function progressBar() {
-		let width = 1
-		Bars.forEach(bar => {
-			setInterval(function () {
-				if (width >= bar.dataset.percent) {
-					clearInterval(this)
-				} else {
-					width++
-					bar.style.backgroundColor = bar.dataset.color
-					bar.style.width = `${width}%`
-				}
-			}, 25)
-		})
-	}
 
 	// Vamos a recorrer el arreglo de items de trabajos que tenemos en el portafolio para que cuando se de click a alguno de estos items se muestre la información correspondiente
 	portfolioItems.forEach(item => {
@@ -175,4 +145,26 @@ document.addEventListener('DOMContentLoaded', function () {
 			})
 		})
 	})
+})
+
+// Agregamos el evento de carga de window para esconder el loader una vez se cargue toda la página
+window.addEventListener('load', e => {
+	let loader = document.querySelector('.loader')
+	let message = document.querySelector('.loader__message')
+
+	setTimeout(function () {
+		message.textContent = '¡Portafolio Listo!'
+		clearTimeout(this)
+	}, 1500)
+
+	setTimeout(function () {
+		loader.style.transition = 'opacity .8s ease-out'
+		loader.style.opacity = '0'
+		clearTimeout(this)
+	}, 1700)
+
+	setTimeout(function () {
+		loader.style.display = 'none'
+		clearTimeout(this)
+	}, 2500)
 })
