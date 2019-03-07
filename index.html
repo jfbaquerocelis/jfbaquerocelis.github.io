@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link type="image/x-icon" href="public/image/codeico.png" rel="icon" />
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	 crossorigin="anonymous">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
 	<link rel="stylesheet" href="public/css/style.css" />
@@ -22,12 +23,22 @@
 	<div class="blanketBody"></div>
 
 	<div class="control-actions">
-		<span class="control-actions__menu"><i class="fa fa-bars"></i></span>
+		<span class="control-actions__menu"><i class="fas fa-hamburger"></i></span>
 	</div>
 
 	<div class="container-master">
 		<!-- Éste es el menú para dispositivos móviles y tablet's -->
 		<div class="myself__container__menu">
+			<div class="myself__data">
+				<figure class="myself__data__container-avatar">
+					<img src="public/image/john.jpg" class="myself__data__avatar">
+				</figure>
+				<div class="myself__data__info">
+					<h4 class="myself__data__info__fullname">John Baquero Celis</h4>
+					<p class="myself__data__info__role">Desarrollador Javascript</p>
+				</div>
+			</div>
+
 			<ul class="myself__menu">
 				<a href="#home" class="myself__menu__link">
 					<li class="myself__menu__item"><i class="fa fa-home"></i>Inicio</li>
@@ -41,12 +52,18 @@
 				<a href="#my-tools" class="myself__menu__link">
 					<li class="myself__menu__item"><i class="fa fa-code"></i>Mis Herramientas</li>
 				</a>
+				<a href="#medium" class="myself__menu__link">
+					<li class="myself__menu__item">
+						<i class="fab fa-medium"></i>Medium
+						<span class="myself__menu__item__soon">¡Pronto!</span>
+					</li>
+				</a>
 			</ul>
 		</div>
 
 		<!-- Esta es la sección principal, donde se muestra la información básica -->
 		<section class="container__myself">
-			<span class="myself__menu__action"><i class="fa fa-bars"></i></span>
+			<span class="myself__menu__action"><i class="fas fa-hamburger"></i></span>
 
 			<article class="myself">
 				<div class="myself__profile">

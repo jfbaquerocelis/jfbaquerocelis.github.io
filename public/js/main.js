@@ -1,4 +1,5 @@
 'use strict'
+
 document.addEventListener('DOMContentLoaded', function () {
 	// Vamos a indicar al usuario que tiene la orientación horizontal, rotar su celular para una mejor experiencia de usuario
 	if (window.height < 500) alert('Recomendación: Rota tu smartphone para una mejor experiencia.')
