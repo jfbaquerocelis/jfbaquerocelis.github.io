@@ -6,22 +6,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link type="image/x-icon" href="public/image/codeico.png" rel="icon" />
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	 crossorigin="anonymous">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
 	<link rel="stylesheet" href="public/css/style.css" />
 	<title>jfbaquerocelis - Desarrollador Web</title>
 </head>
 <body>
+	<div class="loader">
+		<div class="loader__container">
+			<div class="loader__hexagon"></div>
+			<p class="loader__message">Cargando portafolio...</p>
+		</div>
+	</div>
 	<div class="blanketBody"></div>
 
 	<div class="control-actions">
-		<span class="control-actions__menu"><i class="fa fa-bars"></i></span>
+		<span class="control-actions__menu"><i class="fas fa-hamburger"></i></span>
 	</div>
 
 	<div class="container-master">
 		<!-- Éste es el menú para dispositivos móviles y tablet's -->
 		<div class="myself__container__menu">
+			<div class="myself__data">
+				<figure class="myself__data__container-avatar">
+					<img src="public/image/john.jpg" class="myself__data__avatar">
+				</figure>
+				<div class="myself__data__info">
+					<h4 class="myself__data__info__fullname">John Baquero Celis</h4>
+					<p class="myself__data__info__role">Desarrollador Javascript</p>
+				</div>
+			</div>
+
 			<ul class="myself__menu">
 				<a href="#home" class="myself__menu__link">
 					<li class="myself__menu__item"><i class="fa fa-home"></i>Inicio</li>
@@ -35,12 +52,18 @@
 				<a href="#my-tools" class="myself__menu__link">
 					<li class="myself__menu__item"><i class="fa fa-code"></i>Mis Herramientas</li>
 				</a>
+				<a href="#medium" class="myself__menu__link">
+					<li class="myself__menu__item">
+						<i class="fab fa-medium"></i>Medium
+						<span class="myself__menu__item__soon">¡Pronto!</span>
+					</li>
+				</a>
 			</ul>
 		</div>
 
 		<!-- Esta es la sección principal, donde se muestra la información básica -->
 		<section class="container__myself">
-			<span class="myself__menu__action"><i class="fa fa-bars"></i></span>
+			<span class="myself__menu__action"><i class="fas fa-hamburger"></i></span>
 
 			<article class="myself">
 				<div class="myself__profile">
@@ -50,11 +73,11 @@
 					<h1 class="myself__fullname">John Fredy Baquero Celis</h1>
 					<p class="myself__description">Ingeniero de Sistemas - Desarrollador Web</p>
 					<p class="myself__description">CEO en <a href="http://www.isd-group.co" class="jf-links myself__community" target="_blank">ISD GROUP</a></p>
-					<p class="myself__description">Organizador de <a href="http://meetup.com/monteriajs" class="jf-links myself__community" target="_blank">MonteríaJS</a></p>
+					<p class="myself__description">Organizador en <a href="http://meetup.com/monteriajs" class="jf-links myself__community" target="_blank">MonteríaJS</a></p>
 				</div>
 				<div class="myself__footer">
 					<div class="myself__footer__by">
-						<p>Hecho con <i class="fa fa-heart" style="color:#e75353;"></i> por <a href="https://twitter.com/noverflow" class="jf-links myself__footer__created">jfbaquerocelis</a></p>
+						<p>Hecho con <i class="fa fa-heart" style="color:#e75353;"></i></p>
 						<p>© 2019</p>
 					</div>
 					<div class="myself__footer__social">
@@ -88,20 +111,26 @@
 					<a href="#my-tools" class="menu-list__link">
 						<li class="menu-list__item"><i class="fa fa-code"></i>Mis Herramientas</li>
 					</a>
+					<a href="#medium" class="menu-list__link">
+						<li class="menu-list__item">
+							<i class="fab fa-medium"></i>Medium
+							<span class="menu-list__item__soon">¡Pronto!</span>
+						</li>
+					</a>
 				</ul>
 			</nav>
 
 			<article class="welcome article--show" id="welcome">
-				<h2 class="welcome__title">¡Hola! Bienvenido a mi portafolio.</h2>
-				<p class="welcome__description">Mi nombre es <strong>John</strong>, soy desarrollador web y vivo en la ciudad de Montería. Mi lenguaje de programación favorito es <strong>javascript</strong>, con él he aprendido muchas cosas y con él desarrollo actualmente. Mi objetivo es usarlo como herramienta para crear soluciones tecnológicas que puedan contribuir al desarrollo de la sociedad. <br /> Me gusta compartir lo que sé con otras personas y que esas personas compartan esa misma filosofía. <br /><br />Hago parte de una gran comunidad llamada <a class="welcome__community" target="_blank" href="http://colombia-dev.org">Colombia.dev</a> y soy organizador de la comunidad <a class="welcome__community" target="_blank" href="http://www.meetup.com/monteriajs">MonteríaJS</a>, así que eres bienvenid@!</p>
-				<h2 class="welcome__title">¿Necesitas una aplicación, sitio web o algo similar?</h2>
-				<p class="welcome__description">Has llegado al lugar indicado. Actualmente hago parte de un excelente grupo de trabajo, dispuesto a solucionar tu problema desarrollando software a la medida. <br> <br> Puedes contactarme para tomarnos un café y así hablar de tu idea. Podrás encontrar mis redes sociales en la página principal o si deseas, puedes escribirme a mi correo <a class="welcome__community" href="https://mail.google.com/mail/?view=cm&fs=1&to=jfbaquerocelis@gmail.com" target="_blank">jfbaquerocelis@gmail.com</a>. <br><br> En caso tal de que tengas algún comentario con respecto a mi portafolio, por favor, házmelo saber.</p>
+				<h2 class="welcome__title">¡Hola! Este es mi portafolio</h2>
+				<p class="welcome__description">Mi nombre es <strong>John</strong>, soy desarrollador web y vivo en la ciudad de Montería. Mi lenguaje de programación favorito es <strong>javascript</strong>, con él he aprendido muchas cosas y con él desarrollo actualmente. Mi objetivo es usarlo como herramienta para crear soluciones tecnológicas a la medida de cualquier necesidad. <br /> Estoy convencido de que el trabajo en equipo es la mejor forma de avanzar en cualquier ambito, trabajo o proyecto. <br /><br />Hago parte de una gran comunidad llamada <a class="welcome__community" target="_blank" href="http://colombia-dev.org">Colombia.dev</a> y soy organizador en la comunidad <a class="welcome__community" target="_blank" href="http://www.meetup.com/monteriajs">MonteríaJS</a>, sobra decir que tienes las puertas abiertas para hacer parte de ellas.</p>
+				<h2 class="welcome__title">¿Necesitas una aplicación web o algo similar?</h2>
+				<p class="welcome__description">Has llegado al lugar indicado. Actualmente hago parte de un excelente grupo de trabajo, dispuesto a solucionar tu problema. <br> <br> Puedes contactarme para tomarnos un café y así hablar de tu idea. Podrás encontrar mis redes sociales en el panel principal o si deseas, puedes escribirme a mi correo <a class="welcome__community" href="https://mail.google.com/mail/?view=cm&fs=1&to=jfbaquerocelis@gmail.com" target="_blank">jfbaquerocelis@gmail.com</a>. <br><br> Si tienes algún comentario con respecto a mi portafolio, por favor házmelo saber <a class="welcome__community" href="https://github.com/jfbaquerocelis/Portafolio/issues" target="_blank">aquí</a>.</p>
 			</article>
 
 			<article class="portfolio" id="portfolio">
 				<h2 class="portfolio__title">Mi Portafolio</h2>
-				<p class="portfolio__description">En esta sección vas a encontrar algunos proyectos en los que he trabajado, también algunos talleres, pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
-				<blockquote class="portfolio__blockquote">Para ver en detalle la información de los trabajos que he realizado y en los que he participado, puedes seleccionarlos dando click en el logo respectivo.</blockquote>
+				<p class="portfolio__description">En esta sección encontrarás los proyectos en los que he trabajado, también encontrarás algunas pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
+				<blockquote class="portfolio__blockquote">Para ver en detalle la información de los trabajos que he realizado y en los que he participado puedes dar click en el logo respectivo.</blockquote>
 
 				<div class="portfolio__container-works">
 					<div class="portfolio__works">
@@ -123,6 +152,9 @@
 						<a href="#mipie" class="portfolio__works__item portfolio-item--out">
 							<img src="public/image/mipie.png" class="portfolio__works__item__logo">
 						</a>
+						<a href="#medicall24" class="portfolio__works__item portfolio-item--out">
+							<img src="public/image/Medicall24.png" class="portfolio__works__item__logo">
+						</a>
 					</div>
 
 					<section class="portfolio__works-descriptions">
@@ -132,9 +164,8 @@
 								TAXADMINISTRADOR
 								<a href="http://66.70.138.23/" target="_blank" class="portfolio__works-descriptions__item__title__link"><i class="fa fa-link"></i></a>
 							</h3>
-							<p class="portfolio__works-descriptions__item__resume"><strong>Taxadministrador</strong> es un sistema generador de tarjetas de control el cual cuenta con varias funcionalidades
-							que ayudan a la empresa a gestionar la información de los vehículos vinculados a la empresa,
-							notificar sobre vencimientos de documentos importantes, generar reportes, entre otras funcionalidades.</p>
+							<p class="portfolio__works-descriptions__item__resume">Es una plataforma web enfocada en la generación de tarjetas de control para los taxistas afiliados a la empresa <strong>TELETAXI S.A.S.</strong>. Esta plataforma cuenta con otras funcionalidades que permiten a la empresa generar reportes, observar en tiempo real vencimientos de documentación, gestionar la información de los vehículos vinculados a la empresa,
+							notificar sobre vencimientos de documentos importantes y otras funcionalidades más que permiten tener una mayor efectividad en la operación y la gestión de la empresa.</p>
 							<div class="portfolio__works-descriptions__tools">
 								<div class="portfolio__works-descriptions__tools__role">Desarrollador Javascript Full-Stack</div>
 								<div>
@@ -153,10 +184,9 @@
 								BUSSER
 								<a href="https://play.google.com/store/apps/details?id=com.metrosinu.busser.katana&hl=es" target="_blank" class="portfolio__works-descriptions__item__title__link"><i class="fa fa-link"></i></a>
 							</h3>
-							<p class="portfolio__works-descriptions__item__resume"><strong>Busser</strong> es una aplicación móvil enfocada a la movilidad a través del servicio de transporte público
-							que permite a los usuarios observar buses en tiempo real, información básica, saber qué ruta es la óptima para
-							movilizarse de un punto a otro, etc. En éste proyecto se desarrolló un <strong>API</strong> basada en <strong>JSONAPI</strong>
-							y a través de <strong>WebSockets</strong> se crearon <strong>namespaces</strong> para el envío de información en tiempo real.</p>
+							<p class="portfolio__works-descriptions__item__resume"><strong>Busser</strong> es un sistema informático de movilidad urbana que permite a los usuarios del servicio de transporte público observar los buses, rutas y conductores en tiempo real a través de una aplicación móvil. Dicha aplicación muestra al usuario información básica de la empresa y le permite tener conocimiento sobre qué ruta es la óptima para
+							movilizarse de un punto a otro. <strong>Busser</strong> se alimenta de un <strong>API</strong> basada en <strong>JSONAPI</strong>
+							y a través de <strong>WebSockets</strong> se establece el flujo de la información para la comunicación en tiempo real.</p>
 							<div class="portfolio__works-descriptions__tools">
 								<div class="portfolio__works-descriptions__tools__role">Desarrollador Back-end</div>
 								<div>
@@ -170,7 +200,7 @@
 							<h3 class="portfolio__works-descriptions__item__title">
 								YIPGO
 							</h3>
-							<p class="portfolio__works-descriptions__item__resume"><strong>YipGO</strong> es una aplicación android enfocada al proyecto <strong>Última Milla</strong> de la empresa <strong>Metrosinú</strong> que permite a los operadores del servicio recibir solicitudes en tiempo real de los usuarios que requieran ser movilizados hacia el paradero más cercano.</p>
+							<p class="portfolio__works-descriptions__item__resume"><strong>YipGO</strong> es una aplicación móvil enfocada al proyecto <strong>Última Milla</strong> de la empresa <strong>Metrosinú</strong> que permite a los operadores recibir en tiempo real servicios que son solicitados por los usuarios que requieran ser movilizados hacia el paradero más cercano. <strong>YipGO</strong> se alimenta de un <strong>API</strong> y hace uso de <strong>WebSockets</strong> para mayor efectividad en la recepción de servicios.</p>
 							<div class="portfolio__works-descriptions__tools">
 								<div class="portfolio__works-descriptions__tools__role">Desarrollador Back-end</div>
 								<div>
@@ -185,7 +215,7 @@
 								BUSSER DASHBOARD
 								<a href="http://192.95.33.90/dashboard" target="_blank" class="portfolio__works-descriptions__item__title__link"><i class="fa fa-link"></i></a>
 							</h3>
-							<p class="portfolio__works-descriptions__item__resume"><strong>Dashboard Busser</strong> es una aplicación web que permite manejar la información principal de las aplicaciones móviles <strong>Busser</strong> y <strong>YipGO</strong>. Permite al usuario crear nuevas rutas, paraderos, trayectos y observar métricas que ayudan a manejar la información.</p>
+							<p class="portfolio__works-descriptions__item__resume">Es una aplicación web que permite manejar la información principal de las aplicaciones móviles <strong>Busser</strong> y <strong>YipGO</strong> tales como rutas, calificaciones, dispositivos, etc. Permite al administrador crear nuevas rutas, paraderos, trayectos y observar métricas que ayudan a mejorar la operación.</p>
 							<div class="portfolio__works-descriptions__tools">
 								<div class="portfolio__works-descriptions__tools__role">Desarrollador Front-end</div>
 								<div>
@@ -200,7 +230,7 @@
 							<h3 class="portfolio__works-descriptions__item__title">
 								VRM
 							</h3>
-							<p class="portfolio__works-descriptions__item__resume"><strong>VRM</strong> es una aplicación web responsiva que se encarga de recolectar reportes, manejar sus estados y realizar métricas a partir de ellos que buscan mejorar la calidad de los procesos. Ésta aplicación fue realizada para el área de mantenimiento de la empresa <strong>Metrosinú</strong>.</p>
+							<p class="portfolio__works-descriptions__item__resume"><strong>VRM</strong> es una aplicación web que se encarga de recolectar reportes, manejar sus estados y realizar métricas que buscan mejorar la calidad de los procesos. Ésta aplicación fue realizada para el área de mantenimiento de la empresa <strong>Metrosinú</strong>.</p>
 							<div class="portfolio__works-descriptions__tools">
 								<div class="portfolio__works-descriptions__tools__role">Desarrollador Javascript Full-Stack</div>
 								<div>
@@ -219,13 +249,29 @@
 								MI PIE
 								<a href="https://mipie.funcentra.org" target="_blank" class="portfolio__works-descriptions__item__title__link"><i class="fa fa-link"></i></a>
 							</h3>
-							<p class="portfolio__works-descriptions__item__resume"><strong>Mi Pie</strong> es una plataforma para la admisión y control de pacientes que padecen diabetes, además permite calcular el grupo de riesgo en que el paciente se encuentra y programar próximas citas a partir de su condición. En este proyecto se realizó un <strong>API</strong> basada en <strong>JSONAPI</strong> para crear los endpoints que atiende a la aplicación web construida con <strong>EmberJS</strong>.</p>
+							<p class="portfolio__works-descriptions__item__resume"><strong>Mi Pie</strong> es una plataforma web para la admisión y control de pacientes que padecen diabetes, además permite calcular el grupo de riesgo en que el paciente se encuentra y a partir de esa información programar las próximas citas. En este proyecto se realizó un <strong>API</strong> basada en <strong>JSONAPI</strong> para crear los endpoints que atienden a la aplicación web construida con <strong>EmberJS</strong>.</p>
 							<div class="portfolio__works-descriptions__tools">
 								<div class="portfolio__works-descriptions__tools__role">Desarrollador Javascript Full-Stack</div>
 								<div>
 									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
 									<i class="fab fa-ember fa-lg" style="color:#E04E39;"></i>
 									<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
+								</div>
+							</div>
+						</article>
+
+						<!-- MEDICALL24 -->
+						<article class="portfolio__works-descriptions__item portfolio--out" id="medicall24">
+							<h3 class="portfolio__works-descriptions__item__title">
+								MEDICALL24
+								<a href="https://play.google.com/store/apps/details?id=com.devandr.medicall.medicall24" target="_blank" class="portfolio__works-descriptions__item__title__link"><i
+										class="fa fa-link"></i></a>
+							</h3>
+							<p class="portfolio__works-descriptions__item__resume"><strong>Medicall24</strong> es un sistema enfocado a la telemedicina que busca por medio de una aplicación móvil la descongestión de las salas de urgencias en las clinicas y hospitales permitiendo al paciente realizar su consulta con un médico desde la comodidad de su casa. <strong>Medicall24</strong> se alimenta de un <strong>API</strong> y a través de <strong>WebSockets</strong> se ejecutan ciertas funciones que requieren ejecutarse en tiempo real. Este sistema está integrado con <strong>Twilio</strong> para la realización de videollamadas.</p>
+							<div class="portfolio__works-descriptions__tools">
+								<div class="portfolio__works-descriptions__tools__role">Desarrollador Back-end</div>
+								<div>
+									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
 								</div>
 							</div>
 						</article>
@@ -243,9 +289,7 @@
 							<i class="fab fa-html5" style="color:#f16529;"></i>
 							HTML
 						</div>
-						<div class="my-tools__tool__content-bar">
-							<div class="my-tools__tool__content-bar__bar" data-percent="100" data-color="#f16529">100%</div>
-						</div>
+						<p class="my-tools__tool__description">Es una excelente herramienta que me ayuda a maquetar sitios y aplicaciones web de forma semántica.</p>
 					</div>
 
 					<div class="my-tools__tool">
@@ -253,9 +297,7 @@
 							<i class="fab fa-css3" style="color:#0170ba;"></i>
 							CSS
 						</div>
-						<div class="my-tools__tool__content-bar">
-							<div class="my-tools__tool__content-bar__bar" data-percent="90" data-color="#0170ba">90%</div>
-						</div>
+						<p class="my-tools__tool__description">Con esta herramienta puedo, a través de reglas, diseñar y darle forma a la estructura <strong>HTML</strong>.</p>
 					</div>
 
 					<div class="my-tools__tool">
@@ -263,9 +305,7 @@
 							<i class="fab fa-js" style="color:#ffe629;"></i>
 							Javascript
 						</div>
-						<div class="my-tools__tool__content-bar">
-							<div class="my-tools__tool__content-bar__bar" data-percent="95" data-color="#ffe629">95%</div>
-						</div>
+						<p class="my-tools__tool__description">¡Mi lenguaje favorito! Con él puedo dar interactividad a las aplicaciones o sitios web que desarrollo.</p>
 					</div>
 
 					<div class="my-tools__tool">
@@ -273,29 +313,23 @@
 							<i class="fab fa-sass" style="color:#c6538c;"></i>
 							Sass
 						</div>
-						<div class="my-tools__tool__content-bar">
-							<div class="my-tools__tool__content-bar__bar" data-percent="80" data-color="#c6538c">80%</div>
-						</div>
+						<p class="my-tools__tool__description">Este pre-procesador me permite facilitar la definición de estilos <strong>CSS</strong>.</p>
 					</div>
 
 					<div class="my-tools__tool">
 						<div class="my-tools__tool__name">
 							<i class="fab fa-node-js" style="color:#90c741;"></i>
-							NodeJS
+							Node.js
 						</div>
-						<div class="my-tools__tool__content-bar">
-							<div class="my-tools__tool__content-bar__bar" data-percent="95" data-color="#90c741">95%</div>
-						</div>
+						<p class="my-tools__tool__description">Sí <strong>Javascript</strong> es mi lenguaje favorito, <strong>Node.js</strong> es mi plataforma favorita para trabajar con <strong>Javascript</strong>.</p>
 					</div>
 
 					<div class="my-tools__tool">
 						<div class="my-tools__tool__name">
 							<i class="fab fa-ember" style="color:#E04E39;"></i>
-							EmberJS
+							Ember.js
 						</div>
-						<div class="my-tools__tool__content-bar">
-							<div class="my-tools__tool__content-bar__bar" data-percent="95" data-color="#E04E39">95%</div>
-						</div>
+						<p class="my-tools__tool__description">Este framework <strong>Javascript</strong> me ha ayudado a facilitar la creación de plataformas y aplicaciones que interactúan con los servidores que desarrollo en <strong>Node.js</strong>.</p>
 					</div>
 
 					<div class="my-tools__tool">
@@ -303,29 +337,23 @@
 							<i class="fab fa-git" style="color:#f64e27;"></i>
 							Git
 						</div>
-						<div class="my-tools__tool__content-bar">
-							<div class="my-tools__tool__content-bar__bar" data-percent="90" data-color="#f64e27">90%</div>
-						</div>
+						<p class="my-tools__tool__description">Es el sistema de control de versiones que uso actualmente y la integro con una herramienta llamada <strong>Git Flow</strong>.</p>
 					</div>
 
 					<div class="my-tools__tool">
 						<div class="my-tools__tool__name">
 							<i class="fab fa-vuejs" style="color:#4fc08d;"></i>
-							VueJS
+							Vue.js
 						</div>
-						<div class="my-tools__tool__content-bar">
-							<div class="my-tools__tool__content-bar__bar" data-percent="60" data-color="#4fc08d">60%</div>
-						</div>
+						<p class="my-tools__tool__description">Este framework es genial, actualmente estoy aprendiendo a usarlo y no lo he llevado a producción aún.</p>
 					</div>
 
 					<div class="my-tools__tool">
 						<div class="my-tools__tool__name">
-							<i class="fa fa-database" style="color:#565656;"></i>
+							<i class="fab fa-envira" style="color:#13aa52;"></i>
 							MongoDB
 						</div>
-						<div class="my-tools__tool__content-bar">
-							<div class="my-tools__tool__content-bar__bar" data-percent="90" data-color="#565656">90%</div>
-						</div>
+						<p class="my-tools__tool__description">Esta base de datos es una de mis favoritas para trabajar con <strong>Node.js</strong> a través de <strong>Mongoose</strong>.</p>
 					</div>
 
 					<div class="my-tools__tool">
@@ -333,11 +361,16 @@
 							<i class="fa fa-database" style="color:#2196F3;"></i>
 							PostgreSQL
 						</div>
-						<div class="my-tools__tool__content-bar">
-							<div class="my-tools__tool__content-bar__bar" data-percent="90" data-color="#2196F3">90%</div>
-						</div>
+						<p class="my-tools__tool__description">En lo que a bases de datos relacionales se refiere, siempre elijo trabajar con <strong>PostgreSQL</strong> usando <strong>Sequelize</strong> como librería para trabajar y crear aplicaciones geniales.</p>
 					</div>
 				</div>
+			</article>
+
+			<article id="medium" class="medium">
+				<blockquote class="portfolio__blockquote">
+					<h2>¡Hola!</h2>
+					Gracias por tu interes. Pronto estaré compartiendo contenido en español sobre las tecnologías que uso actualmente para trabajar y mis experiencias a través de Javascript. Si quieres ayudarme, aconsejarme o tienes alguna idea no dudes en escribirme al correo o redes sociales.
+				</blockquote>
 			</article>
 		</section>
 	</div>

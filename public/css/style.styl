@@ -38,9 +38,46 @@ body
 .portfolio--out
 	animation portfolioOut .4s ease-out forwards
 
-
 @import 'components/*'
 @import 'components/sections/*'
+
+// Loader
+.loader
+	background-color $primary
+	display flex
+	height 100vh
+	justify-content center
+	position absolute
+	width 100vw
+	z-index 999
+	&__container
+		align-items center
+		align-self center
+		display flex
+		flex-direction column
+	&__message
+		margin-top 2.3rem
+		color $gray
+	&__hexagon
+		animation loaderHexagon 1.2s linear infinite forwards
+		background-color $accent
+		height 57.74px
+		opacity 1
+		position relative
+		width 100px
+		&:after, &:before
+			content ""
+			position absolute
+			width 0
+			border-left 50px solid transparent
+			border-right 50px solid transparent
+		&:after
+			border-top 28.87px solid $accent
+			top 100%
+			width 0
+		&:before
+			bottom 99%
+			border-bottom 28.87px solid $accent
 
 // Section Control Actions
 .control-actions
@@ -57,7 +94,7 @@ body
 			padding 1.5rem 2rem
 
 	// Section Container Articles
-	.welcome, .portfolio, .my-tools
+	.welcome, .portfolio, .my-tools, .medium
 		padding 0 8rem
 		margin 3rem 0
 
@@ -113,16 +150,19 @@ body
 
 	// Section Control Actions
 	.control-actions
-		background-color $primary
-		font-size .4rem
+		align-items center
+		background-color $accent
+		box-shadow 0 1px 7px #454545
 		color white
+		font-size .4rem
+		height 3rem
 		top 0
 		position absolute
 		width 100vw
 		z-index 9
 		&__menu
-			padding .5rem 1rem
-			font-size 1.5rem
+			padding .5rem .9rem
+			font-size 1.6rem
 
 	// Section Container Master
 	.container-master
@@ -138,7 +178,7 @@ body
 	// Section Container Articles
 	.container__articles
 		display none
-	.welcome, .portfolio, .my-tools
+	.welcome, .portfolio, .my-tools, .medium
 		display none
 		padding 0 2rem
 		margin-top 2.5rem
@@ -157,22 +197,41 @@ body
 			display block
 			position absolute
 			font-size 1.6rem
-			left .8rem
-			top .5rem
+			left .9rem
+			top .7rem
 			z-index 1
 		&__container__menu
 			display block
 			position fixed
 			top 0
 			left -100%
-			width 55%
+			width 66%
 			height 100vh
 			background-color white
 			z-index 11
-			padding 0 1rem
-			border-right 5px solid $accent
+			box-shadow: 2px 0px 15px #212121;
+
+			^[0]__data
+				background-color $accent
+				display flex
+				align-items center
+				border-bottom 1px solid $gray
+				padding 1.5rem .4rem
+				&__container-avatar
+					width 25%
+					margin .5rem .5rem 0 0
+				&__avatar
+					border-radius 50%
+					width 100%
+				&__info
+					color: white;
+					&__fullname, &__role
+						margin 0
+					&__role
+						color #e3e3e3;
+						font-size .8rem
 			^[0]__menu
-				padding 1.5rem 0
+				padding 1.5rem 1rem
 				margin 0
 				&__link
 					padding 1rem 0
@@ -190,6 +249,13 @@ body
 					color $accent
 				&__item
 					display flex
+					&__soon
+						background-color $secondary
+						font-size .6rem
+						color $gray
+						margin-left .4rem
+						padding .2rem .3rem
+						border-radius 3px
 					.material-icons
 						padding-right .5rem
 
@@ -212,5 +278,3 @@ body
 	// Section Tools
 	.my-tools__tool
 		width 100vw
-		&__content-bar
-			width 100%
