@@ -1,4 +1,4 @@
-# ¡Hola! Este es mi portafolio :blush:
+# ¡Hola! Bienvenido a mi portafolio
 
 En él podrás encontrar todo lo relacionado con lo que hago a través de las herramientas que uso.
 
@@ -10,4 +10,4 @@ En él podrás encontrar todo lo relacionado con lo que hago a través de las he
   }
 ```
 
-> Versión 1.0.5
+> Versión 1.0.51
