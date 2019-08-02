@@ -7,7 +7,7 @@
 		margin 0
 		width 55%
 		^[0]__avatar
-			border 2px solid $accent
+			border 1.5px solid $primary
 			width @width
 			border-radius 50%
 			transition all .2s ease
@@ -27,8 +27,10 @@
 		^[0]__logo
 			width 100%
 	&__fullname
-		margin 1rem 0 0
-		font-weight 400
+		font-size 1.8rem
+		text-shadow 1px 1px 1px $black
+		margin .9rem 0 0
+		font-weight 300
 	&__description
 		margin 0 0 .5rem
 	&__footer
@@ -52,4 +54,4 @@
 				font-size 1.6rem
 				transition all .3s ease
 				&:hover
-					color $accent
+					color $primary
