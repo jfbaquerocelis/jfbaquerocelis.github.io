@@ -109,29 +109,29 @@ body
 
 // *************************** Viewport width ******************************
 @media screen and (max-width : 1150px)
-
 	// Section Container myself
 	.myself__profile
 		font-size .9rem
 
 // *************************** Viewport width ******************************
-@media screen and (max-width : 1065px)
-
-	// Section Container myself
-	.myself__footer__social
-		order -1
+@media screen and (max-width : 1100px)
+	// Section Container Articles
+	.welcome, .portfolio, .my-tools, .medium
+		padding 0 4rem
 
 // *************************** Viewport width ******************************
-@media screen and (max-width : 1014px)
+@media screen and (max-width : 1050px)
 	// Section Container myself
-	.myself__profile
-		padding 0 1.5rem
-	.myself__fullname
-		font-size 1.7rem
+	.myself
+		&__container__avatar
+			width 65%
+		&__fullname
+			font-size 1.6rem
+	// Section Menu
+	.menu
+		&-list__link
+			font-size .85rem
 
-	// Section Container Tools
-	.tool
-		flex 1 1 auto
 
 // *************************** Viewport width ******************************
 @media screen and (max-width : 950px)
@@ -150,11 +150,9 @@ body
 
 	// Section Control Actions
 	.control-actions
-		align-items center
 		background-color $accent
 		box-shadow 0 1px 7px #454545
 		color white
-		font-size .4rem
 		height 3.5rem
 		top 0
 		position absolute
@@ -171,21 +169,12 @@ body
 		& .container__articles
 			width 100%
 
-	// Section Container Avatar
-	.container__avatar
-		display none
-
 	// Section Container Articles
 	.container__articles
 		display none
 	.welcome, .portfolio, .my-tools, .medium
 		display none
-		padding 0 2rem
-		margin-top 3rem
-		&__title
-			text-align center
-		&__blockquote
-			width 100%
+		margin-top 3.6rem
 	.medium
 		margin-top 4.5rem
 	.menu
@@ -195,6 +184,8 @@ body
 	.myself
 		position relative
 		border none
+		&__container__avatar
+			width 40%
 		&__menu__action
 			display block
 			position absolute
@@ -203,15 +194,15 @@ body
 			top 1rem
 			z-index 1
 		&__container__menu
+			background-color white
+			box-shadow 2px 0px 15px #333
 			display block
+			height 100vh
+			left -100%
 			position fixed
 			top 0
-			left -100%
-			width 78%
-			height 100vh
-			background-color white
+			width 35%
 			z-index 11
-			box-shadow: 2px 0px 15px #333;
 
 			^[0]__data
 				background-color $accent
@@ -261,22 +252,41 @@ body
 					.material-icons
 						padding-right .5rem
 
-	// Section container portfolio
+// *************************** Viewport width ******************************
+@media screen and (max-width : 700px)
+	// Section Container myself
+	.myself
+		&__container__menu
+			width 50%
+	// Section Portfolio
 	.portfolio
 		&__works__item
-			margin 0 .8rem
-			&__logo
-				width 3.9rem
-		&__works-descriptions
-			&__item
-				width 100%
-			&__tools
-				flex-direction column
-				align-items center
-				& div
-					margin .4rem 0
-					font-size 1rem
+			flex-basis 100%
+			&__header__logo
+				width 11%
 
-	// Section Tools
-	.my-tools__tool
-		width 100vw
+// *************************** Viewport width ******************************
+@media screen and (max-width : 600px)
+	// Section Container myself
+	.myself
+		&__container__avatar
+			width 55%
+		&__container__menu
+			width 60%
+
+// *************************** Viewport width ******************************
+@media screen and (max-width : 450px)
+	// Section Container myself
+	.myself
+		&__container__menu
+			width 70%
+
+	.welcome, .portfolio, .my-tools, .medium
+		padding 0 2rem
+
+	// Section Portfolio
+	.portfolio
+		&__blockquote
+			width 100%
+		&__works__item__header__logo
+				width 14%
