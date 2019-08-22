@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	if (window.height < 500) alert('Recomendación: Rota tu smartphone para una mejor experiencia.')
 
 	// Menu Items
-	let menuItems = document.querySelectorAll('.menu-list__link')
-	let mySelfMenuItems = document.querySelectorAll('.myself__menu__link')
+	let menuItems = Array.from(document.querySelectorAll('.menu-list__link')).filter(item => item.hash)
+	let mySelfMenuItems = Array.from(document.querySelectorAll('.myself__menu__link')).filter(item => item.hash)
 	// Hamburguers
 	let btnMenu = document.querySelector('.myself__menu__action')
 	let ControlActions = document.querySelector('.control-actions')
