@@ -260,6 +260,10 @@ body
 	.myself
 		&__container__menu
 			width 50%
+	// Section Welcome
+	.welcome
+		&__container-stack
+			width 100%
 	// Section Portfolio
 	.portfolio
 		&__works__item
@@ -287,6 +291,16 @@ body
 
 	.welcome, .portfolio, .my-tools
 		padding 0 2rem
+
+	// Section Welcome
+	.welcome
+		&__stack
+			align-items flex-start
+			flex-direction column
+			&__title
+				font-size 1.2rem
+				margin-bottom .2rem
+				padding-bottom .2rem
 
 	// Section Portfolio
 	.portfolio
