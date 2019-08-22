@@ -5,12 +5,15 @@
 	height 100%
 	&__container__avatar
 		margin 0
-		width 55%
+		width 45%
+		border 1.5px inset $secondary
+		border-radius 50%
 		^[0]__avatar
-			border 1.5px solid $accent
-			width @width
+			border 1.5px solid $secondary
 			border-radius 50%
-			transition all .2s ease
+			margin 5%
+			width 90%
+			height 90%
 	&__container__menu
 	&__menu__action
 		display none
