@@ -4,47 +4,64 @@ document.addEventListener('DOMContentLoaded', function () {
 	// Vamos a indicar al usuario que tiene la orientación horizontal, rotar su celular para una mejor experiencia de usuario
 	if (window.height < 500) alert('Recomendación: Rota tu smartphone para una mejor experiencia.')
 
+	// Menu Items
 	let menuItems = document.querySelectorAll('.menu-list__link')
 	let mySelfMenuItems = document.querySelectorAll('.myself__menu__link')
+	// Hamburguers
 	let btnMenu = document.querySelector('.myself__menu__action')
 	let ControlActions = document.querySelector('.control-actions')
 	let ControlBtnMenu = document.querySelector('.control-actions__menu')
+	// Blanket Body
 	let blanketBody = document.querySelector('.blanketBody')
+	// Container Menu
 	let containerMenu = document.querySelector('.myself__container__menu')
 	let containerMySelf = document.querySelector('.container__myself')
-	let portfolioItems = document.querySelectorAll('.portfolio__works__item')
-	let works = document.querySelectorAll('.portfolio__works-descriptions__item')
 
-	function ActiveMenuItems (instance, classActive, classMenu) {
-		if (!instance.classList.contains(classActive)) {
-			let menu = document.querySelectorAll(classMenu)
+	function ActiveMenuItems (classActive, classMenuItem) {
+		// Vamos a validar si el item al que se está clickando no está activo
+		if (!this.classList.contains(classActive)) {
+			// Vamos a obtener un arreglo de items de menú (NodeList -> Array)
+			let menu = Array.from(document.querySelectorAll(classMenuItem))
+			// Vamos a buscar el item que está seleccionado
+			let selectedItem = menu.find(item => item.classList.contains(classActive))
 
-			menu.forEach(function (item) {
-				if (item.hash !== '#home') {
-					let article = document.querySelector(item.hash)
+			// Si el item clickado es el inicio
+			if (this.hash === '#home') {
+				// Buscamos el articulo del item seleccionado
+				let selectedArticle = document.querySelector(selectedItem.hash)
+				// Y a ambos le quitamos las clases que los hacen visibles
+				selectedItem.classList.remove(classActive)
+				selectedArticle.classList.remove('article--show')
+				selectedArticle.classList.add('article--hide')
+				setTimeout(function () {
+					selectedArticle.style.display = 'none'
+				}, 510)
+			} else {
+				// En caso contrario, procedemos a hacer lo mismo
+				selectedItem.classList.remove(classActive)
+				// Pero si el item que está seleccionado es diferente el inicio
+				if (selectedItem.hash !== '#home') {
+					// Entonces vamos a proceder con ocultar su articulo
+					let selectedArticle = document.querySelector(selectedItem.hash)
 
-					if (item.classList.contains(classActive))
-						item.classList.remove(classActive)
-
-					if (article.classList.contains('article--show')) {
-						article.classList.remove('article--show')
-						article.classList.add('article--hide')
-						setTimeout(function () {
-							article.style.display = 'none'
-						}, 510)
-					}
+					selectedArticle.classList.remove('article--show')
+					selectedArticle.classList.add('article--hide')
+					setTimeout(function () {
+						selectedArticle.style.display = 'none'
+					}, 510)
 				}
-			})
-			instance.classList.add(classActive)
 
-			// Vamos a preguntar si el articulo del item al cual estamos dando click ya tiene su articulo activo
-			if (!document.querySelector(instance.hash).classList.contains('article--show')) {
-				document.querySelector(instance.hash).classList.add('article--show')
-				document.querySelector(instance.hash).classList.remove('article--hide')
+				// Por último, capturamos el articulo del item que se está clickando
+				let article = document.querySelector(this.hash)
+				// Y mostramos el articulo
+				article.classList.add('article--show')
+				article.classList.remove('article--hide')
 				setTimeout(() => {
-					document.querySelector(instance.hash).style.display = 'flex'
+					article.style.display = 'flex'
 				}, 520)
 			}
+			// Agregamos la clase active al item de menú
+			this.classList.add(classActive)
 		}
 	}
 
@@ -52,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		m_item.addEventListener('click', function (e) {
 			e.preventDefault()
 
-			ActiveMenuItems(this, 'menu-list__link--active', '.menu-list__link')
+			ActiveMenuItems.apply(this, ['menu-list__link--active', '.menu-list__link'])
 		})
 	})
 
@@ -69,10 +86,6 @@ document.addEventListener('DOMContentLoaded', function () {
 					containerMySelf.style.opacity = "1"
 					ControlActions.style.display = "none"
 				}, 1)
-				mySelfMenuItems.forEach(function (item) {
-					if (item.classList.contains('myself__menu__link--active'))
-						item.classList.remove('myself__menu__link--active')
-				})
 			} else {
 				blanketBody.style.display = "none"
 				containerMenu.style.left = "-100%"
@@ -83,9 +96,9 @@ document.addEventListener('DOMContentLoaded', function () {
 					containerMySelf.style.display = "none"
 					ControlActions.style.display = "flex"
 				}, 505)
-
-				ActiveMenuItems(this, 'myself__menu__link--active', '.myself__menu__link')
 			}
+
+			ActiveMenuItems.apply(this, ['myself__menu__link--active', '.myself__menu__link'])
 		})
 	})
 
@@ -107,43 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		containerMenu.style.left = "-100%"
 		containerMenu.style.transition = "left .5s ease"
-	})
-
-	// Vamos a recorrer el arreglo de items de trabajos que tenemos en el portafolio para que cuando se de click a alguno de estos items se muestre la información correspondiente
-	portfolioItems.forEach(item => {
-		item.addEventListener('click', function (e) {
-			e.preventDefault()
-
-			// Buscamos si existe un item sin escala de grises
-			portfolioItems.forEach(withoutGray => {
-				if (withoutGray.classList.contains('portfolio-item--in')) {
-					withoutGray.classList.remove('portfolio-item--in')
-					withoutGray.classList.add('portfolio-item--out')
-				}
-			})
-
-			// Validamos si el item que estamos seleccionando se encuentra activo
-			if (item.classList.contains('portfolio-item--out')) {
-				this.classList.remove('portfolio-item--out')
-				this.classList.add('portfolio-item--in')
-			}
-
-			// Vamos a mostrar el artículo que corresponde al hash del item
-			works.forEach(work => {
-				// Si existe un elemento activo, vamos a desactivarlo
-				work.classList.remove('portfolio--in')
-				work.classList.add('portfolio--out')
-				// Después de unos segundos, vamos a activar el que se está seleccionando
-				setTimeout(() => {
-					work.style.display = 'none'
-					if (`#${work.id}` === this.hash) {
-						work.classList.remove('portfolio--out')
-						work.classList.add('portfolio--in')
-						work.style.display = 'block'
-					}
-				}, 410)
-			})
-		})
 	})
 })
 
