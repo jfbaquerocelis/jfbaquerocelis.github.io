@@ -1,9 +1,9 @@
 // Section Menu
 .menu
+	align-items center
 	display flex
 	justify-content flex-end
-	align-items center
-	height 4.5rem
+	min-height 4.5rem
 	margin-bottom 1rem
 	width 100%
 	z-index 1
@@ -13,7 +13,7 @@
 	padding 0
 .menu-list__link
 	color $black
-	font-size 1.05rem
+	font-size .97rem
 	text-transform uppercase
 	list-style-type none
 	text-decoration none
@@ -24,19 +24,12 @@
 	&:last-child
 		border-right 0px
 	&:hover
-		color $accent
+		color $secondary
 		transition .5s ease all
 	&--active .menu-list__item
-		color $accent
+		color $secondary
 	.menu-list__item
 		display flex
 		align-items center
-		&__soon
-			background-color $secondary
-			font-size .6rem
-			color $gray
-			margin-left .4rem
-			padding .2rem .3rem
-			border-radius 3px
 		& .fa, & .fab
 			padding-right .4rem

@@ -5,12 +5,15 @@
 	height 100%
 	&__container__avatar
 		margin 0
-		width 55%
+		width 45%
+		border 1.5px inset $secondary
+		border-radius 50%
 		^[0]__avatar
-			border 2px solid $accent
-			width @width
+			border 1.5px solid $secondary
 			border-radius 50%
-			transition all .2s ease
+			margin 5%
+			width 90%
+			height 90%
 	&__container__menu
 	&__menu__action
 		display none
@@ -27,8 +30,10 @@
 		^[0]__logo
 			width 100%
 	&__fullname
-		margin 1rem 0 0
-		font-weight 400
+		font-size 1.8rem
+		text-shadow 1px 1px 15px white
+		margin .9rem 0 0
+		font-weight 300
 	&__description
 		margin 0 0 .5rem
 	&__footer
@@ -52,4 +57,4 @@
 				font-size 1.6rem
 				transition all .3s ease
 				&:hover
-					color $accent
+					color $primary

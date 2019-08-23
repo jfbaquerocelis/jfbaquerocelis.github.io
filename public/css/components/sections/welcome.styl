@@ -9,3 +9,30 @@
 		color $secondary
 		&:hover
 			color $accent
+	&__container-stack
+		display flex
+		flex-flow column wrap
+		width 65%
+		^[0]__stack
+			align-items center
+			display flex
+			justify-content space-between
+			margin .1rem 0
+			padding .5rem
+			&__title
+				margin 0
+				color #878787
+				font-size .85rem
+				letter-spacing 1px
+				text-transform uppercase
+			&__tools
+				display flex
+				justify-content space-between
+				^[-1]__tool
+					align-self center
+					display flex
+					font-size 1.6rem
+					margin 0 .5rem
+					& img
+						width 25px
+						height 100%

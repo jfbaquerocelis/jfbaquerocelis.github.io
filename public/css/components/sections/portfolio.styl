@@ -3,7 +3,8 @@
 	flex-direction column
 	align-items center
 	&__blockquote
-		border-left 5px solid $accent
+		border-left 4px solid $accent
+		color #555
 		padding .5rem .4rem
 		width 60%
 		margin 1rem auto
@@ -13,42 +14,39 @@
 		color $black
 		&:hover
 			color $accent
-	&__container-works
-		display flex
-		flex-direction column
-		flex 1 0 auto
-		width 100%
-	// Nuevo diseño
 	&__works
 		display flex
-		overflow-y hidden
-		overflow-x auto
-		padding .5rem 0
+		flex-flow row wrap
 		&__item
+			border 1px solid $gray
+			box-shadow 1px 1px 5px $gray
 			display flex
 			flex-direction column
-			justify-content center
-			margin 0 1.5rem
-			&:hover
-				animation effectWorks .4s ease-in forwards
-			&__logo
-				width 4.6rem
-		&-descriptions
-			display flex
-			justify-content center
-			&__item
-				width 80%
-				display none
-				&__title__link
-					color $accent
-				&__resume
-					border-bottom 1px solid #dedede
-					margin 0
-					padding-bottom .5rem
-			&__tools
+			flex-basis 45%
+			justify-content space-between
+			margin .2rem
+			&__header
+				align-items center
+				background-color $gray
 				display flex
 				justify-content space-between
-				margin-top .5rem
-				&__role
-					font-style italic
-					color #565656
+				padding 0 .5rem
+				&__logo
+					width 16%
+				&__title
+					letter-spacing 1px
+					font-family 'Rambla', monospace
+					&__link
+						color orange
+			&__resume
+				margin .5rem .5rem 0
+				padding-bottom 1rem
+		&__tools
+			border-top 1px solid $gray
+			display flex
+			justify-content space-between
+			margin 0 .5rem .5rem
+			padding-top .5rem
+			&__role
+				color #777
+				font-size .9rem

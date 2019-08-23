@@ -2,12 +2,10 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8" />
-	<meta name="description" content="John Fredy Baquero Celis - Ingeniero de Sistemas. Desarrollador Web Profesional" />
+	<meta name="description" content="John Fredy Baquero Celis - Desarrollador Web Profesional" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link type="image/x-icon" href="public/image/codeico.png" rel="icon" />
-	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=K2D:300|Rambla:700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
 	<link rel="stylesheet" href="public/css/style.css" />
@@ -20,6 +18,7 @@
 			<p class="loader__message">Cargando portafolio...</p>
 		</div>
 	</div>
+
 	<div class="blanketBody"></div>
 
 	<div class="control-actions">
@@ -40,22 +39,49 @@
 			</div>
 
 			<ul class="myself__menu">
-				<a href="#home" class="myself__menu__link">
-					<li class="myself__menu__item"><i class="fa fa-home"></i>Inicio</li>
+				<a href="#home" class="myself__menu__link myself__menu__link--active">
+					<li class="myself__menu__item">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-square fa-stack-2x"></i>
+							<i class="fa fa-home fa-stack-1x fa-inverse"></i>
+						</span>
+						Inicio
+					</li>
 				</a>
 				<a href="#welcome" class="myself__menu__link">
-					<li class="myself__menu__item"><i class="fa fa-star"></i>Acerca de Mi</li>
+					<li class="myself__menu__item">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-square fa-stack-2x"></i>
+							<i class="fa fa-lightbulb fa-stack-1x fa-inverse"></i>
+						</span>
+						Acerca de Mi
+					</li>
 				</a>
 				<a href="#portfolio" class="myself__menu__link">
-					<li class="myself__menu__item"><i class="fa fa-briefcase"></i>Mi Portafolio</li>
-				</a>
-				<a href="#my-tools" class="myself__menu__link">
-					<li class="myself__menu__item"><i class="fa fa-code"></i>Mis Herramientas</li>
-				</a>
-				<a href="#medium" class="myself__menu__link">
 					<li class="myself__menu__item">
-						<i class="fab fa-medium"></i>Medium
-						<span class="myself__menu__item__soon">¡Pronto!</span>
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-square fa-stack-2x"></i>
+							<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+						</span>
+						Mi Portafolio
+					</li>
+				</a>
+				<a href="#contact" class="myself__menu__link">
+					<li class="myself__menu__item">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-square fa-stack-2x"></i>
+							<i class="fa fa-address-book fa-stack-1x fa-inverse"></i>
+						</span>
+						Contáctame
+					</li>
+				</a>
+				<a href="https://medium.com/@jfbaquerocelis" target="_blank" class="myself__menu__link">
+					<li class="myself__menu__item">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-square fa-stack-2x"></i>
+							<i class="fab fa-medium-m fa-stack-1x fa-inverse"></i>
+						</span>
+						Medium
 					</li>
 				</a>
 			</ul>
@@ -71,7 +97,7 @@
 						<img src="public/image/john.jpg" class="myself__avatar">
 					</figure>
 					<h1 class="myself__fullname">John Fredy Baquero Celis</h1>
-					<p class="myself__description">Ingeniero de Sistemas - Desarrollador Web</p>
+					<p class="myself__description">Ingeniero de Sistemas - Desarrollador Full Stack</p>
 					<p class="myself__description">CEO en <a href="http://www.isd-group.co" class="jf-links myself__community" target="_blank">ISD GROUP</a></p>
 					<p class="myself__description">Organizador en <a href="http://meetup.com/monteriajs" class="jf-links myself__community" target="_blank">MonteríaJS</a></p>
 				</div>
@@ -103,278 +129,312 @@
 			<nav class="menu">
 				<ul class="menu-list">
 					<a href="#welcome" class="menu-list__link menu-list__link--active">
-						<li class="menu-list__item"><i class="fa fa-star"></i>Acerca de Mi</li>
+						<li class="menu-list__item">Acerca de Mi</li>
 					</a>
 					<a href="#portfolio" class="menu-list__link">
-						<li class="menu-list__item"><i class="fa fa-briefcase"></i>Mi Portafolio</li>
+						<li class="menu-list__item">Mi Portafolio</li>
 					</a>
-					<a href="#my-tools" class="menu-list__link">
-						<li class="menu-list__item"><i class="fa fa-code"></i>Mis Herramientas</li>
+					<a href="#contact" class="menu-list__link">
+						<li class="menu-list__item">Contáctame</li>
 					</a>
-					<a href="#medium" class="menu-list__link">
-						<li class="menu-list__item">
-							<i class="fab fa-medium"></i>Medium
-							<span class="menu-list__item__soon">¡Pronto!</span>
-						</li>
+					<a href="https://medium.com/@jfbaquerocelis" target="_blank" class="menu-list__link">
+						<li class="menu-list__item"><i class="fab fa-medium"></i>Medium</li>
 					</a>
 				</ul>
 			</nav>
 
 			<article class="welcome article--show" id="welcome">
-				<h2 class="welcome__title">¡Hola! Este es mi portafolio</h2>
-				<p class="welcome__description">Mi nombre es <strong>John</strong>, soy desarrollador web y vivo en la ciudad de Montería. Mi lenguaje de programación favorito es <strong>javascript</strong>, con él he aprendido muchas cosas y con él desarrollo actualmente. Mi objetivo es usarlo como herramienta para crear soluciones tecnológicas a la medida de cualquier necesidad. <br /> Estoy convencido de que el trabajo en equipo es la mejor forma de avanzar en cualquier ambito, trabajo o proyecto. <br /><br />Hago parte de una gran comunidad llamada <a class="welcome__community" target="_blank" href="http://colombia-dev.org">Colombia.dev</a> y soy organizador en la comunidad <a class="welcome__community" target="_blank" href="http://www.meetup.com/monteriajs">MonteríaJS</a>, sobra decir que tienes las puertas abiertas para hacer parte de ellas.</p>
-				<h2 class="welcome__title">¿Necesitas una aplicación web o algo similar?</h2>
-				<p class="welcome__description">Has llegado al lugar indicado. Actualmente hago parte de un excelente grupo de trabajo, dispuesto a solucionar tu problema. <br> <br> Puedes contactarme para tomarnos un café y así hablar de tu idea. Podrás encontrar mis redes sociales en el panel principal o si deseas, puedes escribirme a mi correo <a class="welcome__community" href="https://mail.google.com/mail/?view=cm&fs=1&to=jfbaquerocelis@gmail.com" target="_blank">jfbaquerocelis@gmail.com</a>. <br><br> Si tienes algún comentario con respecto a mi portafolio, por favor házmelo saber <a class="welcome__community" href="https://github.com/jfbaquerocelis/Portafolio/issues" target="_blank">aquí</a>.</p>
+				<h2 class="welcome__title">¡Bienvenido!</h2>
+				<p class="welcome__description">Mi nombre es <strong>John</strong>, soy desarrollador y vivo en la ciudad de Montería. Mi lenguaje de programación favorito es <strong>javascript</strong>, con él he aprendido muchas cosas y con él desarrollo actualmente. Mi objetivo es usarlo como herramienta para crear soluciones tecnológicas a la medida de cualquier necesidad. <br /> Estoy convencido de que el trabajo en equipo es la mejor forma de avanzar en cualquier trabajo o proyecto. <br /><br />Hago parte de una gran comunidad llamada <a class="welcome__community" target="_blank" href="http://colombia-dev.org">Colombia.dev</a> y soy organizador de la comunidad <a class="welcome__community" target="_blank" href="http://www.meetup.com/monteriajs">MonteríaJS</a>, sobra decir que tienes las puertas abiertas para hacer parte de ellas.</p>
+
+				<h2 class="welcome__title">Stack de Desarrollo</h2>
+				<p class="welcome__description">A lo largo de los años en los que me he desempeñado como desarrollador he trabajado con diferentes tecnologías. A continuación quiero mostrarte mi stack de desarrollo actual y las herramientas con las que he trabajado.</p>
+
+				<div class="welcome__container-stack">
+					<!-- Frontend -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Frontend</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								<i class="fab fa-html5" style="color:#f16529;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-css3-alt" style="color:#0170ba;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-js" style="color:#ffe629; background-color: #2d2d2d;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-bootstrap" style="color:#563d7c;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-sass" style="color:#c6538c;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-ember" style="color:#E04E39;"></i>
+							</div>
+							<!-- <div class="welcome__stack__tool">
+								<i class="fab fa-vuejs" style="color:#4fc08d;"></i>
+							</div> -->
+							<div class="welcome__stack__tool">
+								<i class="fab fa-react" style="color:#2196F3;"></i>
+							</div>
+						</div>
+					</div>
+					<!-- Backend -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Backend</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								<i class="fab fa-node" style="color:#43853d;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-npm" style="color:#ED1C24;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-yarn" style="color:#25799f;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-docker" style="color:#0091e2;"></i>
+							</div>
+						</div>
+					</div>
+					<!-- Herramientas de Trabajo -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Gestión de proyectos</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								<i class="fab fa-git-alt" style="color:#f64e27;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-trello" style="color:#0079bf;"></i>
+							</div>
+						</div>
+					</div>
+					<!-- Databases -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Bases de datos</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="mongodb" />
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="postgresql" />
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://cdn.worldvectorlogo.com/logos/mysql-6.svg" alt="mysql" />
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://cdn.worldvectorlogo.com/logos/cockroachdb.svg" alt="cockroach" />
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" />
+							</div>
+						</div>
+					</div>
+					<!-- Servicios en la nube -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Servicios en la nube</h4>
+						<div class="welcome__stack__tools">
+							<!-- <div class="welcome__stack__tool">
+								<i class="fab fa-aws" style="color:#13aa52;"></i>
+							</div> -->
+							<div class="welcome__stack__tool">
+								<i class="fab fa-digital-ocean" style="color:#0069ff;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" />
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="googlecloud" />
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/zeit/zeit-icon.svg" alt="zeithq" />
+							</div>
+						</div>
+					</div>
+					<!-- Servidores -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Servidores</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								<i class="fab fa-linux" style="color:#2d2d2d;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-ubuntu" style="color:#e95420;"></i>
+							</div>
+						</div>
+					</div>
+				</div>
 			</article>
 
 			<article class="portfolio" id="portfolio">
 				<h2 class="portfolio__title">Mi Portafolio</h2>
 				<p class="portfolio__description">En esta sección encontrarás los proyectos en los que he trabajado, también encontrarás algunas pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
-				<blockquote class="portfolio__blockquote">Para ver en detalle la información de los trabajos que he realizado y en los que he participado puedes dar click en el logo respectivo.</blockquote>
+				<blockquote class="portfolio__blockquote">Puedes encontrar más información sobre mis proyectos en mis perfiles de <strong>Github</strong> o <strong>Bitbucket</strong>.</blockquote>
 
-				<div class="portfolio__container-works">
-					<div class="portfolio__works">
-						<a href="#taxadministrador" class="portfolio__works__item portfolio-item--out">
-							<img src="public/image/taxadministrador.png" class="portfolio__works__item__logo">
-						</a>
-						<a href="#busser" class="portfolio__works__item portfolio-item--out">
-							<img src="public/image/busser.png" class="portfolio__works__item__logo">
-						</a>
-						<a href="#yipgo" class="portfolio__works__item portfolio-item--out">
-							<img src="public/image/yipgo.png" class="portfolio__works__item__logo">
-						</a>
-						<a href="#dashboard" class="portfolio__works__item portfolio-item--out">
-							<img src="public/image/dashboard.png" class="portfolio__works__item__logo">
-						</a>
-						<a href="#vrm" class="portfolio__works__item portfolio-item--out">
-							<img src="public/image/vrm.png" class="portfolio__works__item__logo">
-						</a>
-						<a href="#mipie" class="portfolio__works__item portfolio-item--out">
-							<img src="public/image/mipie.png" class="portfolio__works__item__logo">
-						</a>
-						<a href="#medicall24" class="portfolio__works__item portfolio-item--out">
-							<img src="public/image/Medicall24.png" class="portfolio__works__item__logo">
-						</a>
-					</div>
-
-					<section class="portfolio__works-descriptions">
-						<!-- TAXADMINISTRADOR -->
-						<article class="portfolio__works-descriptions__item portfolio--out" id="taxadministrador">
-							<h3 class="portfolio__works-descriptions__item__title">
+				<section class="portfolio__works">
+					<!-- TAXADMINISTRADOR -->
+					<article class="portfolio__works__item" id="taxadministrador">
+						<div class="portfolio__works__item__header">
+							<img src="public/image/taxadministrador.png" class="portfolio__works__item__header__logo">
+							<h3 class="portfolio__works__item__header__title">
 								TAXADMINISTRADOR
-								<a href="http://66.70.138.23/" target="_blank" class="portfolio__works-descriptions__item__title__link"><i class="fa fa-link"></i></a>
 							</h3>
-							<p class="portfolio__works-descriptions__item__resume">Es una plataforma web enfocada en la generación de tarjetas de control para los taxistas afiliados a la empresa <strong>TELETAXI S.A.S.</strong>. Esta plataforma cuenta con otras funcionalidades que permiten a la empresa generar reportes, observar en tiempo real vencimientos de documentación, gestionar la información de los vehículos vinculados a la empresa,
-							notificar sobre vencimientos de documentos importantes y otras funcionalidades más que permiten tener una mayor efectividad en la operación y la gestión de la empresa.</p>
-							<div class="portfolio__works-descriptions__tools">
-								<div class="portfolio__works-descriptions__tools__role">Desarrollador Javascript Full-Stack</div>
-								<div>
-									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
-									<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
-									<i class="fab fa-html5 fa-lg" style="color:#e57f16;"></i>
-									<i class="fab fa-css3 fa-lg" style="color:#428ae3;"></i>
-									<i class="fab fa-js fa-lg" style="color:#ffeb00;"></i>
-								</div>
+						</div>
+						<p class="portfolio__works__item__resume">Aplicación web enfocada en la generación de tarjetas de control para los taxistas afiliados a las empresas <strong>TELETAXI S.A.S.</strong> y <strong>RADIOTAXI LTDA.</strong></p>
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Desarrollador Full Stack</div>
+							<div>
+								<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
+								<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
+								<i class="fab fa-html5 fa-lg" style="color:#e57f16;"></i>
+								<i class="fab fa-js fa-lg" style="color:#ffeb00;background:#2d2d2d;"></i>
 							</div>
-						</article>
+						</div>
+					</article>
 
-						<!-- BUSSER -->
-						<article class="portfolio__works-descriptions__item portfolio--out" id="busser">
-							<h3 class="portfolio__works-descriptions__item__title">
-								BUSSER
-								<a href="https://play.google.com/store/apps/details?id=com.metrosinu.busser.katana&hl=es" target="_blank" class="portfolio__works-descriptions__item__title__link"><i class="fa fa-link"></i></a>
+					<!-- BUSSER -->
+					<article class="portfolio__works__item" id="busser">
+						<div class="portfolio__works__item__header">
+							<img src="public/image/busser.png" class="portfolio__works__item__header__logo">
+							<h3 class="portfolio__works__item__header__title">
+								<a href="https://play.google.com/store/apps/details?id=com.metrosinu.busser.katana&hl=es" target="_blank" class="portfolio__works__item__header__title__link"><i class="fa fa-link"></i></a>
 							</h3>
-							<p class="portfolio__works-descriptions__item__resume"><strong>Busser</strong> es un sistema informático de movilidad urbana que permite a los usuarios del servicio de transporte público observar los buses, rutas y conductores en tiempo real a través de una aplicación móvil. Dicha aplicación muestra al usuario información básica de la empresa y le permite tener conocimiento sobre qué ruta es la óptima para
-							movilizarse de un punto a otro. <strong>Busser</strong> se alimenta de un <strong>API</strong> basada en <strong>JSONAPI</strong>
-							y a través de <strong>WebSockets</strong> se establece el flujo de la información para la comunicación en tiempo real.</p>
-							<div class="portfolio__works-descriptions__tools">
-								<div class="portfolio__works-descriptions__tools__role">Desarrollador Back-end</div>
-								<div>
-									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
-								</div>
+						</div>
+						<p class="portfolio__works__item__resume">Es un sistema de movilidad urbana que permite a los usuarios del servicio de transporte público observar los buses, rutas y conductores en tiempo real a través de una aplicación móvil.</p>
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Desarrollador Backend</div>
+							<div>
+								<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
 							</div>
-						</article>
+						</div>
+					</article>
 
-						<!-- YIPGO -->
-						<article class="portfolio__works-descriptions__item portfolio--out" id="yipgo">
-							<h3 class="portfolio__works-descriptions__item__title">
+					<!-- YIPGO -->
+					<article class="portfolio__works__item" id="yipgo">
+						<div class="portfolio__works__item__header">
+							<img src="public/image/yipgo.png" class="portfolio__works__item__header__logo">
+							<h3 class="portfolio__works__item__header__title">
 								YIPGO
 							</h3>
-							<p class="portfolio__works-descriptions__item__resume"><strong>YipGO</strong> es una aplicación móvil enfocada al proyecto <strong>Última Milla</strong> de la empresa <strong>Metrosinú</strong> que permite a los operadores recibir en tiempo real servicios que son solicitados por los usuarios que requieran ser movilizados hacia el paradero más cercano. <strong>YipGO</strong> se alimenta de un <strong>API</strong> y hace uso de <strong>WebSockets</strong> para mayor efectividad en la recepción de servicios.</p>
-							<div class="portfolio__works-descriptions__tools">
-								<div class="portfolio__works-descriptions__tools__role">Desarrollador Back-end</div>
-								<div>
-									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
-								</div>
+						</div>
+						<p class="portfolio__works__item__resume">Es una aplicación móvil enfocada al proyecto <strong>Última Milla</strong> de la empresa <strong>Metrosinú</strong> que permite a los operadores recibir en tiempo real servicios que son solicitados por los usuarios que requieran ser movilizados hacia el paradero más cercano.</p>
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Desarrollador Backend</div>
+							<div>
+								<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
 							</div>
-						</article>
+						</div>
+					</article>
 
-						<!-- BUSSER DASHBOARD -->
-						<article class="portfolio__works-descriptions__item portfolio--out" id="dashboard">
-							<h3 class="portfolio__works-descriptions__item__title">
-								BUSSER DASHBOARD
-								<a href="http://192.95.33.90/dashboard" target="_blank" class="portfolio__works-descriptions__item__title__link"><i class="fa fa-link"></i></a>
+					<!-- BUSSER DASHBOARD -->
+					<article class="portfolio__works__item" id="dashboard">
+						<div class="portfolio__works__item__header">
+							<img src="public/image/dashboard.png" class="portfolio__works__item__header__logo">
+							<h3 class="portfolio__works__item__header__title">
+								<!-- BUSSER DASHBOARD -->
+								<a href="http://192.95.33.90/dashboard" target="_blank" class="portfolio__works__item__header__title__link"><i class="fa fa-link"></i></a>
 							</h3>
-							<p class="portfolio__works-descriptions__item__resume">Es una aplicación web que permite manejar la información principal de las aplicaciones móviles <strong>Busser</strong> y <strong>YipGO</strong> tales como rutas, calificaciones, dispositivos, etc. Permite al administrador crear nuevas rutas, paraderos, trayectos y observar métricas que ayudan a mejorar la operación.</p>
-							<div class="portfolio__works-descriptions__tools">
-								<div class="portfolio__works-descriptions__tools__role">Desarrollador Front-end</div>
-								<div>
-									<i class="fab fa-ember fa-lg" style="color:#E04E39;"></i>
-									<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
-								</div>
+						</div>
+						<p class="portfolio__works__item__resume">Es una aplicación web que permite manejar la información principal de las aplicaciones móviles <strong>Busser</strong> y <strong>YipGO</strong> tales como rutas, calificaciones, dispositivos, etc. Permite al administrador crear nuevas rutas, paraderos, trayectos y observar métricas que ayudan a mejorar la operación.</p>
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Desarrollador Frontend</div>
+							<div>
+								<i class="fab fa-ember fa-lg" style="color:#E04E39;"></i>
 							</div>
-						</article>
+						</div>
+					</article>
 
-						<!-- VRM -->
-						<article class="portfolio__works-descriptions__item portfolio--out" id="vrm">
-							<h3 class="portfolio__works-descriptions__item__title">
+					<!-- VRM -->
+					<article class="portfolio__works__item" id="vrm">
+						<div class="portfolio__works__item__header">
+							<img src="public/image/vrm.png" class="portfolio__works__item__header__logo">
+							<h3 class="portfolio__works__item__header__title">
 								VRM
 							</h3>
-							<p class="portfolio__works-descriptions__item__resume"><strong>VRM</strong> es una aplicación web que se encarga de recolectar reportes, manejar sus estados y realizar métricas que buscan mejorar la calidad de los procesos. Ésta aplicación fue realizada para el área de mantenimiento de la empresa <strong>Metrosinú</strong>.</p>
-							<div class="portfolio__works-descriptions__tools">
-								<div class="portfolio__works-descriptions__tools__role">Desarrollador Javascript Full-Stack</div>
-								<div>
-									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
-									<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
-									<i class="fab fa-html5 fa-lg" style="color:#e57f16;"></i>
-									<i class="fab fa-css3 fa-lg" style="color:#428ae3;"></i>
-									<i class="fab fa-js fa-lg" style="color:#ffeb00;"></i>
-								</div>
+						</div>
+						<p class="portfolio__works__item__resume">Es una aplicación web que se encarga de recolectar reportes, manejar sus estados y realizar métricas que buscan mejorar la calidad de los procesos. Ésta aplicación fue realizada para el área de mantenimiento de la empresa <strong>Metrosinú</strong>.</p>
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Desarrollador Full Stack</div>
+							<div>
+								<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
+								<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
+								<i class="fab fa-html5 fa-lg" style="color:#e57f16;"></i>
+								<i class="fab fa-js fa-lg" style="color:#ffeb00;background-color: #2d2d2d;"></i>
 							</div>
-						</article>
+						</div>
+					</article>
 
-						<!-- MI PIE -->
-						<article class="portfolio__works-descriptions__item portfolio--out" id="mipie">
-							<h3 class="portfolio__works-descriptions__item__title">
-								MI PIE
-								<a href="https://mipie.funcentra.org" target="_blank" class="portfolio__works-descriptions__item__title__link"><i class="fa fa-link"></i></a>
+					<!-- MI PIE -->
+					<article class="portfolio__works__item" id="mipie">
+						<div class="portfolio__works__item__header">
+							<img src="public/image/mipie.png" class="portfolio__works__item__header__logo">
+							<h3 class="portfolio__works__item__header__title">
+								<!-- MI PIE -->
+								<a href="https://mipie.funcentra.org" target="_blank" class="portfolio__works__item__header__title__link"><i class="fa fa-link"></i></a>
 							</h3>
-							<p class="portfolio__works-descriptions__item__resume"><strong>Mi Pie</strong> es una plataforma web para la admisión y control de pacientes que padecen diabetes, además permite calcular el grupo de riesgo en que el paciente se encuentra y a partir de esa información programar las próximas citas. En este proyecto se realizó un <strong>API</strong> basada en <strong>JSONAPI</strong> para crear los endpoints que atienden a la aplicación web construida con <strong>EmberJS</strong>.</p>
-							<div class="portfolio__works-descriptions__tools">
-								<div class="portfolio__works-descriptions__tools__role">Desarrollador Javascript Full-Stack</div>
-								<div>
-									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
-									<i class="fab fa-ember fa-lg" style="color:#E04E39;"></i>
-									<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
-								</div>
+						</div>
+						<p class="portfolio__works__item__resume">Es una plataforma web para la admisión y control de pacientes que padecen diabetes, además permite calcular el grupo de riesgo en que el paciente se encuentra y a partir de esa información programar las próximas citas.</p>
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Desarrollador Full Stack</div>
+							<div>
+								<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
+								<i class="fab fa-ember fa-lg" style="color:#E04E39;"></i>
 							</div>
-						</article>
+						</div>
+					</article>
 
-						<!-- MEDICALL24 -->
-						<article class="portfolio__works-descriptions__item portfolio--out" id="medicall24">
-							<h3 class="portfolio__works-descriptions__item__title">
-								MEDICALL24
-								<a href="https://play.google.com/store/apps/details?id=com.devandr.medicall.medicall24" target="_blank" class="portfolio__works-descriptions__item__title__link"><i
+					<!-- MEDICALL24 -->
+					<article class="portfolio__works__item" id="medicall24">
+						<div class="portfolio__works__item__header">
+							<img src="public/image/Medicall24.png" class="portfolio__works__item__header__logo">
+							<h3 class="portfolio__works__item__header__title">
+								<!-- MEDICALL24 -->
+								<a href="https://play.google.com/store/apps/details?id=com.devandr.medicall.medicall24" target="_blank" class="portfolio__works__item__header__title__link"><i
 										class="fa fa-link"></i></a>
 							</h3>
-							<p class="portfolio__works-descriptions__item__resume"><strong>Medicall24</strong> es un sistema enfocado a la telemedicina que busca por medio de una aplicación móvil la descongestión de las salas de urgencias en las clinicas y hospitales permitiendo al paciente realizar su consulta con un médico desde la comodidad de su casa. <strong>Medicall24</strong> se alimenta de un <strong>API</strong> y a través de <strong>WebSockets</strong> se ejecutan ciertas funciones que requieren ejecutarse en tiempo real. Este sistema está integrado con <strong>Twilio</strong> para la realización de videollamadas.</p>
-							<div class="portfolio__works-descriptions__tools">
-								<div class="portfolio__works-descriptions__tools__role">Desarrollador Back-end</div>
-								<div>
-									<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
-								</div>
+						</div>
+						<p class="portfolio__works__item__resume">Es un sistema enfocado a la telemedicina que busca por medio de una aplicación móvil la descongestión de las salas de urgencias en las clinicas y hospitales permitiendo al paciente realizar su consulta con un médico desde la comodidad de su casa.</p>
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Desarrollador Backend</div>
+							<div>
+								<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
 							</div>
-						</article>
-					</section>
-				</div>
+						</div>
+					</article>
+				</section>
 			</article>
 
-			<article class="my-tools" id="my-tools">
-				<h2 class="my-tools__title">Mis Herramientas</h2>
-				<p class="my-tools__description">A continuación, te mostraré las herramientas con las que trabajo actualmente y el nivel de acuerdo a mi experiencia.</p>
+			<article class="contact" id="contact">
+				<h2 class="contact__title">¿Necesitas soluciones tecnológicas para ti o tu empresa?</h2>
+				<p class="contact__description">Has llegado al lugar indicado. Actualmente hago parte de un excelente grupo de trabajo, dispuesto a solucionar tu problema usando las mejores técnicas de análisis y desarrollo de software. <br> <br> Puedes contactarme para tomarnos un café y así hablar de tu idea. Podrás encontrar mis redes sociales en el panel principal o si deseas, puedes escribirme a mi correo <a class="welcome__community" href="https://mail.google.com/mail/?view=cm&fs=1&to=jfbaquerocelis@gmail.com" target="_blank">jfbaquerocelis@gmail.com</a>. <br><br> Si tienes algún comentario con respecto a mi portafolio, por favor házmelo saber <a class="welcome__community" href="https://github.com/jfbaquerocelis/Portafolio/issues" target="_blank">aquí</a>.</p>
 
-				<div class="my-tools__container">
-					<div class="my-tools__tool">
-						<div class="my-tools__tool__name">
-							<i class="fab fa-html5" style="color:#f16529;"></i>
-							HTML
-						</div>
-						<p class="my-tools__tool__description">Es una excelente herramienta que me ayuda a maquetar sitios y aplicaciones web de forma semántica.</p>
-					</div>
+				<h2 class="contact__title">¿Quieres hacer parte de MonteríaJS?</h2>
+				<p class="contact__description">¡Excelente! <br> <br> Puedes escribirme y comentarme de qué forma quieres hacer parte de la comunidad, es decir, ya sea como speaker, colaborador, patrocinador o formar parte del equipo organizador. <br> Ten la plena seguridad que estaremos con los brazos abiertos esperando a que contribuyas con tus ideas y tus conocimientos a través de la comunidad para transmitirlo hacia todas las personas que disfrutan y asisten a nuestros eventos. <br> <br> Puedes seguirnos en nuestras redes sociales ¡Te esperamos!</p>
 
-					<div class="my-tools__tool">
-						<div class="my-tools__tool__name">
-							<i class="fab fa-css3" style="color:#0170ba;"></i>
-							CSS
-						</div>
-						<p class="my-tools__tool__description">Con esta herramienta puedo, a través de reglas, diseñar y darle forma a la estructura <strong>HTML</strong>.</p>
-					</div>
-
-					<div class="my-tools__tool">
-						<div class="my-tools__tool__name">
-							<i class="fab fa-js" style="color:#ffe629;"></i>
-							Javascript
-						</div>
-						<p class="my-tools__tool__description">¡Mi lenguaje favorito! Con él puedo dar interactividad a las aplicaciones o sitios web que desarrollo.</p>
-					</div>
-
-					<div class="my-tools__tool">
-						<div class="my-tools__tool__name">
-							<i class="fab fa-sass" style="color:#c6538c;"></i>
-							Sass
-						</div>
-						<p class="my-tools__tool__description">Este pre-procesador me permite facilitar la definición de estilos <strong>CSS</strong>.</p>
-					</div>
-
-					<div class="my-tools__tool">
-						<div class="my-tools__tool__name">
-							<i class="fab fa-node-js" style="color:#90c741;"></i>
-							Node.js
-						</div>
-						<p class="my-tools__tool__description">Sí <strong>Javascript</strong> es mi lenguaje favorito, <strong>Node.js</strong> es mi plataforma favorita para trabajar con <strong>Javascript</strong>.</p>
-					</div>
-
-					<div class="my-tools__tool">
-						<div class="my-tools__tool__name">
-							<i class="fab fa-ember" style="color:#E04E39;"></i>
-							Ember.js
-						</div>
-						<p class="my-tools__tool__description">Este framework <strong>Javascript</strong> me ha ayudado a facilitar la creación de plataformas y aplicaciones que interactúan con los servidores que desarrollo en <strong>Node.js</strong>.</p>
-					</div>
-
-					<div class="my-tools__tool">
-						<div class="my-tools__tool__name">
-							<i class="fab fa-git" style="color:#f64e27;"></i>
-							Git
-						</div>
-						<p class="my-tools__tool__description">Es el sistema de control de versiones que uso actualmente y la integro con una herramienta llamada <strong>Git Flow</strong>.</p>
-					</div>
-
-					<div class="my-tools__tool">
-						<div class="my-tools__tool__name">
-							<i class="fab fa-vuejs" style="color:#4fc08d;"></i>
-							Vue.js
-						</div>
-						<p class="my-tools__tool__description">Este framework es genial, actualmente estoy aprendiendo a usarlo y no lo he llevado a producción aún.</p>
-					</div>
-
-					<div class="my-tools__tool">
-						<div class="my-tools__tool__name">
-							<i class="fab fa-envira" style="color:#13aa52;"></i>
-							MongoDB
-						</div>
-						<p class="my-tools__tool__description">Esta base de datos es una de mis favoritas para trabajar con <strong>Node.js</strong> a través de <strong>Mongoose</strong>.</p>
-					</div>
-
-					<div class="my-tools__tool">
-						<div class="my-tools__tool__name">
-							<i class="fa fa-database" style="color:#2196F3;"></i>
-							PostgreSQL
-						</div>
-						<p class="my-tools__tool__description">En lo que a bases de datos relacionales se refiere, siempre elijo trabajar con <strong>PostgreSQL</strong> usando <strong>Sequelize</strong> como librería para trabajar y crear aplicaciones geniales.</p>
-					</div>
+				<div class="contact__social">
+					<a class="contact__social__link" href="https://instagram.com/monteriajs" target="_blank">
+						<i class="fab fa-instagram" style="color: palevioletred;"></i>
+					</a>
+					<a class="contact__social__link" href="https://twitter.com/monteriajs" target="_blank">
+						<i class="fab fa-twitter-square" style="color: #2196F3;"></i>
+					</a>
+					<a class="contact__social__link" href="https://facebook.com/monteriajs" target="_blank">
+						<i class="fab fa-facebook-square" style="color: #4267b2;"></i>
+					</a>
+					<a class="contact__social__link" href="https://github.com/monteriajs" target="_blank">
+						<i class="fab fa-github-square" style="color: #2d2d2d;"></i>
+					</a>
+					<a class="contact__social__link" href="https://meetup.com/monteriajs" target="_blank">
+						<i class="fab fa-meetup" style="color: #ED1C24;"></i>
+					</a>
 				</div>
-			</article>
-
-			<article id="medium" class="medium">
-				<blockquote class="portfolio__blockquote">
-					<h2>¡Hola!</h2>
-					Gracias por tu interes. Pronto estaré compartiendo contenido en español sobre las tecnologías que uso actualmente para trabajar y mis experiencias a través de Javascript. Si quieres ayudarme, aconsejarme o tienes alguna idea no dudes en escribirme a <a class="welcome__community" href="https://mail.google.com/mail/?view=cm&fs=1&to=jfbaquerocelis@gmail.com" target="_blank">jfbaquerocelis@gmail.com</a> o seguirme en mis redes sociales.
-				</blockquote>
 			</article>
 		</section>
 	</div>
 
+	<script src="https://kit.fontawesome.com/74a0a4aba0.js"></script>
 	<script src="public/js/main.js"></script>
 </body>
 </html>
