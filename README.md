@@ -1,13 +1,7 @@
-# ¡Hola! Bienvenido a mi portafolio
+# Bienvenido a mi portafolio
 
-En él podrás encontrar todo lo relacionado con lo que hago a través de las herramientas que uso.
+En este repositorio encontrarás todo el código fuente. Eres libre revisarlo, mejorarlo o contribuir en caso de que lo consideres necesario, para mi sería un gusto.
 
-# Redes Sociales
-```javascript
-  const socialNetworks = {
-    'Twitter': '@noverflow',
-    'Gmail': 'jfbaquerocelis@gmail.com'
-  }
-```
+Si tienes algún comentario con respecto a mi portafolio, por favor házmelo saber [aquí](https://github.com/jfbaquerocelis/Portafolio/issues).
 
-> Versión 1.0.51
+> Versión 1.0.6
