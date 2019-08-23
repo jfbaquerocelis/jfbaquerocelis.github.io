@@ -217,22 +217,21 @@ body
 			^[0]__menu
 				padding 1.5rem 1rem
 				margin 0
-				&__link
-					padding 1rem 0
-					display block
-					align-items center
-					color $black
-					text-decoration none
-					font-size 1.1rem
-					& i
-						font-size 1.15rem
-						padding-right 1rem
-					& + ^[2]__link
-						border-top 1px solid $gray
-				&__link--active
-					color $secondary
 				&__item
 					display flex
+					align-items center
+				&__link
+					color $black
+					display block
+					font-size 1rem
+					padding 1rem 0
+					text-decoration none
+					text-transform uppercase
+					& .fa-stack
+						font-size 1rem
+						margin-right 1rem
+				&__link--active
+					color $secondary
 					&__soon
 						background-color $secondary
 						font-size .6rem
@@ -287,7 +286,7 @@ body
 			align-items flex-start
 			flex-direction column
 			&__title
-				font-size 1.2rem
+				font-size 1rem
 				margin-bottom .2rem
 				padding-bottom .2rem
 
