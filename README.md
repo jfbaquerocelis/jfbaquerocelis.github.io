@@ -4,4 +4,4 @@ En este repositorio encontrarás todo el código fuente. Eres libre revisarlo, m
 
 Si tienes algún comentario con respecto a mi portafolio, por favor házmelo saber [aquí](https://github.com/jfbaquerocelis/Portafolio/issues).
 
-> Versión 1.0.6
+> Versión 1.0.61
