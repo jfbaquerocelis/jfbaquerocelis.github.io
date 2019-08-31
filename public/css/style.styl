@@ -191,7 +191,7 @@ body
 			left -100%
 			position fixed
 			top 0
-			width 35%
+			width 40%
 			z-index 11
 
 			^[0]__data
@@ -216,6 +216,7 @@ body
 					color: white;
 					&__fullname, &__role
 						margin 0
+						letter-spacing .8px
 					&__role
 						color #e3e3e3;
 						font-size .8rem
@@ -225,16 +226,17 @@ body
 				&__item
 					display flex
 					align-items center
+					font-size .9rem
 				&__link
-					color $black
+					color #545454
 					display block
 					font-size 1rem
 					padding 1rem 0
 					text-decoration none
 					text-transform uppercase
 					& .fa-stack
-						font-size 1rem
-						margin-right 1rem
+						font-size .9rem
+						margin-right .5rem
 				&__link--active
 					color $secondary
 					&__soon
