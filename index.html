@@ -57,7 +57,7 @@
 						About me
 					</li>
 				</a>
-				<a href="#portfolio" class="myself__menu__link">
+				<!-- <a href="#portfolio" class="myself__menu__link">
 					<li class="myself__menu__item">
 						<span class="fa-stack fa-2x">
 							<i class="fas fa-square fa-stack-2x"></i>
@@ -65,14 +65,14 @@
 						</span>
 						My Portfolio
 					</li>
-				</a>
-				<a href="#contact" class="myself__menu__link">
+				</a> -->
+				<a href="#experience" class="myself__menu__link">
 					<li class="myself__menu__item">
 						<span class="fa-stack fa-2x">
 							<i class="fas fa-square fa-stack-2x"></i>
 							<i class="fa fa-address-book fa-stack-1x fa-inverse"></i>
 						</span>
-						Contact me
+						Past Experience
 					</li>
 				</a>
 				<a href="https://medium.com/@jfbaquerocelis" target="_blank" class="myself__menu__link">
@@ -132,11 +132,11 @@
 					<a href="#welcome" class="menu-list__link menu-list__link--active">
 						<li class="menu-list__item">About me</li>
 					</a>
-					<a href="#portfolio" class="menu-list__link">
+					<!-- <a href="#portfolio" class="menu-list__link">
 						<li class="menu-list__item">My Portfolio</li>
-					</a>
-					<a href="#contact" class="menu-list__link">
-						<li class="menu-list__item">Contact me</li>
+					</a> -->
+					<a href="#experience" class="menu-list__link">
+						<li class="menu-list__item">Past Experience</li>
 					</a>
 					<a href="https://medium.com/@jfbaquerocelis" target="_blank" class="menu-list__link">
 						<li class="menu-list__item"><i class="fab fa-medium"></i>Medium</li>
@@ -282,9 +282,16 @@
 			</article>
 
 			<article class="portfolio" id="portfolio">
-				<h2 class="portfolio__title">Mi Portafolio</h2>
-				<p class="portfolio__description">En esta sección encontrarás los proyectos en los que he trabajado, también encontrarás algunas pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
-				<blockquote class="portfolio__blockquote">Puedes encontrar más información sobre mis proyectos en mis perfiles de <strong>Github</strong> o <strong>Bitbucket</strong>.</blockquote>
+				<h2 class="portfolio__title">My Portfolio</h2>
+				<p class="portfolio__description">In this section you'll find all the projects which I've worked on, you'll find some proof and personal projects. All I know do with the tools that I use.</p>
+				<!-- <p class="portfolio__description">En esta sección encontrarás los proyectos en los que he trabajado, también encontrarás algunas pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p> -->
+				<blockquote class="portfolio__blockquote">
+					<i class="portfolio__blockquote__icon far fa-lightbulb fa-2x" style="color:#555;"></i>
+					<p class="portfolio__blockquote__text">
+						You can find more information about my projects in my <strong>Github</strong> profile.
+					</p>
+				</blockquote>
+				<!-- <blockquote class="portfolio__blockquote">Puedes encontrar más información sobre mis proyectos en mis perfiles de <strong>Github</strong> o <strong>Bitbucket</strong>.</blockquote> -->
 
 				<section class="portfolio__works">
 					<!-- TAXADMINISTRADOR -->
@@ -295,9 +302,10 @@
 								TAXADMINISTRADOR
 							</h3>
 						</div>
-						<p class="portfolio__works__item__resume">Aplicación web enfocada en la generación de tarjetas de control para los taxistas afiliados a las empresas <strong>TELETAXI S.A.S.</strong> y <strong>RADIOTAXI LTDA.</strong></p>
+						<p class="portfolio__works__item__resume">Web application focused on generating yellow cards for taxi drivers affiliated with the companies <strong>TELETAXI S.A.S.</strong> and <strong>RADIOTAXI LTDA.</strong></p>
+						<!-- <p class="portfolio__works__item__resume">Aplicación web enfocada en la generación de tarjetas de control para los taxistas afiliados a las empresas <strong>TELETAXI S.A.S.</strong> y <strong>RADIOTAXI LTDA.</strong></p> -->
 						<div class="portfolio__works__tools">
-							<div class="portfolio__works__tools__role">Desarrollador Full Stack</div>
+							<div class="portfolio__works__tools__role">Full Stack Developer</div>
 							<div>
 								<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
 								<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
@@ -419,11 +427,113 @@
 				</section>
 			</article>
 
-			<article class="contact" id="contact">
-				<h2 class="contact__title">¿Necesitas soluciones tecnológicas para ti o tu empresa?</h2>
-				<p class="contact__description">Has llegado al lugar indicado. Actualmente hago parte de un excelente grupo de trabajo, dispuesto a solucionar tu problema usando las mejores técnicas de análisis y desarrollo de software. <br> <br> Puedes contactarme para tomarnos un café y así hablar de tu idea. Podrás encontrar mis redes sociales en el panel principal o si deseas, puedes escribirme a mi correo <a class="welcome__community" href="https://mail.google.com/mail/?view=cm&fs=1&to=jfbaquerocelis@gmail.com" target="_blank">jfbaquerocelis@gmail.com</a>. <br><br> Si tienes algún comentario con respecto a mi portafolio, por favor házmelo saber <a class="welcome__community" href="https://github.com/jfbaquerocelis/Portafolio/issues" target="_blank">aquí</a>.</p>
+			<article class="experience" id="experience">
+				<h2 class="experience__title">Employment History</h2>
 
-				<h2 class="contact__title">¿Quieres hacer parte de MonteríaJS?</h2>
+				<div class="experience__item">
+					<h3 class="experience__item__title"><span class="experience__item__title__role">Senior Software Engineer |</span> EPAM Systems</h3>
+					<h5 class="experience__item__subtitle">Remote | July 2022 - September 2022</h5>
+					<div class="experience__item__description">
+						<p>Consolidated my knowledge about Clean Code, Clean Design, Cloud Computing, and Agile Mindset throughout the program EngX and CloudX getting a good performance on each assesment.</p>
+					</div>
+				</div>
+
+				<div class="experience__item">
+					<h3 class="experience__item__title"><span class="experience__item__title__role">Lead Software Developer</span> | Melt Studio</h3>
+					<h5 class="experience__item__subtitle">Remote | August 2019 - June 2022</h5>
+					<div class="experience__item__description">
+						<p>As Lead Software Developer in this company, I worked on many projects such as:</p>
+
+						<ul class="experience__item__task-list">
+							<li class="experience__item__task-list__item">
+								<span class="experience__item__task-list__item__title">TOKEN METRICS | Senior Software Developer</span>
+								<ul class="experience__item__task-list__item__sublist">
+									<li>Followed the SDLC using SCRUM as Agile Methodology for
+										planning, designing, building, testing, and deploying the Backend
+										and Frontend apps.</li>
+									<li>Implemented payment gateway using Stripe and worked on the
+										backend creating a REST API to provide to the platform the
+										resources.</li>
+									<li>Stack: Node.js, React.js, Snowflake, JIRA, GitHub, Filezilla, AWS
+										(EC2, S3, Cloudwatch, Route53), Terraform.</li>
+								</ul>
+							</li>
+							<li class="experience__item__task-list__item">
+								<span class="experience__item__task-list__item__title">HAPPYLY | Lead Software Developer</span>
+								<ul class="experience__item__task-list__item__sublist">
+									<li>Followed the SDLC using SCRUM as Agile Methodology for planning, designing, building, testing, and deploying the Backend and Frontend apps.</li>
+									<li>Worked on the new frontend design and refactored a legacy code to Nuxt.js.</li>
+									<li>We Implemented React Native to have the mobile application.</li>
+									<li>Worked on the back-end and refactored the REST API to v2 using Django REST Framework.</li>
+									<li>Stack: Python/Django, Vue.js/Nuxt.js, PostgreSQL, Asana, GitHub/Code Commit, Auto Deployment with Jenkins, and Servers on AWS (EC2, S3, CloudWatch).</li>
+								</ul>
+							</li>
+							<li class="experience__item__task-list__item">
+								<span class="experience__item__task-list__item__title">HQIF | Full Stack Developer</span>
+								<ul class="experience__item__task-list__item__sublist">
+									<li>Refactored the current front-end app using React.js and built the REST API on the back-end side using Node.js.</li>
+									<li>Reviewed the code of teammates and assisted them when they had blockers.</li>
+									<li>Worked on improving the performance of the app using design patterns and best practices of React.js.</li>
+								</ul>
+							</li>
+							<li class="experience__item__task-list__item">
+								<span class="experience__item__task-list__item__title">SUYO | Full Stack Developer</span>
+								<ul class="experience__item__task-list__item__sublist">
+									<li>Developed new features in the dashboard and the REST API.</li>
+									<li>Assisted the team when they had blockers.</li>
+									<li>Worked on improving the performance of the app using design patterns and best practices of React.js.</li>
+									<li>Stack: Python/Django, React.js, PostgreSQL, Pivotal Tracker, GitHub, AWS (EC2, S3).</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="experience__item">
+					<h3 class="experience__item__title"><span class="experience__item__title__role">Backend Developer</span> | Medicall24</h3>
+					<h5 class="experience__item__subtitle">Montería | February 2018 - August 2019</h5>
+					<div class="experience__item__description">
+						<p>Worked on creating an API in Node.js for serving services and resources to the mobile application. Also, I worked on creating a real-time system using Socket.io.</p>
+
+						<ul class="experience__item__task-list">
+							<li class="experience__item__task-list__item">Took the “Medicall24: Product Features” document and defined the features with their ETA. Defined the database schema and the flow data based on the features.</li>
+							<li class="experience__item__task-list__item">Worked on the back-end side, implementing Microservices for creating the REST API using Seneca.js. Implemented Twilio using the Programmable Video Feature to connect the mobile application.</li>
+							<li class="experience__item__task-list__item">Participated in meetings with the PM to discuss the current process and resolve doubts because this project was new.</li>
+							<li class="experience__item__task-list__item">Reviewed the code, merged those changes, and deployed it to alpha for testing.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="experience__item">
+					<h3 class="experience__item__title"><span class="experience__item__title__role">Team Lead - Backend Developer</span> | Metrosinú</h3>
+					<h5 class="experience__item__subtitle">Montería | October 2016 - August 2017</h5>
+					<div class="experience__item__description">
+						<p>Worked on defining requirements for a mobile application called Busser and I developed the back-end side using Node.js creating an API, using Redis for sending pub/sub messages, and Socket.io for sending info in real-time.</p>
+
+						<ul class="experience__item__task-list">
+							<li class="experience__item__task-list__item">Worked on the backend side implementing the REST API. Also, implemented a microsystem using Socket.io to provide the mobile application with the data.</li>
+							<li class="experience__item__task-list__item">Worked on the frontend side implementing a dashboard using Ember.js for checking in real time the current data throughout web sockets.</li>
+							<li class="experience__item__task-list__item">Participated in meetings with the customer to discuss the current process	and resolve doubts regarding the project.</li>
+							<li class="experience__item__task-list__item">Reviewed the code, merged those changes, and deployed it to alpha for testing.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="experience__item">
+					<h3 class="experience__item__title"><span class="experience__item__title__role">Full Stack Developer</span> | Teletaxi SAS</h3>
+					<h5 class="experience__item__subtitle">Montería | July 2015 - September 2016</h5>
+					<div class="experience__item__description">
+						<p>Developed an integral system called Taxadministrador built on Node.js using handlebars.js as a template engine.</p>
+
+						<ul class="experience__item__task-list">
+							<li class="experience__item__task-list__item">Developed an internal system to print control cards to the taxi drivers and	also generate reports, and trigger alerts about document expirations.</li>
+							<li class="experience__item__task-list__item">Worked on the back-end creating a REST API.</li>
+							<li class="experience__item__task-list__item">Worked on the dashboard using template rendering with Node.js.</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- <h2 class="contact__title">¿Quieres hacer parte de MonteríaJS?</h2>
 				<p class="contact__description">¡Excelente! <br> <br> Puedes escribirme y comentarme de qué forma quieres hacer parte de la comunidad, es decir, ya sea como speaker, colaborador, patrocinador o formar parte del equipo organizador. <br> Ten la plena seguridad que estaremos con los brazos abiertos esperando a que contribuyas con tus ideas y tus conocimientos a través de la comunidad para transmitirlo hacia todas las personas que disfrutan y asisten a nuestros eventos. <br> <br> Puedes seguirnos en nuestras redes sociales ¡Te esperamos!</p>
 
 				<div class="contact__social">
@@ -442,7 +552,7 @@
 					<a class="contact__social__link" href="https://meetup.com/monteriajs" target="_blank">
 						<i class="fab fa-meetup" style="color: #ED1C24;"></i>
 					</a>
-				</div>
+				</div> -->
 			</article>
 		</section>
 	</div>
