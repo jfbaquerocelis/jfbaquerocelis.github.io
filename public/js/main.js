@@ -129,7 +129,7 @@ window.addEventListener('load', e => {
 	let message = document.querySelector('.loader__message')
 
 	setTimeout(function () {
-		message.textContent = '¡Portafolio Listo!'
+		message.textContent = '¡Portfolio loaded successfully!'
 		clearTimeout(this)
 	}, 1500)
 
