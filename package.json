@@ -23,7 +23,9 @@
     "lint": "eslint src --color",
     "lint-staged": "lint-staged --config lint-staged.js",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettier": "prettier src -check",
+    "typescript": "tsc --project tsconfig.json --noEmit"
   },
   "eslintConfig": {
     "extends": [
