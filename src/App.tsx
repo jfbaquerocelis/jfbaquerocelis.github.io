@@ -3,6 +3,7 @@ import type { SiderProps } from 'antd'
 import { Layout } from 'antd'
 import styled from 'styled-components'
 import MySelf from './screens/MySelf'
+import MyMenu from './components/MyMenu'
 
 import './App.css'
 import colors from './utils/Colors'
@@ -16,7 +17,9 @@ function App() {
         <MySelf />
       </StyledSider>
       <ContainerArticles>
-        <Header>Header</Header>
+        <StyledHeader>
+          <MyMenu />
+        </StyledHeader>
         <Content>Content</Content>
       </ContainerArticles>
     </ContainerMaster>
@@ -48,6 +51,14 @@ const StyledSider = styled(Sider)<SiderProps>`
     width: 100%;
     z-index: -1;
   }
+`
+const StyledHeader = styled(Header)`
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0;
+  height: 3rem;
+  line-height: 3rem;
 `
 
 export default App
