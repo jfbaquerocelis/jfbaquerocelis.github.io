@@ -2,11 +2,13 @@ import type { SiderProps } from 'antd'
 
 import { Layout } from 'antd'
 import styled from 'styled-components'
+import { Outlet } from 'react-router-dom'
+
 import MySelf from './screens/MySelf'
 import MyMenu from './components/MyMenu'
+import colors from './utils/Colors'
 
 import './App.css'
-import colors from './utils/Colors'
 
 const { Header, Sider, Content } = Layout
 
@@ -20,7 +22,9 @@ function App() {
         <StyledHeader>
           <MyMenu />
         </StyledHeader>
-        <Content>Content</Content>
+        <Content>
+          <Outlet />
+        </Content>
       </ContainerArticles>
     </ContainerMaster>
   )

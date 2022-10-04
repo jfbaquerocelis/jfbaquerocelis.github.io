@@ -1,16 +1,21 @@
 import type { MenuProps } from 'antd'
 import { Menu } from 'antd'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import colors from '../utils/Colors'
 
 const items: MenuProps['items'] = [
   {
-    label: 'ABOUT ME',
+    label: <Link to="/">ABOUT ME</Link>,
     key: 'about',
   },
   {
-    label: 'PAST EXPERIENCE',
+    label: <Link to="experience">PAST EXPERIENCE</Link>,
     key: 'experience',
+  },
+  {
+    label: <Link to="portfolio">PORTFOLIO</Link>,
+    key: 'portfolio',
   },
   {
     label: (
@@ -27,7 +32,13 @@ const items: MenuProps['items'] = [
 ]
 
 function MyMenu() {
-  return <StyledMenu mode="horizontal" items={items} />
+  return (
+    <StyledMenu
+      mode="horizontal"
+      items={items}
+      defaultSelectedKeys={['about']}
+    />
+  )
 }
 
 const StyledMenu = styled(Menu)`
