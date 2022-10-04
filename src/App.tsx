@@ -35,8 +35,11 @@ const ContainerMaster = styled(Layout)`
   min-height: 100vh;
 `
 const ContainerArticles = styled(Layout)`
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
   width: 70% !important;
 `
 const StyledSider = styled(Sider)<SiderProps>`

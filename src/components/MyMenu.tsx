@@ -22,8 +22,7 @@ const items: MenuProps['items'] = [
       <a
         href="https://medium.com/@jfbaquerocelis"
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         MEDIUM
       </a>
     ),
@@ -43,6 +42,7 @@ function MyMenu() {
 
 const StyledMenu = styled(Menu)`
   background-color: transparent;
+  border-bottom: none;
 
   li {
     &:nth-child(n + 0) {
