@@ -2,7 +2,6 @@ import type { MenuProps } from 'antd'
 import { Menu } from 'antd'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import colors from '../utils/Colors'
 
 const items: MenuProps['items'] = [
   {
@@ -50,10 +49,6 @@ const StyledMenu = styled(Menu)`
     }
     &:first-child {
       border-left: 0px;
-    }
-    &:hover {
-      color: ${colors.secondary};
-      transition: 0.1s ease color;
     }
   }
 `

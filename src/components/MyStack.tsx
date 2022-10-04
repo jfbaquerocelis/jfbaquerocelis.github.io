@@ -119,7 +119,11 @@ function MyStack() {
       {stack.map((element, index) => (
         <Stack key={index}>
           <MyTitle level={5}>{element.title}</MyTitle>
-          <Tools>{element.items.map(item => item.icon)}</Tools>
+          <Tools>
+            {element.items.map((item, index) => (
+              <div key={index}>{item.icon}</div>
+            ))}
+          </Tools>
         </Stack>
       ))}
     </Container>
