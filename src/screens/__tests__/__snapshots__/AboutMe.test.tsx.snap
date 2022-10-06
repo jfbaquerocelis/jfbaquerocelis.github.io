@@ -3,7 +3,7 @@
 exports[`AboutMe component should render 1`] = `
 <div>
   <div
-    class="sc-jSMfEi kwtXhV"
+    class="sc-bczRLJ cTUbsI"
   >
     <h2
       class="ant-typography sc-gKXOVf lifexH"
@@ -34,18 +34,18 @@ exports[`AboutMe component should render 1`] = `
       Through the years where I've worked as a developer, I've used different technologies. Down below I'd like to show you my current stack and the rest of the tools which I've used:
     </div>
     <div
-      class="sc-gsnTZi dUPocy"
+      class="sc-dkzDqf emPbvN"
     >
       <div
-        class="sc-dkzDqf gpdxsV"
+        class="sc-hKMtZM dPxJoe"
       >
         <h5
-          class="ant-typography sc-hKMtZM iHcyXl"
+          class="ant-typography sc-eCYdqJ bBrskk"
         >
           Frontend
         </h5>
         <div
-          class="sc-eCYdqJ zOmFv"
+          class="sc-jSMfEi kDSWup"
         >
           <div>
             <svg
@@ -158,15 +158,15 @@ exports[`AboutMe component should render 1`] = `
         </div>
       </div>
       <div
-        class="sc-dkzDqf gpdxsV"
+        class="sc-hKMtZM dPxJoe"
       >
         <h5
-          class="ant-typography sc-hKMtZM iHcyXl"
+          class="ant-typography sc-eCYdqJ bBrskk"
         >
           Backend
         </h5>
         <div
-          class="sc-eCYdqJ zOmFv"
+          class="sc-jSMfEi kDSWup"
         >
           <div>
             <svg
@@ -261,15 +261,15 @@ exports[`AboutMe component should render 1`] = `
         </div>
       </div>
       <div
-        class="sc-dkzDqf gpdxsV"
+        class="sc-hKMtZM dPxJoe"
       >
         <h5
-          class="ant-typography sc-hKMtZM iHcyXl"
+          class="ant-typography sc-eCYdqJ bBrskk"
         >
           Cloud Computing
         </h5>
         <div
-          class="sc-eCYdqJ zOmFv"
+          class="sc-jSMfEi kDSWup"
         >
           <div>
             <svg
@@ -310,63 +310,63 @@ exports[`AboutMe component should render 1`] = `
           <div>
             <img
               alt="heroku"
-              class="sc-bczRLJ fvhjEq"
+              class="sc-gsnTZi dmDcEY"
               src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg"
             />
           </div>
           <div>
             <img
               alt="netlify"
-              class="sc-bczRLJ fvhjEq"
+              class="sc-gsnTZi dmDcEY"
               src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg"
             />
           </div>
         </div>
       </div>
       <div
-        class="sc-dkzDqf gpdxsV"
+        class="sc-hKMtZM dPxJoe"
       >
         <h5
-          class="ant-typography sc-hKMtZM iHcyXl"
+          class="ant-typography sc-eCYdqJ bBrskk"
         >
           Databases
         </h5>
         <div
-          class="sc-eCYdqJ zOmFv"
+          class="sc-jSMfEi kDSWup"
         >
           <div>
             <img
               alt="mongodb"
-              class="sc-bczRLJ fvhjEq"
+              class="sc-gsnTZi dmDcEY"
               src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"
             />
           </div>
           <div>
             <img
               alt="postgresql"
-              class="sc-bczRLJ fvhjEq"
+              class="sc-gsnTZi dmDcEY"
               src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg"
             />
           </div>
           <div>
             <img
               alt="firebase"
-              class="sc-bczRLJ fvhjEq"
+              class="sc-gsnTZi dmDcEY"
               src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
             />
           </div>
         </div>
       </div>
       <div
-        class="sc-dkzDqf gpdxsV"
+        class="sc-hKMtZM dPxJoe"
       >
         <h5
-          class="ant-typography sc-hKMtZM iHcyXl"
+          class="ant-typography sc-eCYdqJ bBrskk"
         >
           Control Version System
         </h5>
         <div
-          class="sc-eCYdqJ zOmFv"
+          class="sc-jSMfEi kDSWup"
         >
           <div>
             <svg

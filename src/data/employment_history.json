@@ -1,0 +1,154 @@
+[
+  {
+    "company": "Moove It",
+    "role": "Senior Software Developer",
+    "companyLogo": "",
+    "type": "Remote",
+    "startDate": "2022-10-10",
+    "endDate": null,
+    "description": null,
+    "projects": []
+  },
+  {
+    "company": "EPAM Systems",
+    "role": "Senior Software Engineer",
+    "companyLogo": "",
+    "type": "Remote",
+    "startDate": "2022-07-05",
+    "endDate": "2022-09-16",
+    "description": "Consolidated my knowledge about Clean Code, Clean Design, Cloud Computing, and Agile Mindset throughout programs like EngX and CloudX getting a good performance on each assessment.",
+    "projects": []
+  },
+  {
+    "company": "MeltStudio",
+    "role": "Lead Software Developer",
+    "companyLogo": "",
+    "type": "Remote",
+    "startDate": "2019-08-26",
+    "endDate": "2022-06-30",
+    "description": "As Lead Software Developer in this company, I worked on many projects such as:",
+    "projects": [
+      {
+        "name": "Token Metrics",
+        "role": "Senior Software Developer",
+        "tasks": [
+          "Followed the SDLC using SCRUM as Agile Methodology for planning, designing, building, testing, and deploying the Backend and Frontend apps.",
+          "Implemented payment gateway using Stripe and worked on the backend creating a REST API to provide to the platform the resources."
+        ],
+        "stack": [
+          "Node.js",
+          "React.js",
+          "Snowflake",
+          "JIRA",
+          "Github Actions",
+          "Filezilla",
+          "AWS",
+          "EC2",
+          "S3",
+          "Cloudwatch",
+          "Route53",
+          "Terraform"
+        ]
+      },
+      {
+        "name": "Happyly",
+        "role": "Lead Software Developer",
+        "tasks": [
+          "Followed the SDLC using SCRUM as Agile Methodology for planning, designing, building, testing, and deploying the Backend and Frontend apps.",
+          "Worked on the new frontend design and refactored a legacy code to Nuxt.js.",
+          "We Implemented React Native to have the mobile application.",
+          "Worked on the back-end and refactored the REST API to v2 using Django REST Framework."
+        ],
+        "stack": [
+          "Python",
+          "Django",
+          "Vue.js",
+          "Nuxt.js",
+          "PostgreSQL",
+          "Asana",
+          "GitHub",
+          "Code Commit",
+          "Jenkins",
+          "AWS",
+          "EC2",
+          "S3",
+          "CloudWatch"
+        ]
+      },
+      {
+        "name": "HQIF",
+        "role": "Full Stack Developer",
+        "tasks": [
+          "Refactored the current front-end app using React.js and built the REST API on the back-end side using Node.js.",
+          "Reviewed the code of teammates and assisted them when they had blockers.",
+          "Worked on improving the performance of the app using design patterns and best practices of React.js."
+        ],
+        "stack": ["Node.js", "React.js", "Python", "AWS"]
+      },
+      {
+        "name": "Suyo",
+        "role": "Full Stack Developer",
+        "tasks": [
+          "Developed new features in the dashboard and the REST API.",
+          "Assisted the team when they had blockers.",
+          "Worked on improving the performance of the app using design patterns and best practices of React.js."
+        ],
+        "stack": [
+          "Python",
+          "Django",
+          "React.js",
+          "PostgreSQL",
+          "Pivotal Tracker",
+          "GitHub",
+          "AWS",
+          "EC2",
+          "S3"
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Medicall24",
+    "role": "Backend Developer",
+    "companyLogo": "",
+    "type": "Montería",
+    "startDate": "2018-02-23",
+    "endDate": "2019-08-31",
+    "description": "Worked on creating an API in Node.js for serving services and resources to the mobile application. Also, I worked on creating a real-time system using Socket.io.",
+    "tasks": [
+      "Took the “Medicall24: Product Features” document and defined the features with their ETA. Defined the database schema and the flow data based on the features.",
+      "Worked on the back-end side, implementing Microservices for creating the REST API using Seneca.js. Implemented Twilio using the Programmable Video Feature to connect the mobile application.",
+      "Participated in meetings with the PM to discuss the current process and resolve doubts because this project was new.",
+      "Reviewed the code, merged those changes, and deployed it to alpha for testing."
+    ]
+  },
+  {
+    "company": "Metrosinú",
+    "role": "Team Lead - Backend Developer",
+    "companyLogo": "",
+    "type": "Montería",
+    "startDate": "2016-10-30",
+    "endDate": "2017-09-30",
+    "description": "Worked on defining requirements for a mobile application called Busser and I developed the back-end side using Node.js creating an API, using Redis for sending pub/sub messages, and Socket.io for sending info in real-time.",
+    "tasks": [
+      "Worked on the backend side implementing the REST API. Also, implemented a microsystem using Socket.io to provide the mobile application with the data.",
+      "Worked on the frontend side implementing a dashboard using Ember.js for checking in real time the current data throughout web sockets.",
+      "Participated in meetings with the customer to discuss the current process and resolve doubts regarding the project.",
+      "Reviewed the code, merged those changes, and deployed it to alpha for testing."
+    ]
+  },
+  {
+    "company": "Teletaxi SAS",
+    "role": "Full Stack Developer",
+    "companyLogo": "",
+    "type": "Montería",
+    "startDate": "2015-07-01",
+    "endDate": "2016-09-30",
+    "description": "Developed an integral system called Taxadministrador built on Node.js using handlebars.js as a template engine.",
+    "tasks": [
+      "Developed an internal system to print control cards to the taxi drivers and also generate reports, and trigger alerts about document expirations.",
+      "Worked on the back-end creating a REST API.",
+      "Worked on the dashboard using template rendering with Node.js."
+    ]
+  }
+]

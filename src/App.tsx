@@ -38,6 +38,7 @@ const ContainerArticles = styled(Layout)`
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
   width: 70% !important;

@@ -1,0 +1,1590 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Experience component should render 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ cTUbsI"
+  >
+    <h2
+      class="ant-typography sc-gsnTZi fhrOFp"
+    >
+      EMPLOYMENT HISTORY
+    </h2>
+    <div
+      class="ant-typography"
+    >
+      Since 2015 taking my experience as a Freelancer, this is the whole history reflects as experience throughout the years. Take a look:
+    </div>
+    <ul
+      class="ant-timeline ant-timeline-label sc-dkzDqf dOIMwT"
+    >
+      <li
+        class="ant-timeline-item ant-timeline-item-left"
+      >
+        <div
+          class="ant-timeline-item-label"
+        >
+          <div
+            class="ant-typography ant-typography-secondary"
+          >
+            October 2022
+             -
+             
+            Current
+          </div>
+        </div>
+        <div
+          class="ant-timeline-item-tail"
+        />
+        <div
+          class="ant-timeline-item-head ant-timeline-item-head-blue"
+        />
+        <div
+          class="ant-timeline-item-content"
+        >
+          <h5
+            class="ant-typography"
+          >
+            <span
+              class="ant-typography sc-hKMtZM dunuRM"
+            >
+              Senior Software Developer
+            </span>
+             | 
+            MOOVE IT
+          </h5>
+          <span
+            class="ant-typography ant-typography-secondary"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-location-dot "
+              data-icon="location-dot"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"
+                fill="currentColor"
+              />
+            </svg>
+             
+            Remote
+          </span>
+          <div
+            class="ant-typography"
+          />
+        </div>
+      </li>
+      <li
+        class="ant-timeline-item ant-timeline-item-left"
+      >
+        <div
+          class="ant-timeline-item-label"
+        >
+          <div
+            class="ant-typography ant-typography-secondary"
+          >
+            July 2022
+             -
+             
+            September 2022
+          </div>
+        </div>
+        <div
+          class="ant-timeline-item-tail"
+        />
+        <div
+          class="ant-timeline-item-head ant-timeline-item-head-blue"
+        />
+        <div
+          class="ant-timeline-item-content"
+        >
+          <h5
+            class="ant-typography"
+          >
+            <span
+              class="ant-typography sc-hKMtZM dunuRM"
+            >
+              Senior Software Engineer
+            </span>
+             | 
+            EPAM SYSTEMS
+          </h5>
+          <span
+            class="ant-typography ant-typography-secondary"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-location-dot "
+              data-icon="location-dot"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"
+                fill="currentColor"
+              />
+            </svg>
+             
+            Remote
+          </span>
+          <div
+            class="ant-typography"
+          >
+            Consolidated my knowledge about Clean Code, Clean Design, Cloud Computing, and Agile Mindset throughout programs like EngX and CloudX getting a good performance on each assessment.
+          </div>
+        </div>
+      </li>
+      <li
+        class="ant-timeline-item ant-timeline-item-left"
+      >
+        <div
+          class="ant-timeline-item-label"
+        >
+          <div
+            class="ant-typography ant-typography-secondary"
+          >
+            August 2019
+             -
+             
+            June 2022
+          </div>
+        </div>
+        <div
+          class="ant-timeline-item-tail"
+        />
+        <div
+          class="ant-timeline-item-head ant-timeline-item-head-blue"
+        />
+        <div
+          class="ant-timeline-item-content"
+        >
+          <h5
+            class="ant-typography"
+          >
+            <span
+              class="ant-typography sc-hKMtZM dunuRM"
+            >
+              Lead Software Developer
+            </span>
+             | 
+            MELTSTUDIO
+          </h5>
+          <span
+            class="ant-typography ant-typography-secondary"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-location-dot "
+              data-icon="location-dot"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"
+                fill="currentColor"
+              />
+            </svg>
+             
+            Remote
+          </span>
+          <div
+            class="ant-typography"
+          >
+            As Lead Software Developer in this company, I worked on many projects such as:
+          </div>
+          <div
+            class="ant-list ant-list-split ant-list-something-after-last-item"
+          >
+            <div
+              class="ant-list-header"
+            >
+              <h5
+                class="ant-typography ant-typography-secondary"
+              >
+                <u>
+                  Token Metrics
+                   | 
+                  Senior Software Developer
+                </u>
+              </h5>
+            </div>
+            <div
+              class="ant-spin-nested-loading"
+            >
+              <div
+                class="ant-spin-container"
+              >
+                <ul
+                  class="ant-list-items"
+                >
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Followed the SDLC using SCRUM as Agile Methodology for planning, designing, building, testing, and deploying the Backend and Frontend apps.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Implemented payment gateway using Stripe and worked on the backend creating a REST API to provide to the platform the resources.
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="ant-list-footer"
+            >
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Node.js
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                React.js
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Snowflake
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                JIRA
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Github Actions
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Filezilla
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                AWS
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                EC2
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                S3
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Cloudwatch
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Route53
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Terraform
+              </span>
+            </div>
+          </div>
+          <div
+            class="ant-list ant-list-split ant-list-something-after-last-item"
+          >
+            <div
+              class="ant-list-header"
+            >
+              <h5
+                class="ant-typography ant-typography-secondary"
+              >
+                <u>
+                  Happyly
+                   | 
+                  Lead Software Developer
+                </u>
+              </h5>
+            </div>
+            <div
+              class="ant-spin-nested-loading"
+            >
+              <div
+                class="ant-spin-container"
+              >
+                <ul
+                  class="ant-list-items"
+                >
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Followed the SDLC using SCRUM as Agile Methodology for planning, designing, building, testing, and deploying the Backend and Frontend apps.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Worked on the new frontend design and refactored a legacy code to Nuxt.js.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        We Implemented React Native to have the mobile application.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Worked on the back-end and refactored the REST API to v2 using Django REST Framework.
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="ant-list-footer"
+            >
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Python
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Django
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Vue.js
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Nuxt.js
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                PostgreSQL
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Asana
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                GitHub
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Code Commit
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Jenkins
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                AWS
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                EC2
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                S3
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                CloudWatch
+              </span>
+            </div>
+          </div>
+          <div
+            class="ant-list ant-list-split ant-list-something-after-last-item"
+          >
+            <div
+              class="ant-list-header"
+            >
+              <h5
+                class="ant-typography ant-typography-secondary"
+              >
+                <u>
+                  HQIF
+                   | 
+                  Full Stack Developer
+                </u>
+              </h5>
+            </div>
+            <div
+              class="ant-spin-nested-loading"
+            >
+              <div
+                class="ant-spin-container"
+              >
+                <ul
+                  class="ant-list-items"
+                >
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Refactored the current front-end app using React.js and built the REST API on the back-end side using Node.js.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Reviewed the code of teammates and assisted them when they had blockers.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Worked on improving the performance of the app using design patterns and best practices of React.js.
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="ant-list-footer"
+            >
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Node.js
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                React.js
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Python
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                AWS
+              </span>
+            </div>
+          </div>
+          <div
+            class="ant-list ant-list-split ant-list-something-after-last-item"
+          >
+            <div
+              class="ant-list-header"
+            >
+              <h5
+                class="ant-typography ant-typography-secondary"
+              >
+                <u>
+                  Suyo
+                   | 
+                  Full Stack Developer
+                </u>
+              </h5>
+            </div>
+            <div
+              class="ant-spin-nested-loading"
+            >
+              <div
+                class="ant-spin-container"
+              >
+                <ul
+                  class="ant-list-items"
+                >
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Developed new features in the dashboard and the REST API.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Assisted the team when they had blockers.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Worked on improving the performance of the app using design patterns and best practices of React.js.
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="ant-list-footer"
+            >
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Python
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Django
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                React.js
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                PostgreSQL
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                Pivotal Tracker
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                GitHub
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                AWS
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                EC2
+              </span>
+              <span
+                class="ant-tag"
+                style="margin: 2px;"
+              >
+                S3
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        class="ant-timeline-item ant-timeline-item-left"
+      >
+        <div
+          class="ant-timeline-item-label"
+        >
+          <div
+            class="ant-typography ant-typography-secondary"
+          >
+            February 2018
+             -
+             
+            August 2019
+          </div>
+        </div>
+        <div
+          class="ant-timeline-item-tail"
+        />
+        <div
+          class="ant-timeline-item-head ant-timeline-item-head-blue"
+        />
+        <div
+          class="ant-timeline-item-content"
+        >
+          <h5
+            class="ant-typography"
+          >
+            <span
+              class="ant-typography sc-hKMtZM dunuRM"
+            >
+              Backend Developer
+            </span>
+             | 
+            MEDICALL24
+          </h5>
+          <span
+            class="ant-typography ant-typography-secondary"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-location-dot "
+              data-icon="location-dot"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"
+                fill="currentColor"
+              />
+            </svg>
+             
+            Montería
+          </span>
+          <div
+            class="ant-typography"
+          >
+            Worked on creating an API in Node.js for serving services and resources to the mobile application. Also, I worked on creating a real-time system using Socket.io.
+          </div>
+          <div
+            class="ant-list ant-list-split"
+          >
+            <div
+              class="ant-spin-nested-loading"
+            >
+              <div
+                class="ant-spin-container"
+              >
+                <ul
+                  class="ant-list-items"
+                >
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Took the “Medicall24: Product Features” document and defined the features with their ETA. Defined the database schema and the flow data based on the features.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Worked on the back-end side, implementing Microservices for creating the REST API using Seneca.js. Implemented Twilio using the Programmable Video Feature to connect the mobile application.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Participated in meetings with the PM to discuss the current process and resolve doubts because this project was new.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Reviewed the code, merged those changes, and deployed it to alpha for testing.
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        class="ant-timeline-item ant-timeline-item-left"
+      >
+        <div
+          class="ant-timeline-item-label"
+        >
+          <div
+            class="ant-typography ant-typography-secondary"
+          >
+            October 2016
+             -
+             
+            September 2017
+          </div>
+        </div>
+        <div
+          class="ant-timeline-item-tail"
+        />
+        <div
+          class="ant-timeline-item-head ant-timeline-item-head-blue"
+        />
+        <div
+          class="ant-timeline-item-content"
+        >
+          <h5
+            class="ant-typography"
+          >
+            <span
+              class="ant-typography sc-hKMtZM dunuRM"
+            >
+              Team Lead - Backend Developer
+            </span>
+             | 
+            METROSINÚ
+          </h5>
+          <span
+            class="ant-typography ant-typography-secondary"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-location-dot "
+              data-icon="location-dot"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"
+                fill="currentColor"
+              />
+            </svg>
+             
+            Montería
+          </span>
+          <div
+            class="ant-typography"
+          >
+            Worked on defining requirements for a mobile application called Busser and I developed the back-end side using Node.js creating an API, using Redis for sending pub/sub messages, and Socket.io for sending info in real-time.
+          </div>
+          <div
+            class="ant-list ant-list-split"
+          >
+            <div
+              class="ant-spin-nested-loading"
+            >
+              <div
+                class="ant-spin-container"
+              >
+                <ul
+                  class="ant-list-items"
+                >
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Worked on the backend side implementing the REST API. Also, implemented a microsystem using Socket.io to provide the mobile application with the data.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Worked on the frontend side implementing a dashboard using Ember.js for checking in real time the current data throughout web sockets.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Participated in meetings with the customer to discuss the current process and resolve doubts regarding the project.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Reviewed the code, merged those changes, and deployed it to alpha for testing.
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        class="ant-timeline-item ant-timeline-item-last ant-timeline-item-left"
+      >
+        <div
+          class="ant-timeline-item-label"
+        >
+          <div
+            class="ant-typography ant-typography-secondary"
+          >
+            June 2015
+             -
+             
+            September 2016
+          </div>
+        </div>
+        <div
+          class="ant-timeline-item-tail"
+        />
+        <div
+          class="ant-timeline-item-head ant-timeline-item-head-blue"
+        />
+        <div
+          class="ant-timeline-item-content"
+        >
+          <h5
+            class="ant-typography"
+          >
+            <span
+              class="ant-typography sc-hKMtZM dunuRM"
+            >
+              Full Stack Developer
+            </span>
+             | 
+            TELETAXI SAS
+          </h5>
+          <span
+            class="ant-typography ant-typography-secondary"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-location-dot "
+              data-icon="location-dot"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"
+                fill="currentColor"
+              />
+            </svg>
+             
+            Montería
+          </span>
+          <div
+            class="ant-typography"
+          >
+            Developed an integral system called Taxadministrador built on Node.js using handlebars.js as a template engine.
+          </div>
+          <div
+            class="ant-list ant-list-split"
+          >
+            <div
+              class="ant-spin-nested-loading"
+            >
+              <div
+                class="ant-spin-container"
+              >
+                <ul
+                  class="ant-list-items"
+                >
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Developed an internal system to print control cards to the taxi drivers and also generate reports, and trigger alerts about document expirations.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Worked on the back-end creating a REST API.
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="ant-list-item"
+                  >
+                    <div
+                      class="ant-space ant-space-horizontal ant-space-align-start"
+                    >
+                      <div
+                        class="ant-space-item"
+                        style="margin-right: 8px;"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-check "
+                          color="#4392F1"
+                          data-icon="check"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="ant-space-item"
+                      >
+                        Worked on the dashboard using template rendering with Node.js.
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
