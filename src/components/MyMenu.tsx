@@ -1,7 +1,12 @@
 import type { MenuProps } from 'antd'
-import { Menu } from 'antd'
-import { Link } from 'react-router-dom'
+
+import { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import { Menu, Space, Tag } from 'antd'
 import styled from 'styled-components'
+import { faMedium } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import colors from '../utils/Colors'
 
 const items: MenuProps['items'] = [
   {
@@ -13,7 +18,15 @@ const items: MenuProps['items'] = [
     key: 'experience',
   },
   {
-    label: <Link to="portfolio">PORTFOLIO</Link>,
+    label: (
+      <Space>
+        <Link to="portfolio">PORTFOLIO</Link>
+        <Tag color={colors.secondary} style={{ margin: 0 }}>
+          Coming Soon
+        </Tag>
+      </Space>
+    ),
+    disabled: true,
     key: 'portfolio',
   },
   {
@@ -22,7 +35,7 @@ const items: MenuProps['items'] = [
         href="https://medium.com/@jfbaquerocelis"
         target="_blank"
         rel="noopener noreferrer">
-        MEDIUM
+        <FontAwesomeIcon icon={faMedium} /> MEDIUM
       </a>
     ),
     key: 'medium',
@@ -30,11 +43,23 @@ const items: MenuProps['items'] = [
 ]
 
 function MyMenu() {
+  const [itemSelected, setItemSelected] = useState<string>('')
+  const location = useLocation()
+
+  useEffect(() => {
+    const { pathname } = location
+
+    if (pathname === '/') setItemSelected('about')
+    else setItemSelected(pathname.replace('/', ''))
+  }, [])
+
+  if (itemSelected === '') return null
+
   return (
     <StyledMenu
       mode="horizontal"
       items={items}
-      defaultSelectedKeys={['about']}
+      defaultSelectedKeys={[itemSelected]}
     />
   )
 }
@@ -42,6 +67,7 @@ function MyMenu() {
 const StyledMenu = styled(Menu)`
   background-color: transparent;
   border-bottom: none;
+  display: flex;
 
   li {
     &:nth-child(n + 0) {
